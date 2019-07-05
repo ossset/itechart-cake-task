@@ -208,6 +208,7 @@ span.last-pager{
     }
     .individual{
         background-color: #fbebea;
+        padding-bottom: 20px;
     }
     .individual__title{
         width: 216px;
@@ -348,5 +349,110 @@ span.last-pager{
     }
     .form-button{
         margin-top: 20px;
+    }
+    .about-us{
+        background-color: #fbebea;
+    }
+    .about-us__img{
+        margin-top: 20px;
+    }
+    .about-us__feedback{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Circe Regular';
+    }
+    .feedback__text{
+        text-align: center;
+        margin-top: 7px;
+        font-size: 12px;
+        width: 230px;
+    }
+    .feedback__title{
+        font-size: 14px;
+        font-weight: 700;
+        margin-top: 4px;
+    }
+    .feedback__link{
+        text-decoration: underline;
+        font-style: italic;
+        color: #f87b91;
+        position: relative;
+    }
+    .feedback__link::after{
+        content: '1/26';
+        position: absolute;
+        left: 85px;
+        font-style: normal;
+    }
+    .feedback__link:hover{
+        cursor: pointer;
+    }
+    .social-icon{
+        display: block;
+        height: 36px;
+        width: 36px;
+        background-color: #ffffff;
+        border-radius: 100px;
+        text-align: center; 
+        padding-top: 10px;
+        box-sizing: border-box;
+        transition: .1s ease-in-out;
+    }
+    .about-us__images{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 25px;
+    }
+    .about-us__social{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 140px;
+        margin-left: 35px;
+    }
+    .social-icon:active{
+        transform: scale(1.1);
+    }
+    .vk{
+        padding-right: 4px;
+        padding-top: 8px;
+    }
+    .about-us__confectioner{
+        font-family: 'Circe Regular';
+    }
+    .about-us__confectione-title{
+        font-family: 'Intro Script R H2 Base';
+        font-size: 22px;
+        margin-top: 20px;
+    }
+    .about-us__confectioner-text span{
+        display: block;
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .about-us__confectioner-text{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .about-us__quote{
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-us__quote span{
+        font-size: 60px;
+        color: #ffffff;
+    }
+    .about-us__quote p{
+        font-style: italic;
+        text-align: center;
+        font-size: 13px;
+        margin-top: 17px;
+        margin-bottom: 35px;
     }
 }
