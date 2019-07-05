@@ -76,7 +76,7 @@ ul{
     }
     .header__promo{
         padding-top: 118px;
-        background: url(/assets/img/header_cake_sm.png) no-repeat 0px -50px;
+        background: url(../assets/img/header_cake_sm.png) no-repeat 0px -50px;
     }
     .header__title{
         line-height: 35px;
