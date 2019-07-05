@@ -58,6 +58,7 @@ ul{
 }
 
 
+
 @media (min-width: 320px){
     .header__logo{
         font-size: 16px;
@@ -76,7 +77,8 @@ ul{
     }
     .header__promo{
         padding-top: 118px;
-        background: url(../assets/img/header_cake_sm.png) no-repeat 0px -50px;
+        background: url(../assets/img/header_cake_sm.png) no-repeat center center;
+        background-position-y: -50px
     }
     .header__title{
         line-height: 35px;
@@ -117,5 +119,66 @@ ul{
     }
     .header__present{
         margin-bottom: 40px;
+    }
+    .examples__card{
+        box-sizing: border-box;
+        width: 280px;
+        height: 120px;
+        margin-bottom: 10px;
+        padding: 13px 0 0 14px;
+        position: relative;
+    }
+    .examples__name::after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 280px;
+        height: 120px;
+        background-color: rgba(0,0,0,0.1);
+        display: none;
+    }
+    .examples__card:hover  .examples__name::after{
+       display: block;     
+    } 
+    .classic-card{
+        background: url(../assets/img/classic-cake-sm.png)
+    }
+    .mousse-card{
+        background: url(../assets/img/mousse-cake-sm.png)
+    }
+    .wedding-card{
+        background: url(../assets/img/wedding-cake-sm.png)
+    }
+    .men-card{
+        background: url(../assets/img/men-cake-sm.png)
+    }
+    .fem-card{
+        background: url(../assets/img/fem-cake-sm.png)
+    }
+    .child-card{
+        background: url(../assets/img/child-cake-sm.png);
+        background-position-y: -48px
+    }
+    .examples__name{
+        font-size: 14px;
+        font-family: 'Circe Regular';
+        color: #2d2829;
+    }
+    .examples__types{
+        font-size: 12px;
+        font-family: 'Circe Regular';
+        color: #2d2829;
+    }
+    .examples{
+        padding-top: 60px;
+        background-color: #fbebea;
+    }
+    .examples__title{
+        margin: 0;
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        font-size: 24px;
+        margin-bottom: 36px;
     }
 }
