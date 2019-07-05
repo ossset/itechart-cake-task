@@ -56,7 +56,31 @@ ul{
     background-color: #fbebea;
     color: #f50049;
 }
-
+.individual__pager{
+    display: flex;
+    width: 51px;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.individual__pager span{
+    width: 6px;
+    height: 6px;
+    background-color: #dddddd;
+    box-sizing: border-box;
+    border-radius: 20px;
+    transition: .1s ease-in-out;
+}
+span.last-pager{
+    width: 4px;
+    height: 4px;
+}
+.individual__pager span:hover{
+    background-color: #f50049;
+    transform: scale(1.1);
+}
 
 
 @media (min-width: 320px){
@@ -172,6 +196,7 @@ ul{
     }
     .examples{
         padding-top: 60px;
+        padding-bottom: 50px;
         background-color: #fbebea;
     }
     .examples__title{
@@ -180,5 +205,148 @@ ul{
         font-family: 'Playfair Display', serif;
         font-size: 24px;
         margin-bottom: 36px;
+    }
+    .individual{
+        background-color: #fbebea;
+    }
+    .individual__title{
+        width: 216px;
+        margin: 0 auto;
+    }
+    .individual__text{
+        text-align: center;
+        margin-top: 13px;
+        font-family: 'Intro Script R H2 Base';
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+    .individual__card{
+        padding: 8px 20px 20px 20px;
+        background-color: #ffffff;
+        margin-bottom: 10px;
+    }
+    .individual__card-title{
+        display: flex;
+        align-items: flex-end;
+    }
+    .individual__card-title {
+        font-family: 'Playfair Display', serif;     
+        font-weight: 700;
+        color: #f50049;
+        font-size: 30px;
+    }
+    .individual__card-title p{
+        font-size: 16px;
+        padding-bottom: 2px;
+        margin-left: 12px;
+    }
+    .image-wrapper{
+        position: relative;
+    }
+    .individual__img{
+        margin: 0 auto;
+        margin-top: 20px;
+        display: block;
+    }
+    .image-wrapper::after{
+        content: '1/12';
+        position: absolute;
+        top: 95px;
+        right: 4px;
+        color: #ffffff;
+        display: block;
+        font-size: 12px;
+        font-family: 'Circe Regular';
+    }
+    .individual__name-title{
+        font-size: 16px;
+        font-family: 'Circe Regular';
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .individual__name-text{
+        font-size: 14px;
+        font-family: 'Circe Regular';
+    }
+    .individual__price{
+        font-size: 18px;
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+    .individual__button{
+        width: 180px;
+    }
+    .circle-img{
+        margin-top: 20px;
+    }
+    .circle-card{
+        position: relative;
+    }
+    .circle-card::after{
+        width: 19px;
+        display: block;
+        content: '1кг';
+        position: absolute;
+        top:50%;
+        left: 50%; 
+        transform: translateX(-51%) translateY(-50%);
+        color: #000000;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .individual__name-circle{
+        text-align: center;
+        font-size: 14px;
+        font-family: 'Circe Regular';
+        margin-bottom: 60px;
+    }
+    .desing-img{
+        position: relative;
+    }
+    .desing-img::after{
+        display: block;
+        content: '1/35';
+        position: absolute;
+        top:180px;
+        left: 180px; 
+        color: #838383;
+        font-size: 12px;
+    }
+    .individual__name-text_design{
+        text-align: center;
+        font-size: 14px;
+        color: #2f2f2f;
+        font-weight: 700;
+    }
+    .individual__form-title{
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+    }
+    .individual__form-result{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .individual__form-result span{
+        font-size: 20px;
+        font-family: 'Intro Script R H2 Base';
+        color: #f50049;
+    }
+    .individual__form-result p{
+        font-family: 'Circe Regular';
+        height: 30px;
+        width: 243px;
+        text-align: center;
+        border: 1px solid #dedede;
+        padding-top: 5px;
+        box-sizing: border-box;
+        border-radius: 50px;
+        margin: 8px 0px 10px 0px;
+    }
+    .form-button{
+        margin-top: 20px;
     }
 }
