@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Intro Script R H2 Base';
+    src: url('IntroScriptR-H2Base.eot');
+    src: url('../assets/fonts/IntroScriptR-H2Base.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/IntroScriptR-H2Base.woff') format('woff'),
+    url('../assets/fonts/IntroScriptR-H2Base.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Circe Regular';
+    src: url('Circe-Regular.eot');
+    src: url('../assets/fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/Circe-Regular.woff') format('woff'),
+    url('../assets/fonts/Circe-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+}
+p{
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+.d-flex{
+    display: flex;
+}
+.header__bg{
+    background: #fbebea;
+}
+.header__menu{
+    background: #ffffff;
+}
+.header__logo{
+    font-family: 'Playfair Display', serif;
+    color: #000000;
+}
+.container{
+    margin: 0 auto;
+}
+.header__promo-text{
+    font-family: 'Intro Script R H2 Base';
+}
+.header__cons-text{        
+    font-family: 'Circe Regular';
+}
+.primary__button{
+    text-transform: uppercase;
+    font-family: 'Circe Regular';
+}
+.primary__button:hover{
+    border: 1px solid #f50049;
+    background-color: #fbebea;
+    color: #f50049;
+}
+
+
+@media (min-width: 320px){
+    .header__logo{
+        font-size: 16px;
+    }
+    .header__nav, .header__phone{
+        display: none;
+    }
+    .container{
+        width: 280px;
+    }
+    .header__menu{
+        display: flex;
+        justify-content: space-between;
+        padding: 13px 0;
+        align-items: center;
+    }
+    .header__promo{
+        padding-top: 118px;
+        background: url(/assets/img/header_cake_sm.png) no-repeat 0px -50px;
+    }
+    .header__title{
+        line-height: 35px;
+        margin: 0 auto;
+        display: block;
+        width: 180px;
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .header__promo-text{
+        text-align: center;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .header__cons-text{
+        font-size: 14px;
+        margin-left: 10px;
+        width: 200px;
+    }
+    .primary__button{
+        font-size: 13px;
+        margin: 0 auto;
+        display: block;
+        width: 226px;
+        height: 51px;
+        color: #ffffff;
+        background-color: #f50049;
+        text-align: center;
+        box-sizing: border-box;
+        padding-top: 20px;
+        border-radius: 50px;
+    }
+    .header__natural{
+        margin-bottom: 13px;
+    }
+    .header__present{
+        margin-bottom: 40px;
+    }
+}
