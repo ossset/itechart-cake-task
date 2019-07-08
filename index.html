@@ -44,38 +44,38 @@
                 <img src="./assets/img/burger-sm.svg" alt="mobile_burger" width="20" height="16">
             </div>
         </div>
-        <div class="header__bg">
-            <div class="header__promo">
-                <h1 class="header__title">Торты на заказ</h1>
-                <p class="header__promo-text">Ручная работа</p>
-            </div>
-            <div class="header__cons container">
-                <div class="header__natural d-flex">
-                    <img src="./assets/img/ingridients-icon.png" alt="natural">
-                    <p class="header__cons-text">
-                        Натуральные ингридиенты
-                    </p>
-                </div>
-                <div class="header__present d-flex">
-                    <img src="./assets/img/present-icon.png" alt="present">
-                    <p class="header__cons-text">
-                        Доставка бесплатно при заказе 
-                        от 2000 рублей*
-                    </p>
-                </div>
-            </div>
-            <a href="#" class="header__button primary__button">
-                    Выбрать торт
-            </a>
-        </div>    
     </header>
+    <section class="promo__bg">
+        <div class="promo">
+            <h1 class="promo__title">Торты на заказ</h1>
+            <p class="promo__text">Ручная работа</p>
+        </div>
+        <div class="promo__cons container">
+            <div class="promo__item promo__item_natural d-flex">
+                <img src="./assets/img/ingridients-icon.png" alt="natural">
+                <p class="promo__cons-text">
+                    Натуральные ингридиенты
+                </p>
+            </div>
+            <div class="promo__item promo__item_present d-flex">
+                <img src="./assets/img/present-icon.png" alt="present">
+                <p class="promo__cons-text">
+                    Доставка бесплатно при заказе 
+                    от 2000 рублей*
+                </p>
+            </div>
+        </div>
+        <a href="#" class=" button">
+            Выбрать торт
+        </a>
+    </section>    
     <section class="examples">
         <div class="container">
             <h2 class="examples__title">
                 Наши торты
             </h2>
             <div>
-                <div class="examples__card classic-card">
+                <div class="examples__card examples__card_classic">
                     <p class="examples__name">
                         Классические
                     </p>
@@ -83,7 +83,7 @@
                         24 вида
                     </p>
                 </div>
-                <div class="examples__card  mousse-card">
+                <div class="examples__card  examples__card_mousse">
                     <p class="examples__name">
                         Муссовые
                     </p>
@@ -91,7 +91,7 @@
                         12 видов
                     </p>
                 </div>
-                <div class="examples__card wedding-card">
+                <div class="examples__card examples__card_wedding">
                     <p class="examples__name">
                         Свадебные
                     </p>
@@ -101,7 +101,7 @@
                 </div>
             </div>
             <div>
-                <div class="examples__card men-card">
+                <div class="examples__card examples__card_men">
                     <p class="examples__name">
                         Мужчинам
                     </p>
@@ -109,7 +109,7 @@
                         12 видов
                     </p>
                 </div>
-                <div class="examples__card fem-card">
+                <div class="examples__card examples__card_fem">
                     <p class="examples__name">
                         Женщинам
                     </p>
@@ -117,7 +117,7 @@
                         16 видов
                     </p>
                 </div>
-                <div class="examples__card child-card">
+                <div class="examples__card examples__card_child">
                     <p class="examples__name">
                         Детские
                     </p>
@@ -130,7 +130,7 @@
     </section>
     <section class="individual">
         <div class="container">
-            <h2 class="individual__title examples__title">
+            <h2 class="individual__title">
                 Индивидуальный заказ
             </h2>
             <p class="individual__text">
@@ -145,11 +145,11 @@
                     <img class="individual__img" src="./assets/img/inner-sm.png" alt="inner">
                 </div>
                 <div class="individual__pager">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span class="last-pager"></span>
+                    <span class="individual__pager__link"></span>
+                    <span class="individual__pager__link"></span>
+                    <span class="individual__pager__link"></span>
+                    <span class="individual__pager__link"></span>
+                    <span class="individual__pager__link individual__pager__link_last"></span>
                 </div>
                 <div class="individual__name">
                     <p class="individual__name-title">
@@ -163,7 +163,7 @@
                 <p class="individual__price">
                     1000 руб/кг
                 </p>
-                <a href="#" class="individual__button header__button primary__button">
+                <a href="#" class="button button__small">
                     Выбрать
                 </a>
             </div>
@@ -176,17 +176,17 @@
                     <img class="individual__img circle-img" src="./assets/img/circle-sm.png" alt="inner">
                 </div>
                 <div class="individual__pager">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span class="individual__pager__link"></span>
+                    <span class="individual__pager__link"></span>
+                    <span class="individual__pager__link"></span>
+                    <span class="individual__pager__link"></span>
                 </div>
                 <div class="individual__name">
                     <p class="individual__name-circle">
                         17-18 см <br>(1 кг – 6 персон)
                     </p>
                 </div>
-                <a href="#" class="individual__button header__button primary__button">
+                <a href="#" class="button button__small">
                     Выбрать
                 </a>
             </div>
@@ -199,11 +199,11 @@
                     <img class="individual__img" src="./assets/img/design-sm.png" alt="inner">
                 </div>
                 <div class="individual__pager">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span class="last-pager"></span>
+                    <span class="individual__pager__link"></span>
+                    <span class="individual__pager__link"></span>
+                    <span class="individual__pager__link"></span>
+                    <span class="individual__pager__link"></span>
+                    <span class="individual__pager__link individual__pager__link_last"></span>
                 </div>
                 <div class="individual__name">
                     <p class="individual__name-text individual__name-text_design ">
@@ -213,7 +213,7 @@
                 <p class="individual__price">
                     600 руб/кг
                 </p>
-                <a href="#" class="individual__button header__button primary__button">
+                <a href="#" class="button button__small">
                     Выбрать
                 </a>
                 <div class="individual__form">
@@ -221,13 +221,13 @@
                         Ваш выбор
                     </h2>
                     <div class="individual__form-result">
-                        <span>Начинка</span>
-                        <p>Шоколадный ганаш</p>
-                        <span>Размер</span>
-                        <p>1 кг</p>
-                        <span>Оформление</span>
-                        <p>Маршмэллоу</p>
-                        <a href="#" class="header__button primary__button form-button">
+                        <span class="individual__form__title">Начинка</span>
+                        <p class="individual__form__text">Шоколадный ганаш</p>
+                        <span class="individual__form__title">Размер</span>
+                        <p class="individual__form__text">1 кг</p>
+                        <span class="individual__form__title">Оформление</span>
+                        <p class="individual__form__text">Маршмэллоу</p>
+                        <a href="#" class="button individual__button">
                             Заказать торт
                         </a>
                     </div>
@@ -311,5 +311,190 @@
             </div>
         </div>
     </section>
+    <section class="pros">
+        <div class="container">
+            <h2 class="individual__title examples__title pros__title">
+                Наши преимущества
+            </h2>
+            <p class="pros__subtitle">
+                Почему нас выбирают?
+            </p>
+        </div>
+            <div class="pros__items">
+                <div class="pros__item">
+                    <img src="./assets/img/ingridients-iconpros-sm.png" alt="natural">
+                    <p class="pros__item-heading">
+                        Без искусственных добавок
+                    </p>
+                    <p class="pros__item-text">
+                        Работаем  с натуральными ингредиентами <br>
+                        и свежими продуктами
+                    </p>
+                </div>
+                <div class="pros__item">
+                    <img src="./assets/img/24cakepros-sm.png" alt="">
+                    <p class="pros__item-heading">
+                        Свежий торт в день торжества
+                    </p>
+                    <p class="pros__item-text">
+                        Торты изготавливаются в течение <br> суток до отправки
+                    </p>
+                </div>
+            </div>
+    </section>
+    <section class="care">
+        <div class="care__wrapper">
+            <div class="container">
+                <h2 class="individual__title examples__title pros__title care__title">
+                    Забота о клиентах
+                </h2> 
+                <p class="care__subtitle pros__subtitle">
+                    Для нас важно
+                </p>
+                <p class="care__description">
+                    Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был создан исключительно <br>
+                    для вас и для вашего события.
+                </p>
+            </div>
+        </div>
+            <div class="care__algorithm">
+                <div class="container">
+                    <div class="care__algorithm-wrapper">
+                            <h2 class="individual__title examples__title pros__title algorithm__title">
+                                Как заказать
+                            </h2> 
+                            <div class="algorithm__item">
+                                <span>
+                                    1
+                                </span>
+                                <div class="algorithm__item-right">
+                                    <p class="algorithm__item-title">
+                                    Срок заказа
+                                    </p>
+                                    <p class="algorithm__item-text">
+                                        Размещать заказы желательно за 2-3 дня.
+                                        На выходные заказы лучше размещать
+                                        минимум за неделю. 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="algorithm__item">
+                                <span>
+                                    2
+                                </span>
+                                <div class="algorithm__item-right">
+                                    <p class="algorithm__item-title">
+                                    Доставка по городу
+                                    </p>
+                                    <p class="algorithm__item-text">    
+                                        Доставка в пределах города 200 рубей , 
+                                        при заказе на сумму более 2000 доставка 
+                                        бесплатно.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="algorithm__item">
+                                <span>
+                                    3
+                                </span>
+                                <div class="algorithm__item-right">
+                                    <p class="algorithm__item-title">
+                                    Доставка за городом
+                                    </p>
+                                    <p class="algorithm__item-text">
+                                        Доставка за пределами города
+                                        рассчитывается индивидуально.
+                                    </p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="prefooter">
+        <div class="container">
+            <p class="prefooter__title">
+                Контакты
+            </p>
+            <p class="prefooter__subtitle">
+                Остались вопросы?
+            </p>
+            <p class="prefooter__text">
+                Заполните форму и наш кондитер <br> с вами свяжется
+            </p>
+            <form action="#" method="POST" class="prefooter__form">
+                <input type="text" placeholder="Ваше имя" class="prefooter__item prefooter__item_input">
+                <input type="email" placeholder="Email адрес" class="prefooter__item prefooter__item_input">
+                <textarea name="question" id="question" cols="28" rows="8" class="prefooter__item prefooter__item_textarea" placeholder="Ваш вопрос"></textarea>
+                <input type="submit" value="Отправить" class="button button__small prefooter__button">
+            </form>
+            <div class="prefooter__contacts">
+                <p class="prefooter__text">
+                    Или позвоните по телефону: <br> +7 906 899 92 96
+                </p>
+                <p class="prefooter__text">
+                    Наша почта : bakerybypavel@mail.ru 
+                </p>
+                <div class="prefooter__social">
+                    <p class="prefooter__text">
+                        Мы в соц. сетях:
+                    </p>
+                    <div class="prefooter__social__links">
+                        <a href="#" class="prefooter__social__link">
+                            <img src="./assets/img/insta-prefooter-sm.png" alt="insta">
+                        </a>
+                        <a href="#" class="prefooter__social__link prefooter__social__link_vk">
+                            <img src="./assets/img/vk-prefooter-sm.png" alt="vk">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__menu">
+                <a href="#" class="footer__logo">
+                    Cakes
+                </a>
+                <ul class="footer__list">
+                    <li class="footer__menu__item">
+                        <a class="footer__list_link" href="#">Наши торты</a>    
+                    </li>
+                    <li class="footer__menu__item">
+                        <a class="footer__list_link" href="#">Индивидуальный заказ</a>
+                        
+                    </li>
+                    <li class="footer__menu__item">
+                        <a class="footer__list_link" href="#">Отзывы</a>
+                        
+                    </li>
+                    <li class="footer__menu__item">
+                        <a class="footer__list_link" href="#">О нас</a>
+                    </li>
+                    <li class="footer__menu__item">
+                        <a class="footer__list_link" href="Как заказать"></a>
+                    </li>
+                    <li class="footer__menu__item">
+                        <a class="footer__list_link" href="#">Контакты</a>
+                    </li>
+                    <li class="footer__menu__item">
+                        <a class="footer__list_link" href="tel:+79068999296">+7 906 899 92 96</a>
+                    </li>
+                </ul>
+                <div class="footer_social">
+                    <a href="#" class="footer__social__item">
+                        <img src="./assets/img/insta-footer-sm.png" alt="">
+                    </a>
+                    <a href="#" class="footer__social__item footer__social__item_vk">
+                        <img src="./assets/img/vk-footer-sm.png" alt="">
+                    </a>
+                </div>
+                <p class="footer__copy">
+                    ©  2018 Cakes
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

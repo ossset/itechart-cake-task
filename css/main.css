@@ -28,7 +28,7 @@ ul{
 .d-flex{
     display: flex;
 }
-.header__bg{
+.promo__bg{
     background: #fbebea;
 }
 .header__menu{
@@ -44,14 +44,14 @@ ul{
 .header__promo-text{
     font-family: 'Intro Script R H2 Base';
 }
-.header__cons-text{        
+.promo__cons-text{        
     font-family: 'Circe Regular';
 }
-.primary__button{
+.button{
     text-transform: uppercase;
     font-family: 'Circe Regular';
 }
-.primary__button:hover{
+.button:hover{
     border: 1px solid #f50049;
     background-color: #fbebea;
     color: #f50049;
@@ -65,7 +65,7 @@ ul{
     align-items: center;
     margin-bottom: 20px;
 }
-.individual__pager span{
+.individual__pager__link{
     width: 6px;
     height: 6px;
     background-color: #dddddd;
@@ -73,7 +73,7 @@ ul{
     border-radius: 20px;
     transition: .1s ease-in-out;
 }
-span.last-pager{
+.individual__pager__link_last{
     width: 4px;
     height: 4px;
 }
@@ -99,12 +99,12 @@ span.last-pager{
         padding: 13px 0;
         align-items: center;
     }
-    .header__promo{
+    .promo{
         padding-top: 118px;
         background: url(../assets/img/header_cake_sm.png) no-repeat center center;
         background-position-y: -50px
     }
-    .header__title{
+    .promo__title{
         line-height: 35px;
         margin: 0 auto;
         display: block;
@@ -115,17 +115,17 @@ span.last-pager{
         font-size: 40px;
         margin-bottom: 20px;
     }
-    .header__promo-text{
+    .promo__text{
         text-align: center;
         margin: 0;
         margin-bottom: 20px;
     }
-    .header__cons-text{
+    .promo__cons-text{
         font-size: 14px;
         margin-left: 10px;
         width: 200px;
     }
-    .primary__button{
+    .button{
         font-size: 13px;
         margin: 0 auto;
         display: block;
@@ -138,10 +138,13 @@ span.last-pager{
         padding-top: 20px;
         border-radius: 50px;
     }
-    .header__natural{
+    .button__small{
+        width: 180px;
+    }
+    .promo__item_natural{
         margin-bottom: 13px;
     }
-    .header__present{
+    .promo__item_present{
         margin-bottom: 40px;
     }
     .examples__card{
@@ -165,22 +168,22 @@ span.last-pager{
     .examples__card:hover  .examples__name::after{
        display: block;     
     } 
-    .classic-card{
+    .examples__card_classic{
         background: url(../assets/img/classic-cake-sm.png)
     }
-    .mousse-card{
+    .examples__card_mousse{
         background: url(../assets/img/mousse-cake-sm.png)
     }
-    .wedding-card{
+    .examples__card_wedding{
         background: url(../assets/img/wedding-cake-sm.png)
     }
-    .men-card{
+    .examples__card_men{
         background: url(../assets/img/men-cake-sm.png)
     }
-    .fem-card{
+    .examples__card_fem{
         background: url(../assets/img/fem-cake-sm.png)
     }
-    .child-card{
+    .examples__card_child{
         background: url(../assets/img/child-cake-sm.png);
         background-position-y: -48px
     }
@@ -213,6 +216,10 @@ span.last-pager{
     .individual__title{
         width: 216px;
         margin: 0 auto;
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        font-size: 24px;
+        margin-bottom: 36px;
     }
     .individual__text{
         text-align: center;
@@ -278,7 +285,7 @@ span.last-pager{
         margin-bottom: 25px;
     }
     .individual__button{
-        width: 180px;
+        margin-top: 20px;
     }
     .circle-img{
         margin-top: 20px;
@@ -302,7 +309,7 @@ span.last-pager{
         text-align: center;
         font-size: 14px;
         font-family: 'Circe Regular';
-        margin-bottom: 60px;
+        margin-bottom: 45px;
     }
     .desing-img{
         position: relative;
@@ -331,12 +338,12 @@ span.last-pager{
         flex-direction: column;
         align-items: center;
     }
-    .individual__form-result span{
+    .individual__form__title{
         font-size: 20px;
         font-family: 'Intro Script R H2 Base';
         color: #f50049;
     }
-    .individual__form-result p{
+    .individual__form__text{
         font-family: 'Circe Regular';
         height: 30px;
         width: 243px;
@@ -443,6 +450,7 @@ span.last-pager{
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 40px;
     }
     .about-us__quote span{
         font-size: 60px;
@@ -454,5 +462,221 @@ span.last-pager{
         font-size: 13px;
         margin-top: 17px;
         margin-bottom: 35px;
+    }
+    .pros{
+        background-color: #fbebea;
+        font-family: 'Circe Regular';
+        text-align: center;
+
+    }
+    .pros__title{
+        width: 100%;
+    }
+    .pros__subtitle{
+        font-family: 'Intro Script R H2 Base';
+        font-size: 22px;
+        text-align: center;
+        margin-top: 5px;
+    }
+    .pros__item-heading{
+    margin-top: 15px;
+       font-size: 16px;
+       font-weight: 700;
+    }
+    .pros__item-text{
+        font-size: 14px;
+        margin-top: 3px;
+    }
+    .pros__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pros__items{
+        background-color: #ffffff;
+        margin-top: 20px;
+        padding: 10px 0;
+        height: 270px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .care{
+        padding-top:35px ;
+        text-align: left;
+        background-color: #fbebea;
+    }
+    .care__description{
+        font-family: 'Circe Regular';
+    }
+    .care__subtitle, .care__title{
+        text-align: left;
+    }
+    .care__description{
+        font-size: 14px;
+    }
+    .care__wrapper{
+        background: url(../assets/img/care-cake-sm.png) no-repeat center;
+        height: 290px;
+        background-position-y: 125px;
+    }
+    .care__algorithm{
+        background: #e3353d; /* Old browsers */
+        background: -moz-linear-gradient(top,  #e3353d 82%, #c93030 100%); 
+        background: -webkit-linear-gradient(top,  #e3353d 82%,#c93030 100%); 
+        background: linear-gradient(to bottom,  #e3353d 82%,#c93030 100%); 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3353d', endColorstr='#c93030',GradientType=0 ); 
+        padding-top: 35px;
+        color: #ffffff;
+    }
+    .algorithm__item{
+        display: flex;
+        font-family: 'Circe Regular';
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .algorithm__item span{
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        font-size: 35px;
+    }
+    .algorithm__item-title{
+        font-weight: 700;
+        font-size: 15px;
+    }
+    .algorithm__item-text{
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    .algorithm__item-right{
+        width: 220px;
+        box-sizing: border-box;
+        padding-top: 15px;
+    }
+    .algorithm__title{
+        margin-bottom: 15px;
+    }
+    .care__algorithm-wrapper{
+        background: url(../assets/img/cakes-present-sm.png) no-repeat;
+        background-position-y: 255px;
+        height: 480px;
+        background-position-x: -14px;
+    }
+    .prefooter{
+        background: #fbebea;
+        padding: 40px 0;
+    }
+    .prefooter__subtitle{
+        font-size: 22px;
+        font-family: 'Intro Script R H2 Base';
+        margin-bottom: 5px;
+    }
+    .prefooter__title{
+
+        margin: 0;
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .prefooter__text{
+        font-size: 14px;
+        margin-bottom: 10px;
+        font-family: 'Circe Regular';
+        font-weight: 700;
+    }
+    .prefooter__form{
+        /* margin-top: 10px; */
+    }
+    .prefooter__button{
+        border: none;
+        padding-top: 5px;
+        margin-top: 15px;
+        margin-bottom: 25px;
+        text-transform: none;
+        font-size: 19px;
+    }
+    .prefooter__item{
+        width: 100%;
+        border: none;
+        margin-bottom: 12px;
+        box-sizing: border-box;
+        height:50px;
+        padding-left: 10px;
+        font-size: 14px;
+        font-family: 'Circe Regular';
+    }
+    .prefooter__item_textarea{
+        height: 120px;
+        padding: 10px;
+    }
+    .prefooter__item::placeholder{
+        color: #cccccc;
+    }
+    .prefooter__social__link{
+        display: block;
+        width: 64px;
+        height: 64px;
+        background: #fff no-repeat;
+        border-radius: 50px;
+        box-sizing: border-box;
+        text-align: center;
+        padding-top: 15px;
+        transition: 0.2s ease-in-out;
+    }
+    .prefooter__social__link:hover{
+        transform: scale(1.1);
+    }
+    .prefooter__social__links{
+        display: flex;
+    }
+    .prefooter__social__link_vk{
+        padding-top: 20px;
+        margin-left: 30px;
+    }
+    .footer{
+        background: #898989;
+        padding-top: 43px;
+        font-family: 'Circe Regular';
+    }
+    .footer__logo{
+        font-family: 'Playfair Display', serif;
+        color: #ffffff;
+        font-size: 28px; 
+        margin-bottom: 15px;
+        display: block;
+    }
+    .footer__menu__item{
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    .footer__list{
+        padding: 0;
+    }
+    .footer__list_link{
+        color: #fff;
+    }
+    .footer__list_link:hover{
+        text-decoration: underline;
+    }
+    .footer_social{
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .footer__social__item_vk{
+        margin-left: 20px;
+    }
+    .footer__copy{
+        font-size: 12px;
+        color: #b8b8b8;
+        padding: 10px 0;
+        border-top: 1px solid ;
+    }
+    .footer__social__item{
+        transition: 0.1s ease-in-out;
+    }
+    .footer__social__item:hover{
+        transform: scale(1.2)
     }
 }
