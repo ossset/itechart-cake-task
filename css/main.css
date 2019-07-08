@@ -32,7 +32,9 @@ ul{
     display: flex;
 }
 .promo__bg{
-    background: #fbebea;
+    padding-top: 118px;
+    background: url(../assets/img/header_cake_sm.png) no-repeat center center;
+    background-position-y: -50px
 }
 .header__menu{
     background: #ffffff;
@@ -103,9 +105,7 @@ ul{
         align-items: center;
     }
     .promo{
-        padding-top: 118px;
-        background: url(../assets/img/header_cake_sm.png) no-repeat center center;
-        background-position-y: -50px
+        background: #fbebea;
     }
     .promo__title{
         line-height: 35px;
@@ -558,6 +558,8 @@ ul{
         font-family: 'Circe Regular';
         justify-content: space-around;
         align-items: flex-start;
+        width: 280px;
+        margin: 0 auto;
     }
     .algorithm__item__number{
         font-family: 'Playfair Display', serif;
@@ -586,10 +588,9 @@ ul{
         text-align: center;
     }
     .care__algorithm-wrapper{
-        background: url(../assets/img/cakes-present-sm.png) no-repeat;
+        background: url(../assets/img/cakes-present-sm.png) no-repeat center;
         background-position-y: 255px;
         height: 480px;
-        background-position-x: -14px;
     }
     .prefooter{
         background: #fbebea;
