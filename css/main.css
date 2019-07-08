@@ -684,7 +684,7 @@ margin-top: 15px;
 .footer__link{
     color: #fff;
 }
-.footer_link:hover{
+.footer__link:hover{
     text-decoration: underline;
 }
 .footer_social{
