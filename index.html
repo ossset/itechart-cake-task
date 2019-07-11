@@ -421,6 +421,58 @@
                     </picture>
                 </div>
             </div>
+            <div class="about-us__people-md">
+                <div class="about-us__people-md-wrapper">
+                    <div class="about-us__people-md-content">
+                        <h2 class="about-us__title">
+                            О нас
+                        </h2>
+                        <div class="about-us__confectioner">
+                            <p class="about-us__confectioner-title">
+                                О кондитере
+                            </p>
+                            <p class="about-us__confectioner-text">
+                                <span class="about-us__confectioner-text-title">Кондитер – как призвание</span><br />
+                                Павел — профессиональный повар в различных гастрономических
+                                областях, но однажды его сердце покорило кондитерское искусство. С
+                                ранних лет он увлекался утонченным мастерством и обратился к своим
+                                талантам как кондитер.
+                            </p>
+                            <p class="about-us__confectioner-text">
+                                <span class="about-us__confectioner-text-title">Принцип – натуральные ингредиенты</span><br />
+                                Сегодня Павел радует изделиями не только близких, но и тех, кто
+                                предпочитает качественную продукцию для торжества, а главным
+                                принципом является выбор натуральных ингредиентов.
+                            </p>
+                        </div>
+                        <div class="about-us__social">
+                            <a href="#" class="instagram  social-icon">
+                                <img src="./assets/img/insta-icon-sm.png" alt="instagram" class="insta-icon" />
+                            </a>
+                            <a href="#" class="vk  social-icon">
+                                <img src="./assets/img/vk-icon-sm.png" alt="vk" class="vk-icon" />
+                            </a>
+                            <a href="#" class="twitter  social-icon">
+                                <img src="./assets/img/twitter-icon-sm.png" alt="twitter" class="twitter-icon" />
+                            </a>
+                        </div>
+                    </div>    
+                    <div class="about-us__people-md-image">
+                        <img src="./assets/img/igor-md.png" alt="igor">
+                    </div>
+                </div>
+                <div class="about-us__quote">
+                    <span class="about-us__quote-comma">,,</span>
+                    <p class="about-us__quote-text">
+                        Я за простые рецепты. В Италии это называют cucina povera: когда
+                        обычные ингредиенты превращаются в божественное блюдо.
+                    </p>
+                    <picture>
+                        <source media="(max-width: 769px)" srcset="./assets/img/sign-sm.png">
+                        <img src="./assets/img/sign-md.png" alt="author" />
+                    </picture>
+                </div>    
+            </div>
         </div>
     </section>
     <section class="pros">
@@ -528,37 +580,42 @@
         </div>
     </section>
     <section class="prefooter">
-        <div class="container">
-            <p class="prefooter__title">
-                Контакты
-            </p>
-            <p class="prefooter__subtitle">
-                Остались вопросы?
-            </p>
-            <p class="prefooter__text">
-                Заполните форму и наш кондитер <br />
-                с вами свяжется
-            </p>
-            <form action="#" method="POST" class="prefooter__form">
-                <input type="text" placeholder="Ваше имя" class="prefooter__item prefooter__item--input" />
-                <input type="email" placeholder="Email адрес" class="prefooter__item prefooter__item--input" />
-                <textarea name="question" id="question" cols="28" rows="8"
-                    class="prefooter__item prefooter__item--textarea" placeholder="Ваш вопрос"></textarea>
-                <input type="submit" value="Отправить" class="button button--small prefooter__button" />
-            </form>
-            <div class="prefooter__contacts">
-                <p class="prefooter__text">
-                    Или позвоните по телефону: <br />
-                    +7 906 899 92 96
-                </p>
-                <p class="prefooter__text">
-                    Наша почта : bakerybypavel@mail.ru
-                </p>
-                <div class="prefooter__social">
+        <div class="prefooter__wrapper">
+            <div class="container prefooter__container">
+                <div class="prefooter__content">
+                    <p class="prefooter__title">
+                        Контакты
+                    </p>
+                    <p class="prefooter__subtitle">
+                        Остались вопросы?
+                    </p>
+                    <p class="prefooter__text">
+                        Заполните форму и наш кондитер <br />
+                        с вами свяжется
+                    </p>
+                    <form action="#" method="POST" class="prefooter__form">
+                        <input type="text" placeholder="Ваше имя" class="prefooter__item prefooter__item--input" />
+                        <input type="email" placeholder="Email адрес" class="prefooter__item prefooter__item--input" />
+                        <textarea name="question" id="question" cols="28" rows="8"
+                            class="prefooter__item prefooter__item--textarea" placeholder="Ваш вопрос"></textarea>
+                        <input type="submit" value="Отправить" class="button button--small prefooter__button" />
+                    </form> 
+                </div>
+                <div class="prefooter__social-container">
+                    <div class="prefooter__contacts">
+                        <p class="prefooter__text">
+                            Или позвоните по телефону: <br />
+                            +7 906 899 92 96
+                        </p>
+                        <p class="prefooter__text">
+                            Наша почта : bakerybypavel@mail.ru
+                        </p>
+                    </div> 
+                    <div class="prefooter__social">
                     <p class="prefooter__text">
                         Мы в соц. сетях:
                     </p>
-                    <div class="prefooter__social-container">
+                    <div class="d-flex">
                         <a href="#" class="prefooter__social-link">
                             <img src="./assets/img/insta-prefooter-sm.png" alt="insta" />
                         </a>
@@ -566,9 +623,10 @@
                             <img src="./assets/img/vk-prefooter-sm.png" alt="vk" />
                         </a>
                     </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </div>     
     </section>
     <footer class="footer">
         <div class="container">
@@ -596,10 +654,12 @@
                         <a class="footer__link" href="#">Контакты</a>
                     </li>
                     <li class="footer__menu-item">
-                        <a class="footer__link" href="tel:+79068999296">+7 906 899 92 96</a>
+                        <a class="footer__link footer__link--tel" href="tel:+79068999296">+7 906 899 92 96</a>
                     </li>
                 </ul>
-                <div class="footer_social">
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__social">
                     <a href="#" class="footer__social-item">
                         <img src="./assets/img/insta-footer-sm.png" alt="" />
                     </a>

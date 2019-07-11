@@ -43,7 +43,7 @@ ul {
 .container {
     margin: 0 auto;
 }
-
+.slider-button{display: none;}
 .button {
     text-transform: uppercase;
 

@@ -141,4 +141,26 @@
     .care__subtitle {
         text-align: left;
     }
+    .care__algorithm{
+        background: url(../assets/img/algorithm-cake-md.png) no-repeat;
+        background-position-x: -300px;
+        height: 420px;
+    }
+    .care__algorithm-wrapper{
+        background: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 30px 105px 0 0;
+
+    }
+    .care__algorithm-title{
+        width: 385px;
+    }
+    .care__algorithm-item{
+        margin: 0;
+    }
+    .care__algorithm-item-text {
+        width: 275px;
+    }
 }
