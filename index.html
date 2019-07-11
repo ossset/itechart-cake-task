@@ -7,6 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/promo.css">
+    <link rel="stylesheet" href="./css/examples.css">
+    <link rel="stylesheet" href="./css/about-us.css">
+    <link rel="stylesheet" href="./css/pros.css">
+    <link rel="stylesheet" href="./css/care.css">
+    <link rel="stylesheet" href="./css/individual.css">
+    <link rel="stylesheet" href="./css/prefooter.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <!-- playfair display -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,700i&display=swap" rel="stylesheet" />
     <!-- Roboto reg -->
@@ -44,7 +53,8 @@
                     </ul>
                 </div>
                 <a href="tel:+79068999296" class="header__phone">+7 906 899 92 96</a>
-                <img src="./assets/img/burger-sm.svg" alt="mobile_burger" width="20" height="16" />
+                <img src="./assets/img/burger-sm.svg" alt="mobile_burger" width="20" height="16"
+                    class="header__burger" />
             </div>
         </div>
     </header>
@@ -53,74 +63,91 @@
             <h1 class="promo__title">Торты на заказ</h1>
             <p class="promo__text">Ручная работа</p>
         </div>
-        <div class="promo__cons container">
-            <div class="promo__item d-flex">
-                <img src="./assets/img/ingridients-icon.png" alt="natural" />
-                <p class="promo__cons-text">
-                    Натуральные ингридиенты
-                </p>
+        <div class="promo__container-cons">
+            <div class="promo__cons container">
+                <div class="promo__item d-flex">
+                    <picture>
+                        <source media="(max-width: 769px)" srcset="./assets/img/ingridients-icon.png">
+                        <img src="./assets/img/ingridients-icon-md.png" alt="">
+                    </picture>
+                    <!-- <img src="./assets/img/ingridients-icon.png" alt="natural" class="promo__img"/>
+                    <img src="./assets/img/ingridients-icon-md.png" alt="natural" class="promo__cons-img"> -->
+
+                    <p class="promo__cons-text">
+                        Натуральные ингридиенты
+                    </p>
+                </div>
+                <div class="promo__item promo__item--present d-flex">
+                    <picture>
+                        <source media="(max-width: 769px)" srcset="./assets/img/present-icon.png">
+                        <img src="./assets/img/present-icon-md.png" alt="">
+                    </picture>
+                    <!-- <img src="./assets/img/present-icon.png" alt="present" class="promo__img" />
+                    <img src="./assets/img/present-icon-md.png" alt="present" class="promo__cons-img"> -->
+                    <p class="promo__cons-text">
+                        Доставка бесплатно при заказе от 2000 рублей*
+                    </p>
+                </div>
             </div>
-            <div class="promo__item promo__item--present d-flex">
-                <img src="./assets/img/present-icon.png" alt="present" />
-                <p class="promo__cons-text">
-                    Доставка бесплатно при заказе от 2000 рублей*
-                </p>
-            </div>
+            <a href="#" class=" button">
+                Выбрать торт
+            </a>
         </div>
-        <a href="#" class=" button">
-            Выбрать торт
-        </a>
     </section>
     <section class="examples">
         <div class="container">
             <h2 class="examples__title">
                 Наши торты
             </h2>
-            <div>
-                <div class="examples__card examples__card--classic">
-                    <p class="examples__name">
+            <div class="examples__container">
+                <div class="examples__card examples__card--classic examples__card--big">
+                    <p class="examples__name examples__name--big">
                         Классические
                     </p>
                     <p class="examples__types">
                         24 вида
                     </p>
                 </div>
-                <div class="examples__card  examples__card--mousse">
-                    <p class="examples__name">
-                        Муссовые
-                    </p>
-                    <p class="examples__types">
-                        12 видов
-                    </p>
-                </div>
-                <div class="examples__card examples__card--wedding">
-                    <p class="examples__name">
-                        Свадебные
-                    </p>
-                    <p class="examples__types">
-                        20 видов
-                    </p>
+                <div class="examples__card-container">
+                    <div class="examples__card  examples__card--mousse">
+                        <p class="examples__name">
+                            Муссовые
+                        </p>
+                        <p class="examples__types">
+                            12 видов
+                        </p>
+                    </div>
+                    <div class="examples__card examples__card--wedding">
+                        <p class="examples__name">
+                            Свадебные
+                        </p>
+                        <p class="examples__types">
+                            20 видов
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div>
-                <div class="examples__card examples__card--men">
-                    <p class="examples__name">
-                        Мужчинам
-                    </p>
-                    <p class="examples__types">
-                        12 видов
-                    </p>
+            <div class="examples__container">
+                <div class="examples__card-container">
+                    <div class="examples__card examples__card--men">
+                        <p class="examples__name">
+                            Мужчинам
+                        </p>
+                        <p class="examples__types">
+                            12 видов
+                        </p>
+                    </div>
+                    <div class="examples__card examples__card--fem">
+                        <p class="examples__name">
+                            Женщинам
+                        </p>
+                        <p class="examples__types">
+                            16 видов
+                        </p>
+                    </div>
                 </div>
-                <div class="examples__card examples__card--fem">
-                    <p class="examples__name">
-                        Женщинам
-                    </p>
-                    <p class="examples__types">
-                        16 видов
-                    </p>
-                </div>
-                <div class="examples__card examples__card--child">
-                    <p class="examples__name">
+                <div class="examples__card examples__card--child examples__card--big">
+                    <p class="examples__name examples__name--big">
                         Детские
                     </p>
                     <p class="examples__types">
@@ -138,15 +165,22 @@
             <p class="individual__text">
                 Соберите торт в 3 шага
             </p>
-            <div class="individual__card">
+            <div class="individual__card individual__card--inner">
                 <div class="individual__card-title">
-                    <p>
+                    <p class="individual__card-number-text">
                         <span class="individual__card-number">01</span>
                         Выберите начинку
                     </p>
                 </div>
-                <div class="image-wrapper">
-                    <img class="individual__img" src="./assets/img/inner-sm.png" alt="inner" />
+                <div class="slider-button slider-button--left">
+                </div>
+                <div>
+                    <picture>
+                        <source srcset="./assets/img/inner-sm.png" class="individual__img" media="(max-width: 769px)">
+                        <img src="./assets/img/inner-md.png" alt="inner" class="individual__img individual__img--md">
+                    </picture>
+                    <!-- <img class="individual__img" src="./assets/img/inner-sm.png" alt="inner" />
+                    <img src="./assets/img/inner-md.png" alt="" class="individual__img individual__img--md"> -->
                 </div>
                 <div class="individual__pager">
                     <span class="individual__pager-link"></span>
@@ -163,42 +197,81 @@
                         Ароматный шоколадный бисквит, густой шоколадный крем – самый
                         шоколадный из всех возможных десертов!
                     </p>
+                    <p class="individual__price individual__price--inner">
+                        1000 руб/кг
+                    </p>
+                    <a href="#" class="button button--small">
+                        Выбрать
+                    </a>
                 </div>
-                <p class="individual__price">
-                    1000 руб/кг
-                </p>
-                <a href="#" class="button button--small">
-                    Выбрать
-                </a>
+                <div class="slider-button slider-button--right"></div>
             </div>
-            <div class="individual__card">
+            <div class="individual__card individual__card--container">
                 <div class="individual__card-title">
-                    <p>
+                    <p class="individual__card-number-text">
                         <span class="individual__card-number">02</span>
                         Размер
                     </p>
                 </div>
-                <div class="image-wrapper circle-card">
-                    <img class="individual__img circle-img" src="./assets/img/circle-sm.png" alt="inner" />
+                <div class="individual__name individual__name--circle individual__card--size">
+                    <div class="individual__item">
+                        <div class=" circle-card">
+                            <picture>
+                                <source media="(max-width: 769px)" srcset="./assets/img/circle-sm.png"
+                                    class="individual__img  circle-img">
+                                <!-- <img class="individual__img  circle-img" src="./assets/img/circle-sm.png" alt="inner" /> -->
+                                <img src="./assets/img/circle1-md.png" alt=""
+                                    class=" individual__img individual__img--md ">
+                            </picture>
+
+                        </div>
+                        <div class="individual__pager">
+                            <span class="individual__pager-link"></span>
+                            <span class="individual__pager-link"></span>
+                            <span class="individual__pager-link"></span>
+                            <span class="individual__pager-link"></span>
+                        </div>
+                        <p class="individual__name-circle">
+                            17-18 см <br />(1 кг – 6 персон)
+                        </p>
+                    </div>
+                    <div class="individual__item individual__item--md">
+                        <div class=" circle-card">
+                            <img class="individual__img individual__img--md" src="./assets/img/circle2-md.png"
+                                alt="inner" />
+                        </div>
+                        <p class="individual__name-circle">
+                            23-24 см <br />(10-12 персон)
+                        </p>
+                    </div>
+                    <div class="individual__item individual__item--md">
+                        <div class=" circle-card">
+                            <img class="individual__img individual__img--md" src="./assets/img/circle3-md.png"
+                                alt="inner" />
+                        </div>
+
+                        <p class="individual__name-circle">
+                            Два яруса 25 и 20 см <br> (15–20 персон)
+                        </p>
+                    </div>
+                    <div class="individual__item individual__item--md">
+                        <div class=" circle-card">
+                            <img class="individual__img individual__img--md" src="./assets/img/circle4-md.png"
+                                alt="inner" />
+                        </div>
+                        <p class="individual__name-circle">
+                            Три яруса 30,25 и 18 см <br> (25–30 персон)
+                        </p>
+                    </div>
+                    <a href="#" class="button button--small">
+                        Выбрать
+                    </a>
+
                 </div>
-                <div class="individual__pager">
-                    <span class="individual__pager-link"></span>
-                    <span class="individual__pager-link"></span>
-                    <span class="individual__pager-link"></span>
-                    <span class="individual__pager-link"></span>
-                </div>
-                <div class="individual__name">
-                    <p class="individual__name-circle">
-                        17-18 см <br />(1 кг – 6 персон)
-                    </p>
-                </div>
-                <a href="#" class="button button--small">
-                    Выбрать
-                </a>
             </div>
-            <div class="individual__card">
-                <div class="individual__card-title">
-                    <p>
+            <div class="individual__card individual__card--last">
+                <div class="individual__card-title individual__card-title--last">
+                    <p class="individual__card-number-text">
                         <span class="individual__card-number">03</span>
                         Оформление
                     </p>
@@ -213,32 +286,54 @@
                     <span class="individual__pager-link"></span>
                     <span class="individual__pager-link individual__pager-link--last"></span>
                 </div>
-                <div class="individual__name">
-                    <p class="individual__name-text individual__name-text--design ">
-                        Маршмэллоу
-                    </p>
+                <div class="slider-button slider-button--left">
                 </div>
-                <p class="individual__price">
-                    600 руб/кг
-                </p>
-                <a href="#" class="button button--small">
-                    Выбрать
-                </a>
-                <div class="individual__form">
-                    <h2 class="individual__title individual__title--form">
-                        Ваш выбор
-                    </h2>
-                    <div class="individual__form-result">
-                        <span class="individual__form-title">Начинка</span>
-                        <p class="individual__form-text">Шоколадный ганаш</p>
-                        <span class="individual__form-title">Размер</span>
-                        <p class="individual__form-text">1 кг</p>
-                        <span class="individual__form-title">Оформление</span>
-                        <p class="individual__form-text">Маршмэллоу</p>
-                        <a href="#" class="button individual__button">
-                            Заказать торт
+                <div class="individual__slider-container">
+                    <div
+                        class="individual__slider-item individual__slider-item--cherry individual__slider-item--design">
+                        <p class="individual__name-text individual__name-text--design ">
+                            Ягодное Ассорти
+                        </p>
+                        <p class="individual__price">
+                            700 руб/кг
+                        </p>
+                    </div>
+                    <div
+                        class="individual__slider-item individual__slider-item--masrhmello individual__slider-item--design">
+                        <p class="individual__name-text individual__name-text--design ">
+                            Маршмэллоу
+                        </p>
+                        <p class="individual__price">
+                            600 руб/кг
+                        </p>
+                        <a href="#" class="button button--small individual__price-button">
+                            Выбрать
                         </a>
                     </div>
+                </div>
+                <div class="slider-button slider-button--right">
+                </div>
+            </div>
+            <div class="individual__form">
+                <h2 class="individual__title individual__title--form">
+                    Ваш выбор
+                </h2>
+                <div class="individual__form-result">
+                    <div class="individual__form-container">
+                        <span class="individual__form-title">Начинка</span>
+                        <p class="individual__form-text">Шоколадный ганаш</p>
+                    </div>
+                    <div class="individual__form-container">
+                        <span class="individual__form-title">Размер</span>
+                        <p class="individual__form-text individual__form-text--small">1 кг</p>
+                    </div>
+                    <div class="individual__form-container">
+                        <span class="individual__form-title">Оформление</span>
+                        <p class="individual__form-text">Маршмэллоу</p>
+                    </div>
+                    <a href="#" class="button individual__button individual__button--small">
+                        Заказать торт
+                    </a>
                 </div>
             </div>
         </div>
@@ -249,17 +344,27 @@
                 Отзывы
             </h2>
             <div class="about-us__feedback">
-                <img class="about-us__img" src="./assets/img/mary-sm.png" alt="mary" />
-                <p class="feedback__title">Мария</p>
-                <p class="feedback__experience">
-                    юрист, 33 года
-                </p>
-                <p class="feedback__text">
-                    Заказывала торт брауни на юбилей мужа. Гости были в восторге!
-                    Отдельное спасибо за своевременную доставку! Теперь будем заказывать
-                    торты только у вас для наших семейных праздников:)
-                    <span class="feedback__link">Развернуть</span>
-                </p>
+                <div class="slider-button slider-button--left">
+                </div>
+                <picture>
+                    <source media="(max-width: 769px )" srcset="./assets/img/mary-sm.png">
+                    <img class="about-us__img" src="./assets/img/mary-md.png" alt="mary" />
+                </picture>
+
+                <div class="about-us__feedback-text">
+                    <p class="about-us__feedback-title">Мария</p>
+                    <p class="about-us__feedback-experience">
+                        юрист, 33 года
+                    </p>
+                    <p class="about-us__feedback-content">
+                        Заказывала торт брауни на юбилей мужа. Гости были в восторге!
+                        Отдельное спасибо за своевременную доставку! Теперь будем заказывать
+                        торты только у вас для наших семейных праздников:)
+                        <span class="about-us__feedback-link">Развернуть</span>
+                    </p>
+                </div>
+                <div class="slider-button slider-button--right">
+                </div>
                 <div class="individual__pager">
                     <span class="individual__pager-link"></span>
                     <span class="individual__pager-link"></span>
@@ -310,7 +415,10 @@
                         Я за простые рецепты. В Италии это называют cucina povera: когда
                         обычные ингредиенты превращаются в божественное блюдо.
                     </p>
-                    <img src="./assets/img/sign-sm.png" alt="author" />
+                    <picture>
+                        <source media="(max-width: 769px)" srcset="./assets/img/sign-sm.png">
+                        <img src="./assets/img/sign-md.png" alt="author" />
+                    </picture>
                 </div>
             </div>
         </div>
@@ -325,40 +433,45 @@
             </p>
         </div>
         <div class="pros__items-container">
-            <div class="pros__item">
+            <div class="pros__item pros__item--ingidients">
                 <img src="./assets/img/ingridients-iconpros-sm.png" alt="natural" />
-                <p class="pros__item-heading">
-                    Без искусственных добавок
-                </p>
-                <p class="pros__item-text">
-                    Работаем с натуральными ингредиентами <br />
-                    и свежими продуктами
-                </p>
+                <div class="pros__item-wrapper">
+                    <p class="pros__item-heading">
+                        Без искусственных добавок
+                    </p>
+                    <p class="pros__item-text">
+                        Работаем с натуральными ингредиентами <br />
+                        и свежими продуктами
+                    </p>
+                </div>
             </div>
-            <div class="pros__item">
+            <div class="pros__item pros__item--present">
                 <img src="./assets/img/24cakepros-sm.png" alt="" />
-                <p class="pros__item-heading">
-                    Свежий торт в день торжества
-                </p>
-                <p class="pros__item-text">
-                    Торты изготавливаются в течение <br />
-                    суток до отправки
-                </p>
+                <div class="pros__item-wrapper">
+                    <p class="pros__item-heading">
+                        Свежий торт в день торжества
+                    </p>
+                    <p class="pros__item-text">
+                        Торты изготавливаются в течение <br />
+                        суток до отправки
+                    </p>
+                </div>
             </div>
         </div>
     </section>
     <section class="care">
+        <div class="care__bg"></div>
         <div class="care__wrapper">
             <div class="container">
                 <h2 class="care__title">
                     Забота о клиентах
                 </h2>
-                <p class="care__subtitle pros__subtitle">
+                <p class="care__subtitle 320">
                     Для нас важно
                 </p>
                 <p class="care__description">
                     Нам важно чтобы каждый торт был безупречным, как внутри, так и
-                    снаружи, чтобы он был создан исключительно <br />
+                    снаружи, чтобы он был создан исключительно
                     для вас и для вашего события.
                 </p>
             </div>
@@ -366,46 +479,46 @@
         <div class="care__algorithm">
             <div class="container">
                 <div class="care__algorithm-wrapper">
-                    <h2 class="algorithm__title">
+                    <h2 class="care__algorithm-title">
                         Как заказать
                     </h2>
-                    <div class="algorithm__item">
-                        <span class="algorithm__item-number">
+                    <div class="care__algorithm-item">
+                        <span class="care__algorithm-item-number">
                             1
                         </span>
-                        <div class="algorithm__item-right">
-                            <p class="algorithm__item-title">
+                        <div class="care__algorithm-item-content">
+                            <p class="care__algorithm-item-title">
                                 Срок заказа
                             </p>
-                            <p class="algorithm__item-text">
+                            <p class="care__algorithm-item-text">
                                 Размещать заказы желательно за 2-3 дня. На выходные заказы
                                 лучше размещать минимум за неделю.
                             </p>
                         </div>
                     </div>
-                    <div class="algorithm__item">
-                        <span class="algorithm__item-number">
+                    <div class="care__algorithm-item">
+                        <span class="care__algorithm-item-number">
                             2
                         </span>
-                        <div class="algorithm__item-right">
-                            <p class="algorithm__item-title">
+                        <div class="care__algorithm-item-content">
+                            <p class="care__algorithm-item-title">
                                 Доставка по городу
                             </p>
-                            <p class="algorithm__item-text">
+                            <p class="care__algorithm-item-text">
                                 Доставка в пределах города 200 рубей , при заказе на сумму
                                 более 2000 доставка бесплатно.
                             </p>
                         </div>
                     </div>
-                    <div class="algorithm__item">
-                        <span class="algorithm__item-number">
+                    <div class="care__algorithm-item">
+                        <span class="care__algorithm-item-number">
                             3
                         </span>
-                        <div class="algorithm__item-right">
-                            <p class="algorithm__item-title">
+                        <div class="care__algorithm-item-content">
+                            <p class="care__algorithm-item-title">
                                 Доставка за городом
                             </p>
-                            <p class="algorithm__item-text">
+                            <p class="care__algorithm-item-text">
                                 Доставка за пределами города рассчитывается индивидуально.
                             </p>
                         </div>

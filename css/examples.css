@@ -1,0 +1,180 @@
+.examples__card {
+    position: relative;
+
+    width: 280px;
+    height: 120px;
+    margin: 0 auto 10px auto;
+    padding: 13px 0 0 14px;
+}
+
+.examples__name::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: none;
+
+    width: 280px;
+    height: 120px;
+
+    content: "";
+
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.examples__card:hover .examples__name::after {
+    display: block;
+}
+
+.examples__card--classic {
+    background: url(../assets/img/classic-cake-sm.png);
+}
+
+.examples__card--mousse {
+    background: url(../assets/img/mousse-cake-sm.png);
+}
+
+.examples__card--wedding {
+    background: url(../assets/img/wedding-cake-sm.png);
+}
+
+.examples__card--men {
+    background: url(../assets/img/men-cake-sm.png);
+}
+
+.examples__card--fem {
+    background: url(../assets/img/fem-cake-sm.png);
+}
+
+.examples__card--child {
+    background: url(../assets/img/child-cake-sm.png);
+    background-position-y: -48px;
+}
+
+.examples__name {
+    color: #2d2829;
+
+    font-family: "Circe Regular";
+    font-size: 14px;
+}
+
+.examples__types {
+    color: #2d2829;
+
+    font-family: "Circe Regular";
+    font-size: 12px;
+}
+
+.examples {
+    padding: 60px 0 50px 0;
+
+    background-color: #fbebea;
+}
+
+.examples__title {
+    margin: 0;
+    padding-bottom: 36px;
+
+    text-align: center;
+
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+}
+
+@media (min-width: 770px) {
+    .examples__title {
+        text-align: left;
+
+        font-size: 28px;
+    }
+
+    .examples__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-bottom: 18px;
+    }
+
+    .examples__card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        height: 390px;
+    }
+
+    .examples__card {
+        width: 290px;
+        height: 185px;
+        margin: 0;
+        padding: 20px 0 0 20px;
+    }
+
+    .examples__card--classic {
+        background: url(../assets/img/classic-cake-md.png);
+    }
+
+    .examples__card--mousse {
+        background: url(../assets/img/mousse-cake-md.png);
+    }
+
+    .examples__card--wedding {
+        background: url(../assets/img/wedding-cake-md.png);
+    }
+
+    .examples__card--men {
+        background: url(../assets/img/men-cake-md.png);
+    }
+
+    .examples__card--fem {
+        background: url(../assets/img/fem-cake-md.png);
+    }
+
+    .examples__card--child {
+        background: url(../assets/img/child-cake-md.png);
+    }
+
+    .examples__card--classic,
+    .examples__card--mousse,
+    .examples__card--wedding,
+    .examples__card--men,
+    .examples__card--fem,
+    .examples__card--child {
+        background-repeat: no-repeat;
+    }
+
+    .examples__card--big {
+        width: 420px;
+        height: 390px;
+    }
+
+    .examples__name {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .examples__types {
+        font-size: 12px;
+    }
+
+    .examples__name::after {
+        width: 288px;
+        height: 184px;
+    }
+
+    .examples__name--big::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: none;
+
+        width: 419px;
+        height: 388px;
+
+        content: "";
+
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}

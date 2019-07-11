@@ -1,0 +1,89 @@
+.prefooter {
+    padding: 40px 0;
+
+    background: #fbebea;
+}
+
+.prefooter__subtitle {
+    margin-bottom: 5px;
+
+    font-family: "Intro Script R H2 Base";
+    font-size: 22px;
+}
+
+.prefooter__title {
+    margin: 0 0 10px 0;
+
+    text-align: center;
+
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+}
+
+.prefooter__text {
+    margin-bottom: 10px;
+
+    font-family: "Circe Regular";
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.prefooter__button {
+    margin: 15px 0 25px 0;
+    padding-top: 5px;
+
+    text-transform: none;
+
+    border: none;
+
+    font-size: 19px;
+}
+
+.prefooter__item {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 12px;
+    padding-left: 10px;
+
+    border: none;
+
+    font-family: "Circe Regular";
+    font-size: 14px;
+}
+
+.prefooter__item--textarea {
+    height: 120px;
+    padding: 10px;
+    resize: none;
+}
+
+.prefooter__item::placeholder {
+    color: #ccc;
+}
+
+.prefooter__social-link {
+    display: block;
+
+    width: 64px;
+    height: 64px;
+    padding-top: 15px;
+
+    transition: 0.2s ease-in-out;
+    text-align: center;
+
+    border-radius: 50px;
+    background: #fff no-repeat;
+}
+
+.prefooter__social-link:hover {
+    transform: scale(1.1);
+}
+
+.prefooter__social-container {
+    display: flex;
+}
+
+.prefooter__social-link--vk {
+    margin-left: 30px;
+    padding-top: 20px;
+}

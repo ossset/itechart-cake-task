@@ -1,0 +1,56 @@
+.header__logo {
+    font-size: 16px;
+    color: #000;
+
+    font-family: "Playfair Display", serif;
+}
+
+.header__nav,
+.header__phone {
+    display: none;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 13px 0;
+}
+
+@media (min-width: 770px) {
+    .header__logo {
+        font-size: 20px;
+    }
+
+    .header__phone {
+        display: block;
+        order: 1;
+
+        color: #2d2829;
+
+        font-family: "Circe Regular";
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .header__phone:hover {
+        text-decoration: underline;
+    }
+
+    .header__burger {
+        margin-right: 465px;
+    }
+
+    .header {
+        background: #fff;
+    }
+
+    .header__menu {
+        background: #fff;
+    }
+
+    .header__promo-text {
+        font-family: "Intro Script R H2 Base";
+    }
+}

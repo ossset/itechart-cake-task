@@ -1,0 +1,179 @@
+.about-us {
+    background-color: #fbebea;
+}
+
+.about-us__title {
+    margin: 0;
+    padding-bottom: 36px;
+
+    text-align: center;
+
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+}
+
+.about-us__feedback {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: "Circe Regular";
+}
+
+.about-us__images-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 240px;
+    margin: 0 auto;
+}
+
+.about-us__social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    height: 140px;
+    margin-left: 35px;
+}
+
+.social-icon:active {
+    transform: scale(1.1);
+}
+
+.vk {
+    padding: 8px 4px 0 0;
+}
+
+.about-us__confectioner {
+    font-family: "Circe Regular";
+}
+
+.about-us__confectioner-title {
+    margin-top: 20px;
+
+    font-family: "Intro Script R H2 Base";
+    font-size: 22px;
+}
+
+.about-us__confectioner-text-title {
+    display: block;
+
+    margin-top: 10px;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.about-us__confectioner-text {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.about-us__quote {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding-bottom: 40px;
+
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+}
+
+.about-us__quote-comma {
+    color: #fff;
+
+    font-size: 60px;
+}
+
+.about-us__quote-text {
+
+    padding: 17px 0 35px 0;
+    text-align: center;
+
+    font-size: 13px;
+    font-style: italic;
+}
+.about-us__feedback-content {
+    width: 230px;
+    margin-top: 7px;
+
+    text-align: center;
+
+    font-size: 12px;
+}
+
+.about-us__feedback-title {
+    margin-top: 4px;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.about-us__feedback-link {
+    position: relative;
+
+    text-decoration: underline;
+
+    color: #f87b91;
+
+    font-style: italic;
+}
+
+.about-us__feedback-link::after {
+    position: absolute;
+    left: 85px;
+
+    content: "1/26";
+
+    font-style: normal;
+}
+
+.about-us__feedback-link:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 576px) {
+    .about-us__confectioner {
+        text-align: center;
+    }
+}
+
+@media (min-width: 770px) {
+    .about-us__title {
+        font-size: 28px;
+    }
+
+    .about-us__feedback {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        margin: 0 auto;
+    }
+
+    .about-us__quote-comma {
+        font-size: 77px;
+    }
+
+    .about-us__quote-text {
+        width: 350px;
+
+        font-size: 14px;
+    }
+
+    .feedback__text {
+        width: 255px;
+
+        text-align: left;
+
+        font-size: 14px;
+    }
+
+    .feedback__link::after {
+        top: 20px;
+        left: 240px;
+    }
+}

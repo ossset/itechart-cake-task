@@ -1,0 +1,110 @@
+.pros {
+    text-align: center;
+
+    background-color: #fbebea;
+
+    font-family: "Circe Regular";
+}
+
+.pros__title {
+    margin: 0;
+    padding-bottom: 36px;
+
+    text-align: center;
+
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+}
+
+.pros__subtitle {
+    text-align: center;
+
+    font-family: "Intro Script R H2 Base";
+    font-size: 22px;
+}
+
+.pros__item-heading {
+    margin-top: 15px;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.pros__item-text {
+    margin-top: 3px;
+
+    font-size: 14px;
+}
+
+.pros__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pros__items-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 270px;
+    margin-top: 20px;
+    padding: 10px 0;
+
+    background-color: #fff;
+}
+
+@media (min-width: 770px) {
+    .pros__title {
+        padding-bottom: 0;
+    }
+
+    .pros__items-container {
+        background-color: #fbebea;
+    }
+
+    .pros__item {
+        align-items: flex-end;
+        flex-direction: row;
+        justify-content: space-between;
+
+        width: 335px;
+    }
+
+    .pros__items-container {
+        align-items: flex-end;
+        justify-content: center;
+
+        padding-right: 60px;
+    }
+
+    .pros__item-wrapper {
+        text-align: left;
+    }
+
+    .pros__item--present {
+        width: 316px;
+        margin-right: 45px;
+    }
+
+    .pros__item--ingidients {
+        width: 349px;
+    }
+
+    .pros {
+        position: relative;
+    }
+
+    .pros__subtitle::after {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+
+        width: 310px;
+        height: 380px;
+        content: "";
+
+        background: url(../assets/img/berries-md.png) no-repeat;
+    }
+}
