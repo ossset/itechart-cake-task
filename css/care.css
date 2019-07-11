@@ -1,0 +1,144 @@
+.care {
+    padding-top: 35px;
+
+    text-align: left;
+
+    background-color: #fbebea;
+}
+
+.care__description {
+    font-family: "Circe Regular";
+}
+
+.care__title {
+    margin: 0 0 7px 0;
+
+    text-align: center;
+
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+}
+
+.care__subtitle,
+.care__title {
+    text-align: left;
+}
+
+.care__subtitle {
+    text-align: center;
+
+    font-family: "Intro Script R H2 Base";
+    font-size: 22px;
+}
+
+.care__description {
+    font-size: 14px;
+}
+
+.care__wrapper {
+    height: 290px;
+
+    background: url(../assets/img/care-cake-sm.png) no-repeat center;
+    background-position-y: 125px;
+}
+
+.care__algorithm {
+    padding-top: 35px;
+
+    color: #fff;
+    background: #e3353d;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #e3353d 82%, #c93030 100%);
+    background: -webkit-linear-gradient(top, #e3353d 82%, #c93030 100%);
+    background: linear-gradient(to bottom, #e3353d 82%, #c93030 100%);
+
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e3353d', endColorstr='#c93030', GradientType=0);
+}
+
+.care__algorithm-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    width: 280px;
+    margin: 0 auto;
+
+    font-family: "Circe Regular";
+}
+
+.care__algorithm-item-number {
+    font-family: "Playfair Display", serif;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.care__algorithm-item-title {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.care__algorithm-item-text {
+    margin-top: 5px;
+
+    font-size: 14px;
+}
+
+.care__algorithm-item-content {
+    width: 220px;
+    padding-top: 15px;
+}
+
+.care__algorithm-title {
+    margin: 0 0 15px 0;
+
+    text-align: center;
+    text-align: center;
+
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+}
+
+.care__algorithm-wrapper {
+    height: 480px;
+
+    background: url(../assets/img/cakes-present-sm.png) no-repeat center;
+    background-position-y: 255px;
+}
+
+@media (min-width: 770px) {
+    .care__wrapper {
+        position: relative;
+
+        height: 340px;
+        padding-top: 95px;
+
+        background: none;
+    }
+
+    .care__description {
+        width: 310px;
+
+        font-size: 14px;
+    }
+
+    .care {
+        position: relative;
+    }
+
+    .care__bg::after {
+        position: absolute;
+        top: -7px;
+        right: 0;
+
+        width: 419px;
+        height: 380px;
+
+        content: "";
+
+        background: url(../assets/img/care-cake-md.png) no-repeat;
+    }
+
+    .care__subtitle {
+        text-align: left;
+    }
+}

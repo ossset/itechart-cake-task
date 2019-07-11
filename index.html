@@ -2,11 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/normalize.css" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./css/normalize.css"/>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/promo.css">
+    <link rel="stylesheet" href="./css/examples.css">
+    <link rel="stylesheet" href="./css/about-us.css">
+    <link rel="stylesheet" href="./css/pros.css">
+    <link rel="stylesheet" href="./css/care.css">
+    <link rel="stylesheet" href="./css/individual.css">
+    <link rel="stylesheet" href="./css/prefooter.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <!-- playfair display -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,700i&display=swap" rel="stylesheet" />
     <!-- Roboto reg -->
@@ -163,7 +172,7 @@
                         Выберите начинку
                     </p>
                 </div>
-                <div class="individual__pager-left">
+                <div class="slider-button slider-button--left">
                 </div>
                 <div>
                     <picture>
@@ -195,7 +204,7 @@
                         Выбрать
                     </a>
                 </div>
-                <div class="individual__pager-right"></div>
+                <div class="slider-button slider-button--right"></div>
             </div>
             <div class="individual__card individual__card--container">
                 <div class="individual__card-title">
@@ -275,9 +284,10 @@
                     <span class="individual__pager-link"></span>
                     <span class="individual__pager-link individual__pager-link--last"></span>
                 </div>
-                <div class="individual__pager-left">
+                <div class="slider-button slider-button--left">
                 </div>
-                <div class="individual__name individual__name--cherry individual__name--3">
+                <div class="individual__slider-container">
+                    <div class="individual__name individual__name--cherry individual__name--design">
                         <p class="individual__name-text individual__name-text--design ">
                             Ягодное Ассорти
                         </p>
@@ -285,18 +295,19 @@
                             700 руб/кг
                         </p>
                     </div>
-                <div class="individual__name individual__name--masrhmello individual__name--3">
-                    <p class="individual__name-text individual__name-text--design ">
-                        Маршмэллоу
-                    </p>
-                    <p class="individual__price">
-                        600 руб/кг
-                    </p>
-                    <a href="#" class="button button--small individual__price-button">
-                        Выбрать
-                    </a>
+                    <div class="individual__name individual__name--masrhmello individual__name--design">
+                        <p class="individual__name-text individual__name-text--design ">
+                            Маршмэллоу
+                        </p>
+                        <p class="individual__price">
+                            600 руб/кг
+                        </p>
+                        <a href="#" class="button button--small individual__price-button">
+                            Выбрать
+                        </a>
+                    </div>
                 </div>
-                <div class="individual__pager-right">
+                <div class="slider-button slider-button--right">
                 </div>
             </div>
             <div class="individual__form">
@@ -329,7 +340,7 @@
                 Отзывы
             </h2>
             <div class="about-us__feedback">
-                <div class="individual__pager-left">
+                <div class="slider-button slider-button--left">
                 </div>
                 <picture>
                     <source media="(max-width: 769px )" srcset="./assets/img/mary-sm.png">
@@ -337,18 +348,18 @@
                 </picture>
                 
                 <div class="about-us__feedback-text">
-                    <p class="feedback__title">Мария</p>
-                    <p class="feedback__experience">
+                    <p class="about-us__feedback-title">Мария</p>
+                    <p class="about-us__feedback-experience">
                         юрист, 33 года
                     </p>
-                    <p class="feedback__text">
+                    <p class="about-us__feedback-content">
                         Заказывала торт брауни на юбилей мужа. Гости были в восторге!
                         Отдельное спасибо за своевременную доставку! Теперь будем заказывать
                         торты только у вас для наших семейных праздников:)
-                        <span class="feedback__link">Развернуть</span>
+                        <span class="about-us__feedback-link">Развернуть</span>
                     </p>
                 </div>
-                <div class="individual__pager-right">
+                <div class="slider-button slider-button--right">
                 </div>
                 <div class="individual__pager">
                     <span class="individual__pager-link"></span>
@@ -464,46 +475,46 @@
         <div class="care__algorithm">
             <div class="container">
                 <div class="care__algorithm-wrapper">
-                    <h2 class="algorithm__title">
+                    <h2 class="care__algorithm-title">
                         Как заказать
                     </h2>
-                    <div class="algorithm__item">
-                        <span class="algorithm__item-number">
+                    <div class="care__algorithm-item">
+                        <span class="care__algorithm-item-number">
                             1
                         </span>
-                        <div class="algorithm__item-right">
-                            <p class="algorithm__item-title">
+                        <div class="care__algorithm-item-content">
+                            <p class="care__algorithm-item-title">
                                 Срок заказа
                             </p>
-                            <p class="algorithm__item-text">
+                            <p class="care__algorithm-item-text">
                                 Размещать заказы желательно за 2-3 дня. На выходные заказы
                                 лучше размещать минимум за неделю.
                             </p>
                         </div>
                     </div>
-                    <div class="algorithm__item">
-                        <span class="algorithm__item-number">
+                    <div class="care__algorithm-item">
+                        <span class="care__algorithm-item-number">
                             2
                         </span>
-                        <div class="algorithm__item-right">
-                            <p class="algorithm__item-title">
+                        <div class="care__algorithm-item-content">
+                            <p class="care__algorithm-item-title">
                                 Доставка по городу
                             </p>
-                            <p class="algorithm__item-text">
+                            <p class="care__algorithm-item-text">
                                 Доставка в пределах города 200 рубей , при заказе на сумму
                                 более 2000 доставка бесплатно.
                             </p>
                         </div>
                     </div>
-                    <div class="algorithm__item">
-                        <span class="algorithm__item-number">
+                    <div class="care__algorithm-item">
+                        <span class="care__algorithm-item-number">
                             3
                         </span>
-                        <div class="algorithm__item-right">
-                            <p class="algorithm__item-title">
+                        <div class="care__algorithm-item-content">
+                            <p class="care__algorithm-item-title">
                                 Доставка за городом
                             </p>
-                            <p class="algorithm__item-text">
+                            <p class="care__algorithm-item-text">
                                 Доставка за пределами города рассчитывается индивидуально.
                             </p>
                         </div>
@@ -527,7 +538,7 @@
             <form action="#" method="POST" class="prefooter__form">
                 <input type="text" placeholder="Ваше имя" class="prefooter__item prefooter__item--input" />
                 <input type="email" placeholder="Email адрес" class="prefooter__item prefooter__item--input" />
-                <textarea name="question" id="question" cols="28" rows="8"
+                <textarea  name="question" id="question" cols="28" rows="8"
                     class="prefooter__item prefooter__item--textarea" placeholder="Ваш вопрос"></textarea>
                 <input type="submit" value="Отправить" class="button button--small prefooter__button" />
             </form>

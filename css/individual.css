@@ -1,0 +1,530 @@
+.individual__pager {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 51px;
+    margin: 0 auto;
+    margin: 65px 0 20px 0;
+}
+
+.individual__pager-link {
+    width: 6px;
+    height: 6px;
+
+    transition: 0.1s ease-in-out;
+
+    border-radius: 20px;
+    background-color: #ddd;
+}
+
+.individual__pager-link--last {
+    width: 4px;
+    height: 4px;
+}
+
+.individual__pager-link:hover {
+    transform: scale(1.1);
+
+    background-color: #f50049;
+}
+
+.individual {
+    padding-bottom: 20px;
+
+    background-color: #fbebea;
+}
+
+.individual__title {
+    width: 216px;
+    margin: 0 auto;
+    padding-bottom: 36px;
+    padding-left: 25px;
+
+    text-align: center;
+
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+}
+
+.individual__text {
+    padding-bottom: 25px;
+
+    text-align: center;
+
+    font-family: "Intro Script R H2 Base";
+    font-size: 22px;
+}
+
+.individual__card {
+    margin-bottom: 10px;
+    padding: 8px 20px 20px 20px;
+
+    background-color: #fff;
+}
+
+.individual__card-title {
+    display: flex;
+    align-items: flex-end;
+}
+
+.individual__card-title {
+    color: #f50049;
+
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.individual__card-title {
+    margin-left: 12px;
+    padding-bottom: 2px;
+
+    font-size: 16px;
+}
+
+.individual__card-number {
+    margin-right: 10px;
+
+    font-size: 38px;
+}
+
+.individual__name--cherry {
+    display: none;
+}
+
+.image-wrapper {
+    position: relative;
+    /* width: 241px; */
+}
+
+.individual__img {
+    display: block;
+
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.individual__item--md {
+    display: none;
+}
+
+.image-wrapper::after {
+    position: absolute;
+    top: 95px;
+    right: 4px;
+
+    display: block;
+
+    content: "1/12";
+
+    color: #fff;
+
+    font-family: "Circe Regular";
+    font-size: 12px;
+}
+
+.individual__name-title {
+    margin-bottom: 10px;
+
+    font-family: "Circe Regular";
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.individual__name-text {
+    font-family: "Circe Regular";
+    font-size: 14px;
+}
+
+.individual__price {
+    margin: 20px 0 25px 0;
+
+    text-align: center;
+
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.individual__button {
+    margin-top: 20px;
+}
+
+.circle-img {
+    margin-top: 20px;
+}
+
+.circle-card {
+    position: relative;
+}
+
+.circle-card::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+
+    width: 19px;
+
+    content: "1кг";
+    transform: translateX(-51%) translateY(-50%);
+
+    color: #000;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.individual__name-circle {
+    margin-bottom: 45px;
+
+    text-align: center;
+
+    font-family: "Circe Regular";
+    font-size: 14px;
+}
+
+.desing-img {
+    position: relative;
+}
+
+.desing-img::after {
+    position: absolute;
+    top: 180px;
+    left: 180px;
+
+    display: block;
+
+    content: "1/35";
+
+    color: #838383;
+
+    font-size: 12px;
+}
+
+.individual__name-text--design {
+    text-align: center;
+
+    color: #2f2f2f;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.individual__form {
+    padding-bottom: 20px;
+
+    background: #fff;
+}
+
+.individual__form-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.individual__form-title {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+}
+
+.individual__card--last {
+    margin-bottom: 0;
+}
+
+.individual__title--form {
+    margin: 0;
+    padding-top: 30px;
+
+    text-align: left;
+}
+
+.individual__form-result {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.individual__form-title {
+    color: #f50049;
+
+    font-family: "Intro Script R H2 Base";
+    font-size: 20px;
+}
+
+.individual__form-text {
+    width: 243px;
+    height: 30px;
+    margin: 8px 0 10px 0;
+    padding-top: 5px;
+
+    text-align: center;
+
+    border: 1px solid #dedede;
+    border-radius: 50px;
+
+    font-family: "Circe Regular";
+}
+
+@media (min-width: 576px) {
+    .individual__title--form {
+        margin: 0 auto;
+
+        text-align: center;
+    }
+}
+
+@media (min-width: 770px) {
+    .individual__title {
+        width: 100%;
+        padding-bottom: 20px;
+
+        font-size: 28px;
+    }
+
+    .individual__card-number-text {
+        width: 100px;
+    }
+
+    .individual__card {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        height: 350px;
+    }
+
+    .individual__pager {
+        display: none;
+    }
+
+    .individual__name {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+
+        width: 190px;
+    }
+
+    .individual__name .button {
+        width: 135px;
+        margin: 0;
+    }
+
+    .individual__img {
+        display: none;
+    }
+
+    .individual__img--md {
+        display: block;
+
+        margin: 0;
+    }
+
+    .individual__price {
+        margin: 20px 0 25px 0;
+    }
+
+    .individual__card-number-text {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+    }
+
+    .image-wrapper::after {
+        display: none;
+    }
+
+    .individual__card--inner::after {
+        position: absolute;
+        top: 300px;
+        right: 50px;
+
+        display: block;
+
+        content: "1/12";
+
+        color: #000;
+
+        font-family: "Circe Regular";
+        font-size: 12px;
+    }
+
+    
+
+    .image-wrapper {
+        width: 210px;
+    }
+
+    .individual__name--circle .button {
+        display: none;
+    }
+
+    .individual__item--md {
+        display: block;
+    }
+
+    .individual__card--size {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: row;
+        justify-content: space-around;
+
+        width: 100%;
+        padding-top: 60px;
+    }
+
+    .circle-card::after {
+        display: none;
+    }
+
+    .individual__card--container {
+        display: block;
+    }
+
+    .individual__name-circle {
+        margin-bottom: 0;
+        padding-top: 20px;
+
+        text-align: left;
+
+        font-family: "Circe Regular";
+        font-size: 12px;
+    }
+
+    .individual__card-title {
+        margin: 0;
+        padding: 0;
+    }
+
+    .individual__form-text {
+        width: 160px;
+    }
+
+    .individual__form-text--small {
+        width: 75px;
+    }
+
+    .individual__button--small {
+        width: 160px;
+        margin: 0;
+    }
+
+    .individual__form-result {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .individual__price-button {
+        display: none;
+    }
+
+    .individual__name--cherry {
+        height: 280px;
+
+        background: url(../assets/img/desidn-cherry-md.png) no-repeat;
+        background-position-x: -15px;
+    }
+
+    .individual__price {
+        margin: 0;
+    }
+
+    .individual__name--design {
+        display: flex;
+        align-items: center;
+
+        margin-left: 25px;
+        padding-top: 220px;
+    }
+
+    .individual__name--masrhmello {
+        height: 280px;
+
+        background: url(../assets/img/design-md.png) no-repeat;
+        background-position-x: -15px;
+    }
+
+    .individual__card-title--last {
+        background: url(../assets/img/illustartion-md.png) no-repeat;
+    }
+
+    .individual__card--last {
+        display: flex;
+        justify-content: flex-end;
+
+        width: 100%;
+    }
+
+    .individual__card--last::before {
+        position: absolute;
+        top: 100px;
+        left: 20px;
+
+        width: 120px;
+        height: 140px;
+
+        content: "";
+
+        background: url(../assets/img/illustartion-md.png);
+    }
+
+    .image-wrapper {
+        width: 0;
+    }
+
+    .individual__price--inner {
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    .individual__card--last .slider-button {
+        margin-left: 25px;
+    }
+
+    .individual__form-container {
+        align-items: flex-start;
+    }
+
+    .individual__title--form {
+        padding-top: 0;
+        padding-left: 25px;
+
+        text-align: left;
+    }
+
+    .individual__name--cherry:hover {
+        -webkit-box-shadow: 0px 12px 40px -1px rgba(209, 209, 209, 0.92);
+        -moz-box-shadow: 0px 12px 40px -1px rgba(209, 209, 209, 0.92);
+        box-shadow: 0px 12px 40px -1px rgba(209, 209, 209, 0.92);
+    }
+
+    .individual__name--masrhmello:hover {
+        -webkit-box-shadow: 0px 12px 40px -1px rgba(209, 209, 209, 0.92);
+        -moz-box-shadow: 0px 12px 40px -1px rgba(209, 209, 209, 0.92);
+        box-shadow: 0px 12px 40px -1px rgba(209, 209, 209, 0.92);
+    }
+
+    .individual__card--last::after {
+        position: absolute;
+        top: 300px;
+        right: 50px;
+
+        display: block;
+
+        content: "2/35";
+
+        color: #6d6d6d;
+
+        font-family: "Circe Regular";
+        font-size: 12px;
+    }
+    .individual__slider-container{
+        display: flex;
+    }
+}
