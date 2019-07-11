@@ -38,8 +38,7 @@
 .individual__title {
     width: 216px;
     margin: 0 auto;
-    padding-bottom: 36px;
-    padding-left: 25px;
+    padding: 0 0 36px 25px;
 
     text-align: center;
 
@@ -89,7 +88,7 @@
     font-size: 38px;
 }
 
-.individual__name--cherry {
+.individual__slider-item--cherry {
     display: none;
 }
 
@@ -314,6 +313,17 @@
         width: 135px;
         margin: 0;
     }
+    .individual__slider-item{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+
+        width: 190px;
+    }
+    .individual__slider-item .button {
+        width: 135px;
+        margin: 0;
+    }
 
     .individual__img {
         display: none;
@@ -424,7 +434,7 @@
         display: none;
     }
 
-    .individual__name--cherry {
+    .individual__slider-item--cherry {
         height: 280px;
 
         background: url(../assets/img/desidn-cherry-md.png) no-repeat;
@@ -435,7 +445,7 @@
         margin: 0;
     }
 
-    .individual__name--design {
+    .individual__slider-item--design {
         display: flex;
         align-items: center;
 
@@ -443,7 +453,7 @@
         padding-top: 220px;
     }
 
-    .individual__name--masrhmello {
+    .individual__slider-item--masrhmello {
         height: 280px;
 
         background: url(../assets/img/design-md.png) no-repeat;
@@ -498,13 +508,13 @@
         text-align: left;
     }
 
-    .individual__name--cherry:hover {
+    .individual__slider-item--cherry:hover {
         -webkit-box-shadow: 0px 12px 40px -1px rgba(209, 209, 209, 0.92);
         -moz-box-shadow: 0px 12px 40px -1px rgba(209, 209, 209, 0.92);
         box-shadow: 0px 12px 40px -1px rgba(209, 209, 209, 0.92);
     }
 
-    .individual__name--masrhmello:hover {
+    .individual__slider-item--masrhmello:hover {
         -webkit-box-shadow: 0px 12px 40px -1px rgba(209, 209, 209, 0.92);
         -moz-box-shadow: 0px 12px 40px -1px rgba(209, 209, 209, 0.92);
         box-shadow: 0px 12px 40px -1px rgba(209, 209, 209, 0.92);
