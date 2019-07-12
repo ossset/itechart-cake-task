@@ -54,3 +54,36 @@
         font-family: "Intro Script R H2 Base";
     }
 }
+@media (min-width:1080px){
+    .header__burger{
+        display: none;
+    }
+    .header__nav{
+        display: block;
+        width: 62%;
+        
+    }
+    .header__nav-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .header__link{
+        font-size: 13px;
+        text-transform: uppercase;
+        font-family: "Circe Regular";
+        color: #2d2829;
+    }
+    .header__link:hover{
+        color: #f61f5e;
+    }
+    .header__phone{
+        margin-left: 10%;
+    }
+    .header__logo{
+        font-size: 23px;
+    }
+    .header ,.header__menu{
+        background: #fbebea;
+    }
+}

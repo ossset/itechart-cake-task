@@ -120,7 +120,9 @@ ul {
 .slider-button:active {
     transform: scale(1);
 }
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+    
+}
 
 @media (min-width: 770px) {
     .container {
@@ -132,5 +134,10 @@ ul {
     }
     .slider-button{
         display: block;
+    }
+}
+@media (min-width:1080px){
+    .container{
+        width: 89%;
     }
 }
