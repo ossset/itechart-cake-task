@@ -168,18 +168,19 @@
                 Соберите торт в 3 шага
             </p>
             <div class="individual__card individual__card--inner">
-                <div class="individual__card-title">
+                <!-- <div class="individual__card-title"> -->
                     <p class="individual__card-number-text">
                         <span class="individual__card-number">01</span>
                         Выберите начинку
                     </p>
-                </div>
+                <!-- </div> -->
                 <div class="slider-button slider-button--left">
                 </div>
                 <div>
                     <picture>
                         <source srcset="./assets/img/inner-sm.png" class="individual__img" media="(max-width: 769px)">
-                        <img src="./assets/img/inner-md.png" alt="inner" class="individual__img individual__img--md">
+                        <source media="(max-width :1080px)" class="individual__img" srcset="./assets/img/inner-md.png">
+                        <img src="./assets/img/inner-lg.png" alt="inner" class="individual__img individual__img--md">
                     </picture>
                     <!-- <img class="individual__img" src="./assets/img/inner-sm.png" alt="inner" />
                     <img src="./assets/img/inner-md.png" alt="" class="individual__img individual__img--md"> -->
@@ -209,21 +210,21 @@
                 <div class="slider-button slider-button--right"></div>
             </div>
             <div class="individual__card individual__card--container">
-                <div class="individual__card-title">
+                <!-- <div class="individual__card-title"> -->
                     <p class="individual__card-number-text">
                         <span class="individual__card-number">02</span>
                         Размер
                     </p>
-                </div>
+                <!-- </div> -->
                 <div class="individual__name individual__name--circle individual__card--size">
                     <div class="individual__item">
                         <div class=" circle-card">
                             <picture>
-                                <source media="(max-width: 769px)" srcset="./assets/img/circle-sm.png"
-                                    class="individual__img  circle-img">
+                                <source media="(max-width: 769px)" srcset="./assets/img/circle-sm.png" class="individual__img  circle-img">
+                                <source media="(max-width: 1080px)" srcset="./assets/img/circle1-md.png">
                                 <!-- <img class="individual__img  circle-img" src="./assets/img/circle-sm.png" alt="inner" /> -->
-                                <img src="./assets/img/circle1-md.png" alt=""
-                                    class=" individual__img individual__img--md ">
+                                <img src="./assets/img/circle1-lg.png" alt="" class=" individual__img individual__img--md ">
+                                    
                             </picture>
 
                         </div>
@@ -239,8 +240,12 @@
                     </div>
                     <div class="individual__item individual__item--md">
                         <div class=" circle-card">
-                            <img class="individual__img individual__img--md" src="./assets/img/circle2-md.png"
-                                alt="inner" />
+                            <picture>
+                                <source media="(max-width:1080px)" srcset="./assets/img/circle2-md.png">
+                                <img class="individual__img individual__img--md" src="./assets/img/circle2-lg.png" alt="inner" />
+                                
+                            </picture>
+                           
                         </div>
                         <p class="individual__name-circle">
                             23-24 см <br />(10-12 персон)
@@ -248,18 +253,22 @@
                     </div>
                     <div class="individual__item individual__item--md">
                         <div class=" circle-card">
-                            <img class="individual__img individual__img--md" src="./assets/img/circle3-md.png"
-                                alt="inner" />
+                            <picture>
+                                <source media="(max-width:1080px)" srcset="./assets/img/circle3-md.png">
+                                <img class="individual__img individual__img--md" src="./assets/img/circle3-lg.png" alt="inner" />
+                            </picture>
                         </div>
-
                         <p class="individual__name-circle">
                             Два яруса 25 и 20 см <br> (15–20 персон)
                         </p>
                     </div>
                     <div class="individual__item individual__item--md">
                         <div class=" circle-card">
-                            <img class="individual__img individual__img--md" src="./assets/img/circle4-md.png"
-                                alt="inner" />
+                            <picture>
+                                <source media="(max-width:1080px)" srcset="./assets/img/circle4-md.png">
+                                <img class="individual__img individual__img--md" src="./assets/img/circle4-lg.png" alt="inner" />
+                            </picture>
+                            
                         </div>
                         <p class="individual__name-circle">
                             Три яруса 30,25 и 18 см <br> (25–30 персон)
@@ -272,12 +281,12 @@
                 </div>
             </div>
             <div class="individual__card individual__card--last">
-                <div class="individual__card-title individual__card-title--last">
+                <!-- <div class="individual__card-title individual__card-title--last"> -->
                     <p class="individual__card-number-text">
                         <span class="individual__card-number">03</span>
                         Оформление
                     </p>
-                </div>
+                <!-- </div> -->
                 <div class="image-wrapper desing-img">
                     <img class="individual__img" src="./assets/img/design-sm.png" alt="inner" />
                 </div>
@@ -350,7 +359,8 @@
                 </div>
                 <picture>
                     <source media="(max-width: 769px )" srcset="./assets/img/mary-sm.png">
-                    <img class="about-us__img" src="./assets/img/mary-md.png" alt="mary" />
+                        <source media="(min-width: 770px)" srcset="./assets/img/mary-md.png">
+                    <img class="about-us__img" src="./assets/img/mary-lg.png" alt="mary" width="209px" height="209px" />
                 </picture>
 
                 <div class="about-us__feedback-text">
@@ -464,7 +474,10 @@
                         </div>
                     </div>    
                     <div class="about-us__people-md-image">
-                        <img src="./assets/img/igor-md.png" alt="igor">
+                        <picture>
+                            <source media="(max-width: 1079px)" srcset="./assets/img/igor-md.png">
+                            <img src="./assets/img/igor-lg.png" alt="igor">
+                        </picture>   
                     </div>
                 </div>
                 <div class="about-us__quote">
@@ -475,7 +488,8 @@
                     </p>
                     <picture>
                         <source media="(max-width: 769px)" srcset="./assets/img/sign-sm.png">
-                        <img src="./assets/img/sign-md.png" alt="author" />
+                        <source media="(max-width: 1079px)" srcset="./assets/img/sign-md.png">
+                        <img src="./assets/img/sign-lg.png" alt="author" />
                     </picture>
                 </div>    
             </div>

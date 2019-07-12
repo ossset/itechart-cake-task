@@ -226,3 +226,48 @@
         margin-top: 10px;
     }
 }
+@media (min-width: 1079px){
+    .about-us__title{
+        font-size: 40px;
+    }
+    .about-us__feedback{
+        justify-content: space-between;
+        width: 860px;
+    }
+    .about-us__feedback-title{
+        font-size: 27px;
+    }
+    .about-us__feedback-experience{
+        font-size: 20px;
+    }
+    .about-us__feedback-content{
+        font-size: 18px;
+        text-align: left;
+        width: 350px;
+    }
+    .about-us__feedback-link::after{
+        left: 160px;
+        top: 40px;
+    }
+    .about-us__confectioner-title{
+        font-size: 35px;
+    }
+    .about-us__confectioner-text-title{
+        font-size: 20px;
+    }
+    .about-us__confectioner-text-content{
+        font-size: 18px;
+        width: 550px;
+    }
+    .about-us__people-md-wrapper{
+        justify-content: space-between;
+    }
+    .about-us__quote-comma{
+        font-size: 140px;
+    }
+    .about-us__quote-text{
+       font-size: 25px; 
+       width: 625px;
+    }
+    
+}
