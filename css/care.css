@@ -164,3 +164,26 @@
         width: 275px;
     }
 }
+@media (min-width: 1080px){
+    .care__wrapper{
+        padding-top: 200px;
+        height: 665px;
+    }
+    .care__title{
+        font-size: 40px;
+    }
+    .care__subtitle{
+        font-size: 35px;
+    }
+    .care__description{
+        font-size: 20px;
+        width: 440px;
+    }
+    .care__bg::after{
+        background: url(../assets/img/care-cake-lg.png) no-repeat;
+        top: -115px;
+        right: -25px;
+        width: 780px;
+        height: 805px;
+    }
+}
