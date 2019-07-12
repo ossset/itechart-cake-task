@@ -4,8 +4,7 @@
     justify-content: space-between;
 
     width: 51px;
-    margin: 0 auto;
-    margin: 65px 0 20px 0;
+    margin: 65px auto 20px auto;
 }
 
 .individual__pager-link {

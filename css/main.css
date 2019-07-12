@@ -43,7 +43,7 @@ ul {
 .container {
     margin: 0 auto;
 }
-
+.slider-button{display: none;}
 .button {
     text-transform: uppercase;
 
@@ -129,5 +129,8 @@ ul {
 
     body {
         background: #fbebea;
+    }
+    .slider-button{
+        display: block;
     }
 }

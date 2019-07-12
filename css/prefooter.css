@@ -81,9 +81,46 @@
 
 .prefooter__social-container {
     display: flex;
+    flex-direction: column;
 }
 
 .prefooter__social-link--vk {
     margin-left: 30px;
     padding-top: 20px;
+}
+@media (min-width: 769px){
+    .prefooter__title{
+        text-align: left;
+        font-size: 28px;
+    }
+    .prefooter__subtitle{
+        font-size: 22px;
+    }
+    .prefooter__item{
+        width: 350px;
+    }
+    .prefooter__form{
+        display: flex;
+        flex-direction: column;
+    }
+    .prefooter__wrapper{
+        background: url(../assets/img/prefooter-bg-md.png) no-repeat;
+        background-position-x: 100%;
+        background-position-y: 295px;
+        height: 590px;
+    }
+    .prefooter{
+        height: 590px;
+    }
+    .prefooter__container{
+        display: flex;
+        justify-content: space-around;
+    }
+    .prefooter__social-container{
+        flex-direction: column;
+        padding-top: 75px;
+    }
+    .footer__link--tel{
+        display: none;
+    }
 }

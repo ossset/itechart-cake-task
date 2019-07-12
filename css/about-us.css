@@ -134,7 +134,9 @@
 .about-us__feedback-link:hover {
     cursor: pointer;
 }
-
+.about-us__people-md{
+    display: none;
+}
 @media (min-width: 576px) {
     .about-us__confectioner {
         text-align: center;
@@ -175,5 +177,52 @@
     .feedback__link::after {
         top: 20px;
         left: 240px;
+    }
+    .about-us__people{
+        display: none;
+    }
+    .about-us__people-md{
+        display: block;
+        padding-top: 120px;
+    }
+    .about-us__people-md-wrapper{
+        display: flex;
+        justify-content: space-around;
+    }
+    .about-us__people-md-content{
+        width: 320px;
+        text-align: left;
+    }
+    .about-us__confectioner-title{
+        margin: 0;
+    }
+    .about-us__title--md{
+        padding-bottom: 0;
+        font-size: 28px;
+    }
+    .about-us__social{
+        flex-direction: row;
+        margin-left: 0;
+        width: 150px;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+    .about-us__people-md-wrapper .about-us__title, .about-us__confectioner-title, .about-us__confectioner-text-title, .about-us__confectioner-text{
+        text-align: left;
+    }
+    .about-us__confectioner-title{
+        font-size: 26px;
+    }
+    .about-us__confectioner-text-title{
+        font-size: 15px;
+    }
+    .about-us__confectioner-text{
+        font-size: 14px;
+        text-align: left;
+    }
+    .about-us__confectioner-text-content{
+        text-align: left;
+        font-size: 14px;
+        margin-top: 10px;
     }
 }
