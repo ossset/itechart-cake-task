@@ -130,4 +130,7 @@ ul {
     body {
         background: #fbebea;
     }
+    .slider-button{
+        display: block;
+    }
 }
