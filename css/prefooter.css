@@ -124,3 +124,44 @@
         display: none;
     }
 }
+@media (min-width:1080px){
+    .prefooter{
+        height: 845px;
+    }
+    .prefooter__title{
+        font-size: 40px;
+    }
+    .prefooter__subtitle{
+        font-size: 35px;
+    }
+    .prefooter__text{
+        font-size: 20px;
+    }
+    .prefooter__wrapper{
+        background: url(../assets/img/contacts-lg.png) no-repeat;
+        background-position-x: 475px;
+        background-position-y: 400px;
+        height: 845px;
+    }
+    .prefooter__content{
+        width: 555px;
+    }
+    .prefooter__item{
+        width: 100%;
+        background: none;
+        border-bottom: 1px solid #c9bcbb;
+    }
+    .prefooter__item--textarea{
+        height: 50px;
+    }
+    .prefooter__button{
+        margin-top: 120px;
+    }
+    .prefooter__container{
+        justify-content: space-between;
+    }
+    .prefooter__social-container{
+        margin-right: 185px;
+        padding-top: 100px;
+    }
+}
