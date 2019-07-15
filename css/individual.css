@@ -455,7 +455,7 @@
         padding-top: 220px;
     }
 
-    .individual__slider-item--masrhmello {
+    .individual__slider-item--marshmello {
         height: 280px;
 
         background: url(../assets/img/design-md.png) no-repeat;
@@ -495,7 +495,7 @@
         margin-bottom: 25px;
     }
 
-    .individual__card--last .slider-button {
+    .slider-button--last {
         margin-left: 25px;
     }
 
@@ -516,7 +516,7 @@
         box-shadow: 0px 12px 40px -1px rgba(209, 209, 209, 0.92);
     }
 
-    .individual__slider-item--masrhmello:hover {
+    .individual__slider-item--marshmello:hover {
         -webkit-box-shadow: 0px 12px 40px -1px rgba(209, 209, 209, 0.92);
         -moz-box-shadow: 0px 12px 40px -1px rgba(209, 209, 209, 0.92);
         box-shadow: 0px 12px 40px -1px rgba(209, 209, 209, 0.92);
@@ -616,7 +616,7 @@
         padding-top: 333px;
     }
 
-    .individual__slider-item--masrhmello {
+    .individual__slider-item--marshmello {
         background: url(../assets/img/marsh-lg.png)
     }
 
@@ -629,7 +629,7 @@
         margin-left: 40px;
     }
 
-    .individual__card--last .slider-button {
+    .slider-button--last {
         margin-left: 40px;
     }
 
