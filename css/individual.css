@@ -380,14 +380,14 @@
         display: block;
     }
 
-    .individual__card--size {
+    .individual__card--size-selector {
         display: flex;
         align-items: flex-end;
         flex-direction: row;
         justify-content: space-around;
 
         width: 100%;
-        padding-top: 60px;
+        padding-top: 150px;
     }
 
     .circle-card::after {
@@ -590,10 +590,6 @@
         right: 120px;
     }
 
-    .individual__card--size {
-        padding-top: 150px;
-    }
-
     .individual__name-circle {
         font-size: 18px;
         padding-left: 10px;
@@ -629,9 +625,8 @@
         padding-right: 70px;
     }
 
-    .individual__card--last * {
+    .individual__card--last .slider-button--left, .slider-button--right, .individual__slider-item {
         margin-left: 40px;
-
     }
 
     .individual__card--last .slider-button {
