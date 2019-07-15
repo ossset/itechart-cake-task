@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "Intro Script R H2 Base";
+    font-weight: normal;
+    font-style: normal;
+
+    src: url("IntroScriptR-H2Base.eot");
+    src: url("../assets/fonts/IntroScriptR-H2Base.eot?#iefix") format("embedded-opentype"),
+        url("../assets/fonts/IntroScriptR-H2Base.woff") format("woff"),
+        url("../assets/fonts/IntroScriptR-H2Base.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Circe Regular";
+    font-weight: normal;
+    font-style: normal;
+
+    src: url("Circe-Regular.eot");
+    src: url("../assets/fonts/Circe-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../assets/fonts/Circe-Regular.woff") format("woff"),
+        url("../assets/fonts/Circe-Regular.ttf") format("truetype");
+}
+
+@import './partials/vars';
+@import './partials/header';
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.container {
+    margin: 0 auto;
+    width: 87.5%;
+}
+
+.slider-button{
+    @include dN();
+}
+%button{
+    text-transform: uppercase;
+    display: block;
+
+    width: 226px;
+    height: 51px;
+    margin: 0 auto;
+    padding-top: 20px;
+
+    text-align: center;
+
+    color: #fff;
+    border-radius: 50px;
+    background-color: #f50049;
+
+    font-size: 13px;
+    font-family: $mainFont;
+    &:hover{
+        color: #f50049;
+        border: 1px solid #f50049;
+        background-color: #fbebea; 
+    }
+}
+
+%button--small{
+    width: 180px;
+}
+
+%social-icon{
+    display: block;
+
+    width: 36px;
+    height: 36px;
+    padding-top: 10px;
+
+    transition: 0.1s ease-in-out;
+    text-align: center;
+
+    border-radius: 100px;
+    background-color: #fff;
+}
+%slider-button {
+    width: 40px;
+    height: 40px;
+    &:hover{
+        transform: scale(1.1);
+    }
+    &:active{
+        transform: scale(1);
+    }
+}
+.slider-button--left{
+    background: url(../assets/img/pager-left.png);
+}
+.slider-button--right{
+    background: url(../assets/img/pager-right.png);
+}
+@media (min-width: 770px) {
+    .container {
+        width: 730px;
+    }
+
+    body {
+        background: $mainBodyColor;
+    }
+    .slider-button{
+        display: block;
+    }
+}
+@media (min-width: 1080px){
+    .container{
+        width: 89%;
+    }
+}

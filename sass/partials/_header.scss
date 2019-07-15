@@ -1,0 +1,70 @@
+.header__logo{
+    font-size: 16px;
+    font-family: $titleFont;
+    color: #000;
+}
+.header__nav,
+.header__phone {
+    @include dN();
+}
+.header__menu {
+    @include flex (row, center, space-between);
+    
+    padding: 13px 0;
+}
+
+@media (min-width: 770px) {
+    .header__logo{
+        font-size: 20px;
+    }
+
+    .header__phone{
+        font-family: $mainFont;
+        font-size: 15px;
+        font-weight: 700;
+        display: block;
+        color: $navMenuColor;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    .header__burger {
+        margin-right: 465px;
+    }
+    .header, .header__burger{
+        background: $headerBg;
+    }
+    .header__promo-text{
+        font-family: $curvyFont;
+    }
+}
+@media (min-width: 1080px){
+    .header__burger{
+        @include dN();
+    }
+    .header__nav{
+        display: block;
+        width: 62%;
+    }
+    .header__nav-wrapper{
+        @include flex(row, center, space-between);
+    }
+    .header__link{
+        text-transform: uppercase;
+        font-size: 13px;
+        font-family: $mainFont;
+        color: $navMenuColor;
+        &:hover{
+            color: #f61f5e;
+        }
+    }
+    .header__phone{
+        margin-left: auto;
+    }
+    .header__logo{
+        font-size: 23px;
+    }
+    .header, .header__menu{
+        background: $mainBodyColor;
+    }
+}

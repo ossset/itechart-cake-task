@@ -1,0 +1,16 @@
+$titleFont : "Playfair Display", serif;
+$mainFont : "Circe Regular";
+$curvyFont: "Intro Script R H2 Base";
+$navMenuColor : #2d2829;
+$mainBodyColor: #fbebea;
+$headerBg : #fff;
+
+@mixin dN {
+    display: none;
+}
+@mixin flex ($direction, $alignItems, $justifyContent) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $alignItems;
+    justify-content: $justifyContent;
+}

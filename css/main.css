@@ -46,21 +46,6 @@ ul {
 .slider-button{display: none;}
 .button {
     text-transform: uppercase;
-
-    font-family: "Circe Regular";
-}
-
-.button:hover {
-    color: #f50049;
-    border: 1px solid #f50049;
-    background-color: #fbebea;
-}
-
-.container {
-    width: 87.5%;
-}
-
-.button {
     display: block;
 
     width: 226px;
@@ -75,7 +60,19 @@ ul {
     background-color: #f50049;
 
     font-size: 13px;
+    font-family: "Circe Regular";
 }
+
+.button:hover {
+    color: #f50049;
+    border: 1px solid #f50049;
+    background-color: #fbebea;
+}
+
+.container {
+    width: 87.5%;
+}
+
 
 .button--small {
     width: 180px;
