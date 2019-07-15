@@ -49,7 +49,7 @@ ul {
 }
 
 .slider-button{
-    @include dN();
+    @include hide();
 }
 %button{
     text-transform: uppercase;
@@ -73,8 +73,8 @@ ul {
         border: 1px solid #f50049;
         background-color: #fbebea; 
     }
+    
 }
-
 %button--small{
     width: 180px;
 }
@@ -92,7 +92,7 @@ ul {
     border-radius: 100px;
     background-color: #fff;
 }
-%slider-button {
+.slider-button {
     width: 40px;
     height: 40px;
     &:hover{
