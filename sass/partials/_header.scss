@@ -4,7 +4,9 @@
         font-family: $titleFont;
         color: #000;
     }
-
+    &__button{
+        @extend %button;
+    }
     &__nav, &__phone  {
         @include hide();
     }

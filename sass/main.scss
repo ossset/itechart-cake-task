@@ -24,6 +24,12 @@
 @import './partials/header';
 @import './partials/promo';
 @import './partials/examples';
+@import './partials/individual';
+@import './partials/about-us';
+@import './partials/pros';
+@import './partials/care';
+@import './partials/prefooter';
+@import './partials/footer';
 
 * {
     box-sizing: border-box;
@@ -60,7 +66,7 @@ ul {
     width: 226px;
     height: 51px;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 16px;
 
     text-align: center;
 
@@ -81,7 +87,7 @@ ul {
     width: 180px;
 }
 
-%social-icon{
+.social-icon{
     display: block;
 
     width: 36px;
