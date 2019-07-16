@@ -61,12 +61,13 @@
     background-color: #fff;
 }
 
-.individual__card-title {
+.individual__card-number-text {
     display: flex;
-    align-items: flex-end;
+    /* align-items: flex-end; */
+    flex-direction: column;
 }
 
-.individual__card-title {
+.individual__card-number-text {
     color: #f50049;
 
     font-family: "Playfair Display", serif;
@@ -74,7 +75,7 @@
     font-weight: 700;
 }
 
-.individual__card-title {
+.individual__card-number-text {
     margin-left: 12px;
     padding-bottom: 2px;
 
@@ -312,13 +313,15 @@
         width: 135px;
         margin: 0;
     }
-    .individual__slider-item{
+
+    .individual__slider-item {
         display: flex;
         align-items: flex-start;
         flex-direction: column;
 
         width: 190px;
     }
+
     .individual__slider-item .button {
         width: 135px;
         margin: 0;
@@ -363,7 +366,7 @@
         font-size: 12px;
     }
 
-    
+
 
     .image-wrapper {
         width: 210px;
@@ -377,14 +380,14 @@
         display: block;
     }
 
-    .individual__card--size {
+    .individual__card--size-selector {
         display: flex;
         align-items: flex-end;
         flex-direction: row;
         justify-content: space-around;
 
         width: 100%;
-        padding-top: 60px;
+        padding-top: 150px;
     }
 
     .circle-card::after {
@@ -405,7 +408,7 @@
         font-size: 12px;
     }
 
-    .individual__card-title {
+    .individual__card-number-text {
         margin: 0;
         padding: 0;
     }
@@ -452,14 +455,14 @@
         padding-top: 220px;
     }
 
-    .individual__slider-item--masrhmello {
+    .individual__slider-item--marshmello {
         height: 280px;
 
         background: url(../assets/img/design-md.png) no-repeat;
         background-position-x: -15px;
     }
 
-    .individual__card-title--last {
+    .individual__card-number-text--last {
         background: url(../assets/img/illustartion-md.png) no-repeat;
     }
 
@@ -492,7 +495,7 @@
         margin-bottom: 25px;
     }
 
-    .individual__card--last .slider-button {
+    .slider-button--last {
         margin-left: 25px;
     }
 
@@ -513,7 +516,7 @@
         box-shadow: 0px 12px 40px -1px rgba(209, 209, 209, 0.92);
     }
 
-    .individual__slider-item--masrhmello:hover {
+    .individual__slider-item--marshmello:hover {
         -webkit-box-shadow: 0px 12px 40px -1px rgba(209, 209, 209, 0.92);
         -moz-box-shadow: 0px 12px 40px -1px rgba(209, 209, 209, 0.92);
         box-shadow: 0px 12px 40px -1px rgba(209, 209, 209, 0.92);
@@ -533,7 +536,135 @@
         font-family: "Circe Regular";
         font-size: 12px;
     }
-    .individual__slider-container{
+
+    .individual__slider-container {
         display: flex;
+    }
+}
+
+@media (min-width: 1080px) {
+    .individual__title {
+        font-size: 40px;
+    }
+
+    .individual__text {
+        font-size: 35px;
+    }
+
+    .individual__card-number-text {
+        font-size: 27px;
+    }
+
+    .individual__card-number {
+        font-size: 58px;
+    }
+
+    .individual__card {
+        height: 575px;
+    }
+
+    .individual__name-title {
+        font-size: 20px;
+    }
+
+    .individual__name-text {
+        font-size: 18px;
+        width: 280px;
+    }
+
+    .desing-img {
+        display: none;
+    }
+
+    .individual__card--last {
+        justify-content: space-around;
+    }
+
+    .individual__price {
+        font-size: 22px;
+    }
+
+    .individual__card--inner::after {
+        font-size: 18px;
+        top: 500px;
+        right: 120px;
+    }
+
+    .individual__name-circle {
+        font-size: 18px;
+        padding-left: 10px;
+    }
+
+    .individual__card--last::before {
+        background: url(../assets/img/individual-ill-lg.png) no-repeat;
+        top: 170px;
+        left: 15px;
+        width: 250px;
+        height: 300px;
+    }
+
+    .individual__slider-item {
+        width: 320px;
+        height: 430px;
+    }
+
+    .individual__slider-item--cherry {
+        background: url(../assets/img/berries-lg.png)
+    }
+
+    .individual__slider-item--design {
+        padding-top: 333px;
+    }
+
+    .individual__slider-item--marshmello {
+        background: url(../assets/img/marsh-lg.png)
+    }
+
+    .individual__card--last {
+        justify-content: flex-end;
+        padding-right: 70px;
+    }
+
+    .individual__card--last .slider-button--left, .slider-button--right, .individual__slider-item {
+        margin-left: 40px;
+    }
+
+    .slider-button--last {
+        margin-left: 40px;
+    }
+
+    .individual__card--last::after {
+        font-size: 18px;
+        top: 480px;
+        right: 55px;
+    }
+
+    .individual__title--form {
+        font-size: 27px;
+        padding-left: 65px;
+    }
+
+    .individual__form-title {
+        font-size: 27px;
+    }
+
+    .individual__form-text {
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid;
+        width: 250px;
+        text-align: left;
+    }
+
+    .individual__form-text--small {
+        width: 140px;
+    }
+
+    .individual__button {
+        width: 220px;
+    }
+
+    .individual__form-result {
+        padding-left: 30px;
     }
 }

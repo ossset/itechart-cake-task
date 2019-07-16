@@ -164,3 +164,59 @@
         width: 275px;
     }
 }
+@media (min-width: 1080px){
+    .care__wrapper{
+        padding-top: 200px;
+        height: 665px;
+        
+    }
+    .care__title{
+        font-size: 40px;
+    }
+    .care__subtitle{
+        font-size: 35px;
+    }
+    .care__description{
+        font-size: 20px;
+        width: 440px;
+    }
+    .care__bg::after{
+        background: url(../assets/img/care-cake-lg.png) no-repeat;
+        top: -115px;
+        right: -25px;
+        width: 780px;
+        height: 805px;
+    }
+    .care__algorithm{
+        background: #c93030;
+        position: relative;
+        height: 700px;
+    }
+    .care__algorithm-wrapper::after{
+        position: absolute;
+        content: '';
+        background: url(../assets/img/algorithm-cake-lg.png) no-repeat;
+        top: 0;
+        left: 0;
+        width: 770px;
+        height: 700px;
+        background-position: 0 140px;
+    }
+    .care__algorithm-wrapper{
+        padding: 105px 190px 0 0;
+    }
+    .care__algorithm-title{
+        font-size: 40px;
+        width: 281px;
+    }
+    .care__algorithm-item-number{
+        font-size: 64px;
+    }
+    .care__algorithm-item-title{
+        font-size: 21px;
+    }
+    .care__algorithm-item-text{
+        font-size: 20px;
+        width: 370px;
+    }
+}

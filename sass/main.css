@@ -1,0 +1,184 @@
+@font-face {
+  font-family: "Intro Script R H2 Base";
+  font-weight: normal;
+  font-style: normal;
+  src: url("IntroScriptR-H2Base.eot");
+  src: url("../assets/fonts/IntroScriptR-H2Base.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/IntroScriptR-H2Base.woff") format("woff"), url("../assets/fonts/IntroScriptR-H2Base.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Circe Regular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("Circe-Regular.eot");
+  src: url("../assets/fonts/Circe-Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Circe-Regular.woff") format("woff"), url("../assets/fonts/Circe-Regular.ttf") format("truetype");
+}
+
+.header__logo {
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+  color: #000;
+}
+
+.header__nav, .header__phone {
+  display: none;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 13px 0;
+}
+
+@media (min-width: 770px) {
+  .header__logo {
+    font-size: 20px;
+  }
+  .header__phone {
+    font-family: "Circe Regular";
+    font-size: 15px;
+    font-weight: 700;
+    display: block;
+    color: #2d2829;
+  }
+  .header__phone:hover {
+    text-decoration: underline;
+  }
+  .header__burger {
+    margin-right: 465px;
+  }
+  .header, .header__burger {
+    background: #fff;
+  }
+  .header__promo-text {
+    font-family: "Intro Script R H2 Base";
+  }
+}
+
+@media (min-width: 1080px) {
+  .header__burger {
+    display: none;
+  }
+  .header__nav {
+    display: block;
+    width: 62%;
+  }
+  .header__nav-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header__link {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: "Circe Regular";
+    color: #2d2829;
+  }
+  .header__link:hover {
+    color: #f61f5e;
+  }
+  .header__phone {
+    margin-left: auto;
+  }
+  .header__logo {
+    font-size: 23px;
+  }
+  .header, .header__menu {
+    background: #fbebea;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container {
+  margin: 0 auto;
+  width: 87.5%;
+}
+
+.slider-button {
+  display: none;
+}
+
+.slider-button {
+  width: 40px;
+  height: 40px;
+}
+
+.slider-button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.slider-button:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.slider-button--left {
+  background: url(../assets/img/pager-left.png);
+}
+
+.slider-button--right {
+  background: url(../assets/img/pager-right.png);
+}
+
+@media (min-width: 770px) {
+  .container {
+    width: 730px;
+  }
+  body {
+    background: #fbebea;
+  }
+  .slider-button {
+    display: block;
+  }
+}
+
+@media (min-width: 1080px) {
+  .container {
+    width: 89%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

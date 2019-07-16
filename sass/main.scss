@@ -20,6 +20,9 @@
         url("../assets/fonts/Circe-Regular.ttf") format("truetype");
 }
 
+@import './partials/vars';
+@import './partials/header';
+
 * {
     box-sizing: border-box;
 }
@@ -42,9 +45,13 @@ ul {
 
 .container {
     margin: 0 auto;
+    width: 87.5%;
 }
-.slider-button{display: none;}
-.button {
+
+.slider-button{
+    @include hide();
+}
+%button{
     text-transform: uppercase;
     display: block;
 
@@ -60,25 +67,19 @@ ul {
     background-color: #f50049;
 
     font-size: 13px;
-    font-family: "Circe Regular";
+    font-family: $mainFont;
+    &:hover{
+        color: #f50049;
+        border: 1px solid #f50049;
+        background-color: #fbebea; 
+    }
+    
 }
-
-.button:hover {
-    color: #f50049;
-    border: 1px solid #f50049;
-    background-color: #fbebea;
-}
-
-.container {
-    width: 87.5%;
-}
-
-
-.button--small {
+%button--small{
     width: 180px;
 }
 
-.social-icon {
+%social-icon{
     display: block;
 
     width: 36px;
@@ -94,46 +95,32 @@ ul {
 .slider-button {
     width: 40px;
     height: 40px;
+    &:hover{
+        transform: scale(1.1);
+    }
+    &:active{
+        transform: scale(1);
+    }
 }
-
 .slider-button--left{
     background: url(../assets/img/pager-left.png);
 }
 .slider-button--right{
     background: url(../assets/img/pager-right.png);
 }
-.slider-button:hover {
-    transform: scale(1.1);
-}
-
-.slider-button:hover {
-    transform: scale(1.1);
-}
-
-.slider-button:active {
-    transform: scale(1);
-}
-
-.slider-button:active {
-    transform: scale(1);
-}
-@media (min-width: 576px) {
-    
-}
-
 @media (min-width: 770px) {
     .container {
         width: 730px;
     }
 
     body {
-        background: #fbebea;
+        background: $mainBodyColor;
     }
     .slider-button{
         display: block;
     }
 }
-@media (min-width:1080px){
+@media (min-width: 1080px){
     .container{
         width: 89%;
     }

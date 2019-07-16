@@ -87,7 +87,7 @@
         margin-right: 45px;
     }
 
-    .pros__item--ingidients {
+    .pros__item--ingridients {
         width: 349px;
     }
 
@@ -106,5 +106,44 @@
         content: "";
 
         background: url(../assets/img/berries-md.png) no-repeat;
+    }
+}
+@media (min-width: 1080px){
+    .pros__title{
+        font-size: 40px;
+    }
+    .pros__subtitle{
+        font-size: 35px;
+    }
+    .pros__subtitle::after{
+        background: url(../assets/img/berries-pros-lg.png) no-repeat;
+        width: 555px;
+        height: 690px;
+    }
+    .pros__items-container{
+        height: 450px;
+        padding-right: 250px;
+    }
+    .pros__item-heading{
+        font-size: 20px;
+    }
+    .pros__item-text{
+        font-size: 20px;
+    }
+    .pros__item-heading{
+        width: 280px;
+    }
+    .pros__item-text{
+        width: 400px;
+    }
+    .pros__item{
+        display: flex;
+        align-items: center;
+    }
+    .pros__item-wrapper{
+        padding-left: 30px;
+    }
+    .pros__item-wrapper--ingridients{
+        padding-left: 40px;
     }
 }
