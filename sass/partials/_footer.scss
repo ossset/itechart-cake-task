@@ -29,11 +29,13 @@
 
     &__link {
         color: #fff;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
-    &__link:hover {
-        text-decoration: underline;
-    }
+
 
     &_social {
         @include flex(row, center);
@@ -93,9 +95,9 @@
             border: none;
         }
 
-        & {
-            padding-top: 20px;
-        }
+
+        padding-top: 20px;
+
 
         &__social-lg {
             @include hide();
@@ -104,16 +106,17 @@
 
     @media (min-width:1080px) {
         &__social-lg {
-            display: block;  
+            display: block;
         }
+
         &__social-md {
             @include hide();
         }
 
-        & {
-            padding-top: 0;
-            background: #e8e8e8;
-        }
+
+        padding-top: 0;
+        background: #e8e8e8;
+
 
         &__logo {
             margin-bottom: 0;
@@ -128,11 +131,13 @@
         &__menu {
             padding: 30px 0;
 
+            &-item {
+                margin-bottom: 0;
+            }
+
         }
 
-        &__menu-item {
-            margin-bottom: 0;
-        }
+
 
         &__logo,
         &__link {

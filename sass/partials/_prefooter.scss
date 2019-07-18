@@ -1,9 +1,9 @@
 .prefooter {
-    & {
-        padding: 40px 0;
 
-        background: $mainBodyColor;
-    }
+    padding: 40px 0;
+
+    background: $mainBodyColor;
+
 
     &__subtitle {
         margin-bottom: 5px;
@@ -78,6 +78,11 @@
         &:hover {
             transform: scale(1.1);
         }
+
+        &--vk {
+            margin-left: 30px;
+            padding-top: 20px;
+        }
     }
 
 
@@ -85,10 +90,7 @@
         @include flex(column);
     }
 
-    &__social-link--vk {
-        margin-left: 30px;
-        padding-top: 20px;
-    }
+
 
     @media (min-width: 769px) {
         &__title {
@@ -116,9 +118,9 @@
             height: 590px;
         }
 
-        & {
-            height: 590px;
-        }
+
+        height: 590px;
+
 
         &__container {
             @include flex(row, flex-start, space-around);
@@ -135,9 +137,9 @@
     }
 
     @media (min-width:1080px) {
-        & {
-            height: 845px;
-        }
+
+        height: 845px;
+
 
         &__title {
             font-size: 40px;
@@ -166,11 +168,13 @@
             width: 100%;
             background: none;
             border-bottom: 1px solid #c9bcbb;
+
+            &--textarea {
+                height: 50px;
+            }
         }
 
-        &__item--textarea {
-            height: 50px;
-        }
+
 
         &__button {
             margin-top: 120px;

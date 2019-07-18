@@ -43,28 +43,30 @@
 
     &__confectioner {
         font-family: $mainFont;
+
+        &__confectioner-title {
+            margin-top: 20px;
+
+            font-family: $curvyFont;
+            font-size: 22px;
+        }
+
+        &__confectioner-text-title {
+            display: block;
+
+            margin-top: 10px;
+
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        &__confectioner-text {
+            font-size: 12px;
+            line-height: 14px;
+        }
     }
 
-    &__confectioner-title {
-        margin-top: 20px;
 
-        font-family: $curvyFont;
-        font-size: 22px;
-    }
-
-    &__confectioner-text-title {
-        display: block;
-
-        margin-top: 10px;
-
-        font-size: 14px;
-        font-weight: 700;
-    }
-
-    &__confectioner-text {
-        font-size: 12px;
-        line-height: 14px;
-    }
 
     &__quote {
         @include flex(column, center);
@@ -153,7 +155,7 @@
             margin: 0 auto;
         }
 
-        &__aiote {
+        &__quote {
             &-comma {
                 font-size: 77px;
             }
@@ -202,6 +204,7 @@
 
         &__confectioner-title {
             margin: 0;
+            font-size: 26px;
         }
 
         &__title--md {
@@ -224,24 +227,24 @@
             text-align: left;
         }
 
-        &__confectioner-title {
-            font-size: 26px;
-        }
 
-        &__confectioner-text-title {
-            font-size: 15px;
-        }
 
         &__confectioner-text {
             font-size: 14px;
             text-align: left;
+
+            &-title {
+                font-size: 15px;
+            }
+
+            &-content {
+                text-align: left;
+                font-size: 14px;
+                margin-top: 10px;
+            }
         }
 
-        &__confectioner-text-content {
-            text-align: left;
-            font-size: 14px;
-            margin-top: 10px;
-        }
+
     }
 
     @media (min-width: 1079px) {
