@@ -1,34 +1,34 @@
 .prefooter {
     & {
         padding: 40px 0;
-    
+
         background: $mainBodyColor;
     }
-    
+
     &__subtitle {
         margin-bottom: 5px;
-    
+
         font-family: $curvyFont;
         font-size: 22px;
     }
-    
+
     &__title {
         margin: 0 0 10px 0;
-    
+
         text-align: center;
-    
+
         font-family: $titleFont;
         font-size: 24px;
     }
-    
+
     &__text {
         margin-bottom: 10px;
-    
+
         font-family: $mainFont;
         font-size: 14px;
         font-weight: 700;
     }
-    
+
     &__button {
         @extend %button;
         margin: 15px 0 25px 0;
@@ -37,127 +37,150 @@
         border: none;
         font-size: 19px;
     }
-    
+
     &__item {
         width: 100%;
         height: 50px;
         margin-bottom: 12px;
         padding-left: 10px;
-    
+
         border: none;
-    
+
         font-family: $mainFont;
         font-size: 14px;
+
+        &--textarea {
+            height: 120px;
+            padding: 10px;
+            resize: none;
+        }
+
+        &::placeholder {
+            color: #ccc;
+        }
     }
-    
-    &__item--textarea {
-        height: 120px;
-        padding: 10px;
-        resize: none;
-    }
-    
-    &__item::placeholder {
-        color: #ccc;
-    }
-    
+
+
+
     &__social-link {
         display: block;
-    
+
         width: 64px;
         height: 64px;
         padding-top: 15px;
-    
+
         transition: 0.2s ease-in-out;
         text-align: center;
-    
+
         border-radius: 50px;
         background: #fff no-repeat;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
-    
-    &__social-link:hover {
-        transform: scale(1.1);
-    }
-    
+
+
     &__social-container {
         @include flex(column);
     }
-    
+
     &__social-link--vk {
         margin-left: 30px;
         padding-top: 20px;
     }
-    @media (min-width: 769px){
-        &__title{
+
+    @media (min-width: 769px) {
+        &__title {
             text-align: left;
             font-size: 28px;
         }
-        &__subtitle{
+
+        &__subtitle {
             font-size: 22px;
         }
-        &__item{
+
+        &__item {
             width: 350px;
         }
-        &__form{
+
+        &__form {
             display: flex;
             flex-direction: column;
         }
-        &__wrapper{
+
+        &__wrapper {
             background: url(../assets/img/prefooter-bg-md.png) no-repeat;
             background-position-x: 100%;
             background-position-y: 295px;
             height: 590px;
         }
-        &{
+
+        & {
             height: 590px;
         }
-        &__container{
+
+        &__container {
             @include flex(row, flex-start, space-around);
         }
-        &__social-container{
+
+        &__social-container {
             flex-direction: column;
             padding-top: 75px;
         }
-        .footer__link--tel{
+
+        .footer__link--tel {
             display: none;
         }
     }
-    @media (min-width:1080px){
-        &{
+
+    @media (min-width:1080px) {
+        & {
             height: 845px;
         }
-        &__title{
+
+        &__title {
             font-size: 40px;
         }
-        &__subtitle{
+
+        &__subtitle {
             font-size: 35px;
         }
-        &__text{
+
+        &__text {
             font-size: 20px;
         }
-        &__wrapper{
+
+        &__wrapper {
             background: url(../assets/img/contacts-lg.png) no-repeat;
             background-position-x: 475px;
             background-position-y: 400px;
             height: 845px;
         }
-        &__content{
+
+        &__content {
             width: 555px;
         }
-        &__item{
+
+        &__item {
             width: 100%;
             background: none;
             border-bottom: 1px solid #c9bcbb;
         }
-        &__item--textarea{
+
+        &__item--textarea {
             height: 50px;
         }
-        &__button{
+
+        &__button {
             margin-top: 120px;
         }
-        &__container{
+
+        &__container {
             justify-content: space-between;
         }
-        &__social-container{
+
+        &__social-container {
             margin-right: 185px;
             padding-top: 100px;
         }

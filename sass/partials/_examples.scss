@@ -8,20 +8,7 @@
         padding: 13px 0 0 14px;
     }
     
-    &__name::after {
-        position: absolute;
-        top: 0;
-        left: 0;
-    
-       @include hide();
-    
-        width: 280px;
-        height: 120px;
-    
-        content: "";
-    
-        background-color: rgba(0, 0, 0, 0.1);
-    }
+
     
     &__card:hover &__name::after {
         display: block;
@@ -55,14 +42,45 @@
     &__name {
         color: #2d2829;
     
-        font-family: "Circe Regular";
+        font-family: $mainFont;
         font-size: 14px;
+        font-weight: 700;
+
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+        
+           @include hide();
+        
+           width: 288px;
+           height: 184px;
+        
+            content: "";
+        
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    
+        &--big::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+    
+            @include hide();
+    
+            width: 419px;
+            height: 388px;
+    
+            content: "";
+    
+            background-color: rgba(0, 0, 0, 0.1);
+        }
     }
     
     &__types {
         color: #2d2829;
     
-        font-family: "Circe Regular";
+        font-family: $mainFont;
         font-size: 12px;
     }
     
@@ -94,83 +112,56 @@
             margin-bottom: 18px;
         }
     
-        &__card-container {
-            @include flex(column, flex-start, space-between);
-            height: 390px;
-        }
-    
         &__card {
             width: 290px;
             height: 185px;
             margin: 0;
             padding: 20px 0 0 20px;
-        }
-    
-        &__card--classic {
-            background: url(../assets/img/classic-cake-md.png);
-        }
-    
-        &__card--mousse {
-            background: url(../assets/img/mousse-cake-md.png);
-        }
-    
-        &__card--wedding {
-            background: url(../assets/img/wedding-cake-md.png);
-        }
-    
-        &__card--men {
-            background: url(../assets/img/men-cake-md.png);
-        }
-    
-        &__card--fem {
-            background: url(../assets/img/fem-cake-md.png);
-        }
-    
-        &__card--child {
-            background: url(../assets/img/child-cake-md.png);
-        }
-    
-        &__card--classic,
-        &__card--mousse,
-        &__card--wedding,
-        &__card--men,
-        &__card--fem,
-        &__card--child {
-            background-repeat: no-repeat;
-        }
-    
-        &__card--big {
-            width: 420px;
+            &-container {
+            @include flex(column, flex-start, space-between);
             height: 390px;
+            }
+            &--classic {
+            background: url(../assets/img/classic-cake-md.png);
+            }
+        
+            &--mousse {
+                background: url(../assets/img/mousse-cake-md.png);
+            }
+        
+            &--wedding {
+                background: url(../assets/img/wedding-cake-md.png);
+            }
+        
+            &--men {
+                background: url(../assets/img/men-cake-md.png);
+            }
+        
+            &--fem {
+                background: url(../assets/img/fem-cake-md.png);
+            }
+        
+            &--child {
+                background: url(../assets/img/child-cake-md.png);
+            }
+        
+            &--classic,
+            &--mousse,
+            &--wedding,
+            &--men,
+            &--fem,
+            &--child {
+                background-repeat: no-repeat;
+            }
+        
+            &--big {
+                width: 420px;
+                height: 390px;
+            }
         }
-    
-        &__name {
-            font-size: 14px;
-            font-weight: 700;
-        }
-    
+  
         &__types {
             font-size: 12px;
-        }
-    
-        &__name::after {
-            width: 288px;
-            height: 184px;
-        }
-    
-        &__name--big::after {
-            position: absolute;
-            top: 0;
-            left: 0;
-    
-            @include hide();
-    
-            width: 419px;
-            height: 388px;
-    
-            content: "";
-    
-            background-color: rgba(0, 0, 0, 0.1);
         }
     }
     
@@ -239,8 +230,7 @@
         &__types{
             font-size: 20px;
             color: #6c6869;
-        }
-        &__types::after{
+             &::after{
             position: absolute;
             top: 280px;
             right: 20px;
@@ -248,17 +238,19 @@
             width: 20px;
             height: 17px;
             background: url(../assets/img/arrow.png) no-repeat;
+            }
+            &--lg::after{
+                width: 133px;
+                top: 600px;
+                content: 'Смотреть';
+                right: 60px;
+                background-position-x: 115px;
+                background-position-y: 5px;
+            }
+            &--child::after{
+                content: '';
+            }
         }
-        &__types--lg::after{
-            width: 133px;
-            top: 600px;
-            content: 'Смотреть';
-            right: 60px;
-            background-position-x: 115px;
-            background-position-y: 5px;
-        }
-        &__types--child::after{
-            content: '';
-        }
+       
     }
 }

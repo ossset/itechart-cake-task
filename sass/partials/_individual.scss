@@ -4,28 +4,29 @@
     
         width: 51px;
         margin: 65px auto 20px auto;
+        &-link {
+            width: 6px;
+            height: 6px;
+        
+            transition: 0.1s ease-in-out;
+        
+            border-radius: 20px;
+            background-color: #ddd;
+        }
+        
+        &-link--last {
+            width: 4px;
+            height: 4px;
+        }
+        
+        &-link:hover {
+            transform: scale(1.1);
+        
+            background-color: #f50049;
+        }
     }
     
-    &__pager-link {
-        width: 6px;
-        height: 6px;
     
-        transition: 0.1s ease-in-out;
-    
-        border-radius: 20px;
-        background-color: #ddd;
-    }
-    
-    &__pager-link--last {
-        width: 4px;
-        height: 4px;
-    }
-    
-    &__pager-link:hover {
-        transform: scale(1.1);
-    
-        background-color: #f50049;
-    }
     
     & {
         padding-bottom: 20px;
@@ -58,6 +59,7 @@
         padding: 8px 20px 20px 20px;
     
         background-color: #fff;
+        
     }
     
     &__card-number-text {

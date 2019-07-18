@@ -317,17 +317,6 @@
   padding: 13px 0 0 14px;
 }
 
-.examples__name::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
-  width: 280px;
-  height: 120px;
-  content: "";
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 .examples__card:hover .examples__name::after {
   display: block;
 }
@@ -361,6 +350,29 @@
   color: #2d2829;
   font-family: "Circe Regular";
   font-size: 14px;
+  font-weight: 700;
+}
+
+.examples__name::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 288px;
+  height: 184px;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.examples__name--big::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 419px;
+  height: 388px;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .examples__types {
@@ -403,6 +415,12 @@
             justify-content: space-between;
     margin-bottom: 18px;
   }
+  .examples__card {
+    width: 290px;
+    height: 185px;
+    margin: 0;
+    padding: 20px 0 0 20px;
+  }
   .examples__card-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -418,12 +436,6 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     height: 390px;
-  }
-  .examples__card {
-    width: 290px;
-    height: 185px;
-    margin: 0;
-    padding: 20px 0 0 20px;
   }
   .examples__card--classic {
     background: url(../assets/img/classic-cake-md.png);
@@ -450,26 +462,8 @@
     width: 420px;
     height: 390px;
   }
-  .examples__name {
-    font-size: 14px;
-    font-weight: 700;
-  }
   .examples__types {
     font-size: 12px;
-  }
-  .examples__name::after {
-    width: 288px;
-    height: 184px;
-  }
-  .examples__name--big::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: none;
-    width: 419px;
-    height: 388px;
-    content: "";
-    background-color: rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -1325,12 +1319,12 @@
   font-weight: 700;
 }
 
-.about-us__quote-comma {
+.about-us__quote__comma {
   color: #fff;
   font-size: 60px;
 }
 
-.about-us__quote-text {
+.about-us__quote__text {
   padding: 17px 0 35px 0;
   text-align: center;
   font-size: 13px;
@@ -1394,10 +1388,10 @@
         justify-content: space-around;
     margin: 0 auto;
   }
-  .about-us__quote-comma {
+  .about-us__aiote-comma {
     font-size: 77px;
   }
-  .about-us__quote-text {
+  .about-us__aiote-text {
     width: 350px;
     font-size: 14px;
   }
@@ -2162,8 +2156,18 @@
   padding-bottom: 30px;
 }
 
-.footer__social-item--vk {
+.footer_social-item--vk {
   margin-left: 20px;
+}
+
+.footer_social-item--vk__social-item {
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+
+.footer_social-item--vk__social-item:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .footer__copy {
@@ -2171,16 +2175,6 @@
   color: #b8b8b8;
   border-top: 1px solid;
   font-size: 12px;
-}
-
-.footer__social-item {
-  -webkit-transition: 0.1s ease-in-out;
-  transition: 0.1s ease-in-out;
-}
-
-.footer__social-item:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
 }
 
 @media (min-width: 769px) {

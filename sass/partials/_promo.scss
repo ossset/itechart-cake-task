@@ -49,11 +49,12 @@
 
     &__item {
         margin-bottom: 13px;
+        &--present {
+        margin-bottom: 40px;
+        }
     }
 
-    &__item--present {
-        margin-bottom: 40px;
-    }
+    
 
     &__cons-img {
         @include hide();

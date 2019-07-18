@@ -2,264 +2,305 @@
     & {
         background-color: $mainBodyColor;
     }
-    
+
     &__title {
         margin: 0;
         padding-bottom: 36px;
-    
+
         text-align: center;
-    
+
         font-family: $titleFont;
         font-size: 24px;
     }
-    
+
     &__feedback {
         @include flex(column, center);
         font-family: $mainFont;
     }
-    
+
     &__images-container {
         @include flex(row, center, flex-start);
         width: 240px;
         margin: 0 auto;
     }
-    
+
     &__social {
         @include flex(column, flex-start, space-around);
         height: 140px;
         margin-left: 35px;
     }
-    
+
     .social-icon:active {
         transform: scale(1.1);
     }
+
     .vk {
         padding: {
             top: 7px;
             right: 3px;
         }
     }
-    
+
     &__confectioner {
         font-family: $mainFont;
     }
-    
+
     &__confectioner-title {
         margin-top: 20px;
-    
+
         font-family: $curvyFont;
         font-size: 22px;
     }
-    
+
     &__confectioner-text-title {
         display: block;
-    
+
         margin-top: 10px;
-    
+
         font-size: 14px;
         font-weight: 700;
     }
-    
+
     &__confectioner-text {
         font-size: 12px;
         line-height: 14px;
     }
-    
+
     &__quote {
         @include flex(column, center);
         padding-bottom: 40px;
-    
+
         font-family: $titleFont;
         font-weight: 700;
+
+        &__comma {
+            color: #fff;
+
+            font-size: 60px;
+        }
+
+        &__text {
+
+            padding: 17px 0 35px 0;
+            text-align: center;
+
+            font-size: 13px;
+            font-style: italic;
+        }
     }
-    
-    &__quote-comma {
-        color: #fff;
-    
-        font-size: 60px;
+
+    &__feedback {
+        &-content {
+            width: 230px;
+            margin-top: 7px;
+
+            text-align: center;
+
+            font-size: 12px;
+        }
+
+        &-title {
+            margin-top: 4px;
+
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        &-link {
+            position: relative;
+
+            text-decoration: underline;
+
+            color: #f87b91;
+
+            font-style: italic;
+        }
+
+        &-link::after {
+            position: absolute;
+            left: 85px;
+
+            content: "1/26";
+
+            font-style: normal;
+        }
+
+        &-link:hover {
+            cursor: pointer;
+        }
     }
-    
-    &__quote-text {
-    
-        padding: 17px 0 35px 0;
-        text-align: center;
-    
-        font-size: 13px;
-        font-style: italic;
-    }
-    &__feedback-content {
-        width: 230px;
-        margin-top: 7px;
-    
-        text-align: center;
-    
-        font-size: 12px;
-    }
-    
-    &__feedback-title {
-        margin-top: 4px;
-    
-        font-size: 14px;
-        font-weight: 700;
-    }
-    
-    &__feedback-link {
-        position: relative;
-    
-        text-decoration: underline;
-    
-        color: #f87b91;
-    
-        font-style: italic;
-    }
-    
-    &__feedback-link::after {
-        position: absolute;
-        left: 85px;
-    
-        content: "1/26";
-    
-        font-style: normal;
-    }
-    
-    &__feedback-link:hover {
-        cursor: pointer;
-    }
-    &__people-md{
+
+    &__people-md {
         @include hide();
     }
+
     @media (min-width: 576px) {
         &__confectioner {
             text-align: center;
         }
     }
-    
+
     @media (min-width: 770px) {
         &__title {
             font-size: 28px;
         }
-    
+
         &__feedback {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-    
+
             margin: 0 auto;
         }
-    
-        &__quote-comma {
-            font-size: 77px;
+
+        &__aiote {
+            &-comma {
+                font-size: 77px;
+            }
+
+            &-text {
+                width: 350px;
+
+                font-size: 14px;
+            }
         }
-    
-        &__quote-text {
-            width: 350px;
-    
-            font-size: 14px;
+
+        .feedback {
+            &__text {
+                width: 255px;
+
+                text-align: left;
+
+                font-size: 14px;
+            }
+
+            &__link::after {
+                top: 20px;
+                left: 240px;
+            }
         }
-    
-        .feedback__text {
-            width: 255px;
-    
-            text-align: left;
-    
-            font-size: 14px;
-        }
-    
-        .feedback__link::after {
-            top: 20px;
-            left: 240px;
-        }
-        &__people{
+
+
+        &__people {
             display: none;
+
+            &-md {
+                display: block;
+                padding-top: 120px;
+            }
+
+            &-md-wrapper {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            &-md-content {
+                width: 320px;
+                text-align: left;
+            }
         }
-        &__people-md{
-            display: block;
-            padding-top: 120px;
-        }
-        &__people-md-wrapper{
-            display: flex;
-            justify-content: space-around;
-        }
-        &__people-md-content{
-            width: 320px;
-            text-align: left;
-        }
-        &__confectioner-title{
+
+        &__confectioner-title {
             margin: 0;
         }
-        &__title--md{
+
+        &__title--md {
             padding-bottom: 0;
             font-size: 28px;
         }
-        &__social{
+
+        &__social {
             flex-direction: row;
             margin-left: 0;
             width: 150px;
             justify-content: space-between;
             margin-top: 15px;
         }
-        &__people-md-wrapper &__title, &__confectioner-title, &__confectioner-text-title, &__confectioner-text{
+
+        &__people-md-wrapper &__title,
+        &__confectioner-title,
+        &__confectioner-text-title,
+        &__confectioner-text {
             text-align: left;
         }
-        &__confectioner-title{
+
+        &__confectioner-title {
             font-size: 26px;
         }
-        &__confectioner-text-title{
+
+        &__confectioner-text-title {
             font-size: 15px;
         }
-        &__confectioner-text{
+
+        &__confectioner-text {
             font-size: 14px;
             text-align: left;
         }
-        &__confectioner-text-content{
+
+        &__confectioner-text-content {
             text-align: left;
             font-size: 14px;
             margin-top: 10px;
         }
     }
-    @media (min-width: 1079px){
-        &__title{
+
+    @media (min-width: 1079px) {
+        &__title {
             font-size: 40px;
         }
-        &__feedback{
+
+        &__feedback {
             justify-content: space-between;
             width: 860px;
+
+            &-title {
+                font-size: 27px;
+            }
+
+            &-experience {
+                font-size: 20px;
+            }
+
+            &-content {
+                font-size: 18px;
+                text-align: left;
+                width: 350px;
+            }
+
+            &-link::after {
+                left: 160px;
+                top: 40px;
+            }
         }
-        &__feedback-title{
-            font-size: 27px;
+
+        &__confectioner {
+            &-title {
+                font-size: 35px;
+            }
+
+            &-text-title {
+                font-size: 20px;
+            }
+
+            &-text-content {
+                font-size: 18px;
+                width: 550px;
+            }
         }
-        &__feedback-experience{
-            font-size: 20px;
-        }
-        &__feedback-content{
-            font-size: 18px;
-            text-align: left;
-            width: 350px;
-        }
-        &__feedback-link::after{
-            left: 160px;
-            top: 40px;
-        }
-        &__confectioner-title{
-            font-size: 35px;
-        }
-        &__confectioner-text-title{
-            font-size: 20px;
-        }
-        &__confectioner-text-content{
-            font-size: 18px;
-            width: 550px;
-        }
-        &__people-md-wrapper{
+
+        &__people-md-wrapper {
             justify-content: space-between;
         }
-        &__quote-comma{
-            font-size: 140px;
+
+        &__quote {
+            &-comma {
+                font-size: 140px;
+            }
+
+            &-text {
+                font-size: 25px;
+                width: 625px;
+            }
         }
-        &__quote-text{
-           font-size: 25px; 
-           width: 625px;
-        }
-        
     }
 }
