@@ -5,17 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/promo.css">
-    <link rel="stylesheet" href="./css/examples.css">
-    <link rel="stylesheet" href="./css/about-us.css">
-    <link rel="stylesheet" href="./css/pros.css">
-    <link rel="stylesheet" href="./css/care.css">
-    <link rel="stylesheet" href="./css/individual.css">
-    <link rel="stylesheet" href="./css/prefooter.css">
-    <link rel="stylesheet" href="./css/footer.css"> -->
     <link rel="stylesheet" href="./sass/main.css">
     <!-- playfair display -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,700i&display=swap" rel="stylesheet" />
@@ -67,13 +57,13 @@
             <p class="promo__text">Ручная работа</p>
         </div>
         <div class="promo__container-cons">
-            <div class="promo__cons-container">
+            <div class="promo__cons-container container">
                 <div class="promo__item d-flex">
                     <picture>
                         <source media="(max-width: 769px)" srcset="./assets/img/ingridients-icon.png">
                         <img src="./assets/img/ingridients-icon-md.png" alt="">
                     </picture>
-                
+
 
                     <p class="promo__cons-text">
                         Натуральные ингридиенты
@@ -84,13 +74,13 @@
                         <source media="(max-width: 769px)" srcset="./assets/img/present-icon.png">
                         <img src="./assets/img/present-icon-md.png" alt="">
                     </picture>
-                   
+
                     <p class="promo__cons-text">
                         Доставка бесплатно при заказе от 2000 рублей*
                     </p>
                 </div>
             </div>
-            <a href="#" class=" button header__button">
+            <a href="#" class=" header__button">
                 Выбрать торт
             </a>
         </div>
@@ -128,7 +118,7 @@
                     </div>
                 </div>
             </div>
-            <div class="examples__container">
+            <div class="examples__container examples__container--child">
                 <div class="examples__card-container">
                     <div class="examples__card examples__card--men">
                         <p class="examples__name">
@@ -167,12 +157,12 @@
                 Соберите торт в 3 шага
             </p>
             <div class="individual__card individual__card--inner">
-               
-                    <p class="individual__card-number-text">
-                        <span class="individual__card-number">01</span>
-                        Выберите начинку
-                    </p>
-                
+
+                <p class="individual__card-number-text">
+                    <span class="individual__card-number">01</span>
+                    Выберите начинку
+                </p>
+
                 <div class="slider-button slider-button--left">
                 </div>
                 <div>
@@ -181,7 +171,7 @@
                         <source media="(max-width :1080px)" class="individual__img" srcset="./assets/img/inner-md.png">
                         <img src="./assets/img/inner-lg.png" alt="inner" class="individual__img individual__img--md">
                     </picture>
-                   
+
                 </div>
                 <div class="individual__pager">
                     <span class="individual__pager-link"></span>
@@ -201,90 +191,98 @@
                     <p class="individual__price individual__price--inner">
                         1000 руб/кг
                     </p>
-                    <a href="#" class="button button--small individual__button">
+                    <a href="#" class=" individual__button">
                         Выбрать
                     </a>
                 </div>
                 <div class="slider-button slider-button--right"></div>
             </div>
             <div class="individual__card individual__card--container">
-                
-                    <p class="individual__card-number-text">
-                        <span class="individual__card-number">02</span>
-                        Размер
-                    </p>
-                
-                <div class="individual__name individual__name--circle individual__card--size-selector">
-                    <div class="individual__item">
-                        <div class=" circle-card">
-                            <picture>
-                                <source media="(max-width: 769px)" srcset="./assets/img/circle-sm.png" class="individual__img  circle-img">
-                                <source media="(max-width: 1080px)" srcset="./assets/img/circle1-md.png">
-                                
-                                <img src="./assets/img/circle1-lg.png" alt="" class=" individual__img individual__img--md ">
-                                    
-                            </picture>
 
+                <p class="individual__card-number-text">
+                    <span class="individual__card-number">02</span>
+                    Размер
+                </p>
+
+                <div class="individual__name individual__name--circle individual__card--size-selector">
+                    <div class="individual__size-container">
+                        <div class="individual__item">
+                            <div class=" circle-card">
+                                <picture>
+                                    <source media="(max-width: 769px)" srcset="./assets/img/circle-sm.png"
+                                        class="individual__img  circle-img">
+                                    <source media="(max-width: 1080px)" srcset="./assets/img/circle1-md.png">
+
+                                    <img src="./assets/img/circle1-lg.png" alt=""
+                                        class=" individual__img individual__img--md ">
+
+                                </picture>
+
+                            </div>
+                            <div class="individual__pager">
+                                <span class="individual__pager-link"></span>
+                                <span class="individual__pager-link"></span>
+                                <span class="individual__pager-link"></span>
+                                <span class="individual__pager-link"></span>
+                            </div>
+                            <p class="individual__name-circle">
+                                17-18 см <br />(1 кг – 6 персон)
+                            </p>
                         </div>
-                        <div class="individual__pager">
-                            <span class="individual__pager-link"></span>
-                            <span class="individual__pager-link"></span>
-                            <span class="individual__pager-link"></span>
-                            <span class="individual__pager-link"></span>
+                        <div class="individual__item individual__item--md">
+                            <div class=" circle-card">
+                                <picture>
+                                    <source media="(max-width:1080px)" srcset="./assets/img/circle2-md.png">
+                                    <img class="individual__img individual__img--md" src="./assets/img/circle2-lg.png"
+                                        alt="inner" />
+
+                                </picture>
+
+                            </div>
+                            <p class="individual__name-circle">
+                                23-24 см <br />(10-12 персон)
+                            </p>
                         </div>
-                        <p class="individual__name-circle">
-                            17-18 см <br />(1 кг – 6 персон)
-                        </p>
+                        <div class="individual__item individual__item--md">
+                            <div class=" circle-card">
+                                <picture>
+                                    <source media="(max-width:1080px)" srcset="./assets/img/circle3-md.png">
+                                    <img class="individual__img individual__img--md" src="./assets/img/circle3-lg.png"
+                                        alt="inner" />
+                                </picture>
+                            </div>
+                            <p class="individual__name-circle">
+                                Два яруса 25 и 20 см <br> (15–20 персон)
+                            </p>
+                        </div>
+                        <div class="individual__item individual__item--md">
+                            <div class=" circle-card">
+                                <picture>
+                                    <source media="(max-width:1080px)" srcset="./assets/img/circle4-md.png">
+                                    <img class="individual__img individual__img--md" src="./assets/img/circle4-lg.png"
+                                        alt="inner" />
+                                </picture>
+
+                            </div>
+                            <p class="individual__name-circle">
+                                Три яруса 30,25 и 18 см <br> (25–30 персон)
+                            </p>
+                        </div>
                     </div>
-                    <div class="individual__item individual__item--md">
-                        <div class=" circle-card">
-                            <picture>
-                                <source media="(max-width:1080px)" srcset="./assets/img/circle2-md.png">
-                                <img class="individual__img individual__img--md" src="./assets/img/circle2-lg.png" alt="inner" />
-                                
-                            </picture>
-                           
-                        </div>
-                        <p class="individual__name-circle">
-                            23-24 см <br />(10-12 персон)
-                        </p>
-                    </div>
-                    <div class="individual__item individual__item--md">
-                        <div class=" circle-card">
-                            <picture>
-                                <source media="(max-width:1080px)" srcset="./assets/img/circle3-md.png">
-                                <img class="individual__img individual__img--md" src="./assets/img/circle3-lg.png" alt="inner" />
-                            </picture>
-                        </div>
-                        <p class="individual__name-circle">
-                            Два яруса 25 и 20 см <br> (15–20 персон)
-                        </p>
-                    </div>
-                    <div class="individual__item individual__item--md">
-                        <div class=" circle-card">
-                            <picture>
-                                <source media="(max-width:1080px)" srcset="./assets/img/circle4-md.png">
-                                <img class="individual__img individual__img--md" src="./assets/img/circle4-lg.png" alt="inner" />
-                            </picture>
-                            
-                        </div>
-                        <p class="individual__name-circle">
-                            Три яруса 30,25 и 18 см <br> (25–30 персон)
-                        </p>
-                    </div>
-                    <a href="#" class="button button--small">
+
+                    <a href="#" class="individual__circle-button">
                         Выбрать
                     </a>
 
                 </div>
             </div>
             <div class="individual__card individual__card--last">
-               
-                    <p class="individual__card-number-text">
-                        <span class="individual__card-number">03</span>
-                        Оформление
-                    </p>
-                
+
+                <p class="individual__card-number-text">
+                    <span class="individual__card-number">03</span>
+                    Оформление
+                </p>
+
                 <div class="image-wrapper desing-img">
                     <img class="individual__img" src="./assets/img/design-sm.png" alt="inner" />
                 </div>
@@ -315,7 +313,7 @@
                         <p class="individual__price">
                             600 руб/кг
                         </p>
-                        <a href="#" class="button button--small individual__price-button">
+                        <a href="#" class="individual__price-button">
                             Выбрать
                         </a>
                     </div>
@@ -340,7 +338,7 @@
                         <span class="individual__form-title">Оформление</span>
                         <p class="individual__form-text">Маршмэллоу</p>
                     </div>
-                    <a href="#" class="button individual__button individual__button--small">
+                    <a href="#" class="individual__button individual__button--small">
                         Заказать торт
                     </a>
                 </div>
@@ -357,8 +355,8 @@
                 </div>
                 <picture>
                     <source media="(max-width: 769px )" srcset="./assets/img/mary-sm.png">
-                        <source media="(min-width: 770px)" srcset="./assets/img/mary-md.png">
-                    <img class="about-us__img" src="./assets/img/mary-lg.png" alt="mary" width="209px" height="209px" />
+                    <source media="(min-width: 770px)" srcset="./assets/img/mary-md.png">
+                    <img class="about-us__img" src="./assets/img/mary-lg.png" alt="mary" />
                 </picture>
 
                 <div class="about-us__feedback-text">
@@ -444,7 +442,7 @@
                             <p class="about-us__confectioner-text">
                                 <p class="about-us__confectioner-text-title">Кондитер – как призвание</p>
                                 <p class="about-us__confectioner-text-content">
-                                     Павел — профессиональный повар в различных гастрономических
+                                    Павел — профессиональный повар в различных гастрономических
                                     областях, но однажды его сердце покорило кондитерское искусство. С
                                     ранних лет он увлекался утонченным мастерством и обратился к своим
                                     талантам как кондитер.
@@ -470,12 +468,12 @@
                                 <img src="./assets/img/twitter-icon-sm.png" alt="twitter" class="twitter-icon" />
                             </a>
                         </div>
-                    </div>    
+                    </div>
                     <div class="about-us__people-md-image">
                         <picture>
                             <source media="(max-width: 1079px)" srcset="./assets/img/igor-md.png">
-                            <img src="./assets/img/igor-lg.png" alt="igor">
-                        </picture>   
+                            <img src="./assets/img/igor-lg.png" alt="igor" class="about-us__igor">
+                        </picture>
                     </div>
                 </div>
                 <div class="about-us__quote">
@@ -489,7 +487,7 @@
                         <source media="(max-width: 1079px)" srcset="./assets/img/sign-md.png">
                         <img src="./assets/img/sign-lg.png" alt="author" />
                     </picture>
-                </div>    
+                </div>
             </div>
         </div>
     </section>
@@ -547,51 +545,51 @@
             </div>
         </div>
         <div class="care__algorithm">
-            <div class="container">
-                <div class="care__algorithm-wrapper">
-                    <h2 class="care__algorithm-title">
-                        Как заказать
-                    </h2>
-                    <div class="care__algorithm-item">
-                        <span class="care__algorithm-item-number">
-                            1
-                        </span>
-                        <div class="care__algorithm-item-content">
-                            <p class="care__algorithm-item-title">
-                                Срок заказа
-                            </p>
-                            <p class="care__algorithm-item-text">
-                                Размещать заказы желательно за 2-3 дня. На выходные заказы
-                                лучше размещать минимум за неделю.
-                            </p>
-                        </div>
+            <div class="care__image">
+            </div>
+            <div class="care__algorithm-wrapper">
+                <h2 class="care__algorithm-title">
+                    Как заказать
+                </h2>
+                <div class="care__algorithm-item">
+                    <span class="care__algorithm-item-number">
+                        1
+                    </span>
+                    <div class="care__algorithm-item-content">
+                        <p class="care__algorithm-item-title">
+                            Срок заказа
+                        </p>
+                        <p class="care__algorithm-item-text">
+                            Размещать заказы желательно за 2-3 дня. На выходные заказы
+                            лучше размещать минимум за неделю.
+                        </p>
                     </div>
-                    <div class="care__algorithm-item">
-                        <span class="care__algorithm-item-number">
-                            2
-                        </span>
-                        <div class="care__algorithm-item-content">
-                            <p class="care__algorithm-item-title">
-                                Доставка по городу
-                            </p>
-                            <p class="care__algorithm-item-text">
-                                Доставка в пределах города 200 рубей , при заказе на сумму
-                                более 2000 доставка бесплатно.
-                            </p>
-                        </div>
+                </div>
+                <div class="care__algorithm-item">
+                    <span class="care__algorithm-item-number">
+                        2
+                    </span>
+                    <div class="care__algorithm-item-content">
+                        <p class="care__algorithm-item-title">
+                            Доставка по городу
+                        </p>
+                        <p class="care__algorithm-item-text">
+                            Доставка в пределах города 200 рубей , при заказе на сумму
+                            более 2000 доставка бесплатно.
+                        </p>
                     </div>
-                    <div class="care__algorithm-item">
-                        <span class="care__algorithm-item-number">
-                            3
-                        </span>
-                        <div class="care__algorithm-item-content">
-                            <p class="care__algorithm-item-title">
-                                Доставка за городом
-                            </p>
-                            <p class="care__algorithm-item-text">
-                                Доставка за пределами города рассчитывается индивидуально.
-                            </p>
-                        </div>
+                </div>
+                <div class="care__algorithm-item">
+                    <span class="care__algorithm-item-number">
+                        3
+                    </span>
+                    <div class="care__algorithm-item-content">
+                        <p class="care__algorithm-item-title">
+                            Доставка за городом
+                        </p>
+                        <p class="care__algorithm-item-text">
+                            Доставка за пределами города рассчитывается индивидуально.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -608,7 +606,7 @@
                         Остались вопросы?
                     </p>
                     <p class="prefooter__text">
-                        Заполните форму и наш кондитер 
+                        Заполните форму и наш кондитер
                         с вами свяжется
                     </p>
                     <form action="#" method="POST" class="prefooter__form">
@@ -616,8 +614,8 @@
                         <input type="email" placeholder="Email адрес" class="prefooter__item prefooter__item--input" />
                         <textarea name="question" id="question" cols="28" rows="8"
                             class="prefooter__item prefooter__item--textarea" placeholder="Ваш вопрос"></textarea>
-                        <input type="submit" value="Отправить" class="button button--small prefooter__button" />
-                    </form> 
+                        <input type="submit" value="Отправить" class=" prefooter__button" />
+                    </form>
                 </div>
                 <div class="prefooter__social-container">
                     <div class="prefooter__contacts">
@@ -628,23 +626,23 @@
                         <p class="prefooter__text">
                             Наша почта : bakerybypavel@mail.ru
                         </p>
-                    </div> 
-                    <div class="prefooter__social">
-                    <p class="prefooter__text">
-                        Мы в соц. сетях:
-                    </p>
-                    <div class="d-flex">
-                        <a href="#" class="prefooter__social-link">
-                            <img src="./assets/img/insta-prefooter-sm.png" alt="insta" />
-                        </a>
-                        <a href="#" class="prefooter__social-link prefooter__social-link--vk">
-                            <img src="./assets/img/vk-prefooter-sm.png" alt="vk" />
-                        </a>
                     </div>
+                    <div class="prefooter__social">
+                        <p class="prefooter__text">
+                            Мы в соц. сетях:
+                        </p>
+                        <div class="d-flex">
+                            <a href="#" class="prefooter__social-link">
+                                <img src="./assets/img/insta-prefooter-sm.png" alt="insta" />
+                            </a>
+                            <a href="#" class="prefooter__social-link prefooter__social-link--vk">
+                                <img src="./assets/img/vk-prefooter-sm.png" alt="vk" />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>     
+        </div>
     </section>
     <footer class="footer">
         <div class="container">

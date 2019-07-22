@@ -14,6 +14,10 @@
         font-family: $mainFont;
     }
 
+    &__cons-container {
+        max-width: 300px;
+        margin: 0 auto;
+    }
 
     background: $mainBodyColor;
 
@@ -67,6 +71,10 @@
     }
 
     @media (min-width: 770px) {
+        &__container-cons {
+            margin-top: 50px;
+        }
+
         &__title {
             width: 300px;
             margin: 0;
@@ -117,8 +125,16 @@
                 font-size: 14px;
                 font-weight: 700;
             }
-        }
 
+            &-container {
+                margin: {
+                    top: 150px;
+                    left: 50px;
+                }
+
+                @include flex(row);
+            }
+        }
 
 
         &__item {
@@ -154,7 +170,12 @@
         background: url(../assets/img/header_cake-lg.png) no-repeat;
         height: 940px;
         background-position-x: 100%;
+        max-width: 1220px;
+        margin: 0 auto;
 
+        &__bg {
+            width: 370px;
+        }
 
         &__title {
             font-size: 78px;
@@ -166,9 +187,15 @@
         }
 
         &__cons-container {
-            @include flex();
-            padding-left: 40px;
+            @include flex(column);
             margin-top: 150px;
+            max-width: 1220px;
+        }
+    }
+
+    @media (min-width: 1370px) {
+        &__cons-container {
+            flex-direction: row;
         }
     }
 }

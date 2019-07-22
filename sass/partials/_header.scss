@@ -25,6 +25,10 @@
             font-size: 20px;
         }
 
+        &__button {
+            margin-left: 50px;
+        }
+
         &__phone {
             font-family: $mainFont;
             font-size: 15px;
@@ -63,6 +67,7 @@
 
         &__nav-wrapper {
             @include flex(row, center, space-between);
+            max-width: 760px;
         }
 
         &__link {

@@ -21,15 +21,6 @@
 }
 
 @import './partials/vars';
-@import './partials/header';
-@import './partials/promo';
-@import './partials/examples';
-@import './partials/individual';
-@import './partials/about-us';
-@import './partials/pros';
-@import './partials/care';
-@import './partials/prefooter';
-@import './partials/footer';
 
 * {
     box-sizing: border-box;
@@ -47,19 +38,24 @@ ul {
     list-style: none;
 }
 
+body {
+    margin: 0;
+}
+
 .d-flex {
     display: flex;
 }
 
 .container {
     margin: 0 auto;
-    width: 87.5%;
+    width: 91.5%;
 }
 
-.slider-button{
+.slider-button {
     @include hide();
 }
-%button{
+
+%button {
     text-transform: uppercase;
     display: block;
 
@@ -76,18 +72,20 @@ ul {
 
     font-size: 13px;
     font-family: $mainFont;
-    &:hover{
+
+    &:hover {
         color: #f50049;
         border: 1px solid #f50049;
-        background-color: #fbebea; 
+        background-color: #fbebea;
     }
-    
+
 }
-%button--small{
+
+%button--small {
     width: 180px;
 }
 
-.social-icon{
+.social-icon {
     display: block;
 
     width: 36px;
@@ -100,22 +98,28 @@ ul {
     border-radius: 100px;
     background-color: #fff;
 }
+
 .slider-button {
     width: 40px;
     height: 40px;
-    &:hover{
+
+    &:hover {
         transform: scale(1.1);
     }
-    &:active{
+
+    &:active {
         transform: scale(1);
     }
 }
-.slider-button--left{
+
+.slider-button--left {
     background: url(../assets/img/pager-left.png);
 }
-.slider-button--right{
+
+.slider-button--right {
     background: url(../assets/img/pager-right.png);
 }
+
 @media (min-width: 770px) {
     .container {
         width: 730px;
@@ -124,12 +128,25 @@ ul {
     body {
         background: $mainBodyColor;
     }
-    .slider-button{
+
+    .slider-button {
         display: block;
     }
 }
-@media (min-width: 1080px){
-    .container{
+
+@media (min-width: 1080px) {
+    .container {
         width: 89%;
+        max-width: 1220px;
     }
 }
+
+@import './partials/header';
+@import './partials/promo';
+@import './partials/examples';
+@import './partials/individual';
+@import './partials/about-us';
+@import './partials/pros';
+@import './partials/care';
+@import './partials/prefooter';
+@import './partials/footer';

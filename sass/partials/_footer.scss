@@ -5,6 +5,9 @@
 
     font-family: $mainFont;
 
+    &__social-lg {
+        @include hide();
+    }
 
     &__logo {
         display: block;

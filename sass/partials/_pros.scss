@@ -44,8 +44,8 @@
     }
 
     &__items-container {
-        @include flex(column, flex-start, space-between);
-        height: 270px;
+        @include flex(column, center, space-between);
+        height: 320px;
         margin-top: 20px;
         padding: 10px 0;
 
@@ -87,7 +87,7 @@
         position: relative;
 
 
-        &__subtitle::after {
+        &__item--ingridients::after {
             position: absolute;
             z-index: 1;
             top: 0;
@@ -108,17 +108,12 @@
 
         &__subtitle {
             font-size: 35px;
-
-            &::after {
-                background: url(../assets/img/berries-pros-lg.png) no-repeat;
-                width: 555px;
-                height: 690px;
-            }
         }
 
         &__items-container {
             height: 450px;
-            padding-right: 250px;
+            padding-right: 150px;
+            position: relative;
         }
 
         &__item {
@@ -147,6 +142,20 @@
             &-wrapper--ingridients {
                 padding-left: 40px;
             }
+
+            &--ingridients::after {
+                background: url(../assets/img/berries-pros-lg.png) no-repeat;
+                width: 555px;
+                height: 690px;
+            }
+        }
+    }
+
+    @media (min-width: 1380px) {
+        &__items-container {
+            align-items: flex-end;
+            max-width: 1370px;
+            margin: 0 auto 50px auto;
         }
     }
 }

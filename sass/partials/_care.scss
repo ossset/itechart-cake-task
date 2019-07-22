@@ -27,7 +27,7 @@
     }
 
     &__subtitle {
-        text-align: center;
+        text-align: left;
 
         font-family: $curvyFont;
         font-size: 22px;
@@ -101,13 +101,19 @@
             height: 480px;
 
             background: url(../assets/img/cakes-present-sm.png) no-repeat center;
-            background-position-y: 255px;
+            background-position-y: 315px;
         }
     }
 
 
 
     @media (min-width: 770px) {
+        &__image {
+            background: url(../../assets/img/alg-cake-md.png) no-repeat center right;
+            width: 600px;
+            height: 560px;
+        }
+
         &__wrapper {
             position: relative;
 
@@ -126,9 +132,9 @@
         position: relative;
 
 
-        &__bg::after {
+        &__title::after {
             position: absolute;
-            top: -7px;
+            top: -42px;
             right: 0;
 
             width: 419px;
@@ -144,14 +150,15 @@
         }
 
         &__algorithm {
-            background: url(../assets/img/algorithm-cake-md.png) no-repeat;
-            background-position-x: -300px;
             height: 420px;
+            @include flex(row, flex-start, space-between);
+            overflow: hidden;
 
             &-wrapper {
                 background: none;
-                padding: 30px 105px 0 0;
+                padding: 0 105px 0 0;
                 @include flex(column, flex-end);
+                width: 400px;
             }
 
             &-title {
@@ -176,8 +183,15 @@
 
         }
 
+        &__image {
+            background: url(../../assets/img/algorithm-cake-lg.png) no-repeat center right;
+            width: 800px;
+            height: 900px;
+        }
+
         &__title {
             font-size: 40px;
+            width: 200px;
         }
 
         &__subtitle {
@@ -186,13 +200,12 @@
 
         &__description {
             font-size: 20px;
-            width: 440px;
+
         }
 
-        &__bg::after {
+        &__title::after {
             background: url(../assets/img/care-cake-lg.png) no-repeat;
             top: -115px;
-            right: -25px;
             width: 780px;
             height: 805px;
         }
@@ -201,20 +214,13 @@
             background: #c93030;
             position: relative;
             height: 700px;
-
-            &-wrapper::after {
-                position: absolute;
-                content: '';
-                background: url(../assets/img/algorithm-cake-lg.png) no-repeat;
-                top: 0;
-                left: 0;
-                width: 770px;
-                height: 700px;
-                background-position: 0 140px;
-            }
+            @include flex(row, flex-start, center);
+            overflow: hidden;
 
             &-wrapper {
                 padding: 105px 190px 0 0;
+                max-width: 1370px;
+                width: 490px;
             }
 
             &-title {
@@ -236,6 +242,21 @@
                     width: 370px;
                 }
             }
+        }
+    }
+
+    @media (min-width: 1380px) {
+        &__wrapper {
+            max-width: 1370px;
+            margin: 0 auto;
+        }
+
+        &__algorithm-wrapper {
+            padding-left: 0;
+        }
+
+        &__description {
+            width: 440px;
         }
     }
 }

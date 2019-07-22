@@ -11,11 +11,20 @@
 
         font-family: $titleFont;
         font-size: 24px;
+
     }
 
     &__feedback {
         @include flex(column, center);
         font-family: $mainFont;
+
+        &-title {
+            text-align: center;
+        }
+
+        &-experience {
+            text-align: center;
+        }
     }
 
     &__images-container {
@@ -44,14 +53,14 @@
     &__confectioner {
         font-family: $mainFont;
 
-        &__confectioner-title {
+        &-title {
             margin-top: 20px;
 
             font-family: $curvyFont;
             font-size: 22px;
         }
 
-        &__confectioner-text-title {
+        &-text-title {
             display: block;
 
             margin-top: 10px;
@@ -60,7 +69,7 @@
             font-weight: 700;
         }
 
-        &__confectioner-text {
+        &-text {
             font-size: 12px;
             line-height: 14px;
         }
@@ -75,13 +84,13 @@
         font-family: $titleFont;
         font-weight: 700;
 
-        &__comma {
+        &-comma {
             color: #fff;
 
             font-size: 60px;
         }
 
-        &__text {
+        &-text {
 
             padding: 17px 0 35px 0;
             text-align: center;
@@ -252,6 +261,15 @@
             font-size: 40px;
         }
 
+        &__igor {
+            width: 400px;
+        }
+
+        &__img {
+            width: 209px;
+            height: 209px;
+        }
+
         &__feedback {
             justify-content: space-between;
             width: 860px;
@@ -293,6 +311,8 @@
 
         &__people-md-wrapper {
             justify-content: space-between;
+            max-width: 1220px;
+            margin: 0 auto;
         }
 
         &__quote {
@@ -304,6 +324,12 @@
                 font-size: 25px;
                 width: 625px;
             }
+        }
+    }
+
+    @media (min-width: 1369px) {
+        &__igor {
+            width: 509px;
         }
     }
 }
