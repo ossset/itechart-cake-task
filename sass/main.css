@@ -2431,7 +2431,6 @@ body {
             justify-content: space-between;
   }
   .prefooter__social-container {
-    margin-right: 100px;
     padding-top: 100px;
   }
 }
@@ -2440,6 +2439,9 @@ body {
   .prefooter__container {
     max-width: 1220px;
     margin: 0 auto;
+  }
+  .prefooter__social-container {
+    margin-right: 100px;
   }
 }
 
