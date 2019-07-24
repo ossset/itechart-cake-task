@@ -36,8 +36,6 @@
         }
     }
 
-
-
     &__social {
         @include flex(row, center);
         padding-bottom: 10px;
@@ -54,8 +52,6 @@
                 }
             }
         }
-
-
     }
 
     &__copy {
@@ -103,19 +99,17 @@
                 width: 70px;
                 justify-content: space-around;
             }
+
+            &-lg {
+                @include hide();
+            }
         }
 
         &__copy {
             border: none;
         }
 
-
         padding-top: 20px;
-
-
-        &__social-lg {
-            @include hide();
-        }
     }
 
     @media (min-width:1080px) {
@@ -132,12 +126,8 @@
             }
         }
 
-
-
-
         padding-top: 0;
         background: #e8e8e8;
-
 
         &__logo {
             margin-bottom: 0;
@@ -157,8 +147,6 @@
             }
 
         }
-
-
 
         &__logo,
         &__link {

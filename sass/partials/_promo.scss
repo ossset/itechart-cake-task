@@ -10,10 +10,6 @@
         background-position-y: -50px;
     }
 
-    &__cons-text {
-        font-family: $mainFont;
-    }
-
     &__cons-container {
         max-width: 300px;
         margin: 0 auto;
@@ -21,6 +17,19 @@
 
     background: $mainBodyColor;
 
+    &__cons {
+        &-text {
+            font-family: $mainFont;
+            width: 200px;
+            margin-left: 10px;
+
+            font-size: 14px;
+        }
+
+        &-img {
+            @include hide();
+        }
+    }
 
     &__title {
         width: 180px;
@@ -45,23 +54,12 @@
         font-size: 22px;
     }
 
-    &__cons-text {
-        width: 200px;
-        margin-left: 10px;
-
-        font-size: 14px;
-    }
-
     &__item {
         margin-bottom: 13px;
 
         &--present {
             margin-bottom: 40px;
         }
-    }
-
-    &__cons-img {
-        @include hide();
     }
 
     @media (min-width: 576px) {
@@ -134,6 +132,15 @@
 
                 @include flex(row);
             }
+
+            & {
+                @include flex(row, center);
+                padding: 145px 0 0 30px;
+
+                &-img {
+                    display: block;
+                }
+            }
         }
 
 
@@ -149,18 +156,9 @@
         &__img {
             @include hide();
         }
-        
+
         &__container-cons {
             @include flex(column-reverse)
-        }
-
-        &__cons {
-            @include flex(row, center);
-            padding: 145px 0 0 30px;
-
-            &-img {
-                display: block;
-            }
         }
     }
 
