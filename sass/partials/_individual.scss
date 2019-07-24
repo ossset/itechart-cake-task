@@ -27,13 +27,9 @@
         }
     }
 
-
-
-
     padding-bottom: 20px;
 
     background-color: $mainBodyColor;
-
 
     &__title {
         width: 216px;
@@ -168,7 +164,8 @@
     &__button {
         margin-top: 20px;
         @extend %button;
-        @extend %button--small
+        @extend %button--small;
+        padding-top: 20px;
     }
 
     .circle-img {

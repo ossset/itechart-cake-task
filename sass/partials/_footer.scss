@@ -5,9 +5,7 @@
 
     font-family: $mainFont;
 
-    &__social-lg {
-        @include hide();
-    }
+
 
     &__logo {
         display: block;
@@ -40,9 +38,10 @@
 
 
 
-    &_social {
+    &__social {
         @include flex(row, center);
-        padding-bottom: 30px;
+        padding-bottom: 10px;
+        width: 50px;
 
         &-item--vk {
             margin-left: 20px;
@@ -55,6 +54,8 @@
                 }
             }
         }
+
+
     }
 
     &__copy {
@@ -66,6 +67,9 @@
         font-size: 12px;
     }
 
+    &__social-lg {
+        @include hide();
+    }
 
     @media (min-width: 769px) {
         &__list {
@@ -92,6 +96,13 @@
         &__social {
             padding: 0;
             margin-left: 30px;
+
+            &-md {
+                display: flex;
+                align-items: center;
+                width: 70px;
+                justify-content: space-around;
+            }
         }
 
         &__copy {
@@ -108,13 +119,20 @@
     }
 
     @media (min-width:1080px) {
-        &__social-lg {
-            display: block;
+        &__social {
+            &-lg {
+                display: flex;
+                align-items: center;
+                width: 70px;
+                justify-content: space-around;
+            }
+
+            &-md {
+                @include hide();
+            }
         }
 
-        &__social-md {
-            @include hide();
-        }
+
 
 
         padding-top: 0;

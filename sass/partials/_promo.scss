@@ -149,11 +149,7 @@
         &__img {
             @include hide();
         }
-
-        &__cons-img {
-            display: block;
-        }
-
+        
         &__container-cons {
             @include flex(column-reverse)
         }
@@ -161,6 +157,10 @@
         &__cons {
             @include flex(row, center);
             padding: 145px 0 0 30px;
+
+            &-img {
+                display: block;
+            }
         }
     }
 

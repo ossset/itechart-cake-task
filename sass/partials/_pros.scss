@@ -24,12 +24,7 @@
         font-size: 22px;
     }
 
-    &__item-heading {
-        margin-top: 15px;
 
-        font-size: 16px;
-        font-weight: 700;
-    }
 
 
 
@@ -40,6 +35,13 @@
             margin-top: 3px;
 
             font-size: 14px;
+        }
+
+        &-heading {
+            margin-top: 15px;
+
+            font-size: 16px;
+            font-weight: 700;
         }
     }
 
@@ -74,6 +76,19 @@
 
             &--ingridients {
                 width: 349px;
+
+                &::after {
+                    position: absolute;
+                    z-index: 1;
+                    top: 0;
+                    left: 0;
+
+                    width: 310px;
+                    height: 380px;
+                    content: "";
+
+                    background: url(../assets/img/berries-md.png) no-repeat;
+                }
             }
         }
 
@@ -87,18 +102,7 @@
         position: relative;
 
 
-        &__item--ingridients::after {
-            position: absolute;
-            z-index: 1;
-            top: 0;
-            left: 0;
 
-            width: 310px;
-            height: 380px;
-            content: "";
-
-            background: url(../assets/img/berries-md.png) no-repeat;
-        }
     }
 
     @media (min-width: 1080px) {
@@ -137,10 +141,11 @@
 
             &-wrapper {
                 padding-left: 30px;
-            }
 
-            &-wrapper--ingridients {
-                padding-left: 40px;
+                &--ingridients {
+                    padding-left: 40px;
+
+                }
             }
 
             &--ingridients::after {
