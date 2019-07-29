@@ -85,7 +85,7 @@
     padding: 60px 0 50px 0;
 
     background-color: $mainBodyColor;
-
+ no-repeat
     &__title {
         margin: 0;
         padding-bottom: 36px;
@@ -198,27 +198,27 @@
             padding: 20px 0 0 20px;
 
             &--classic {
-                background: url(../assets/img/classic-cake-lg.png);
+                background: url(../assets/img/classic-cake-lg.png) no-repeat;
             }
 
             &--mousse {
-                background: url(../assets/img/mousse-cake-lg.png);
+                background: url(../assets/img/mousse-cake-lg.png) no-repeat;
             }
 
             &--wedding {
-                background: url(../assets/img/wedding-cake-lg.png);
+                background: url(../assets/img/wedding-cake-lg.png) no-repeat;
             }
 
             &--men {
-                background: url(../assets/img/men-cake-lg.png);
+                background: url(../assets/img/men-cake-lg.png) no-repeat;
             }
 
             &--fem {
-                background: url(../assets/img/fem-cake-lg.png);
+                background: url(../assets/img/fem-cake-lg.png) no-repeat;
             }
 
             &--child {
-                background: url(../assets/img/child-cake-lg.png);
+                background: url(../assets/img/child-cake-lg.png) no-repeat;
             }
 
             &--big {

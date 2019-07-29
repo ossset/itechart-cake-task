@@ -5,6 +5,7 @@
     text-align: left;
 
     background-color: $mainBodyColor;
+    position: relative;
 
 
     &__description {
@@ -19,6 +20,16 @@
 
         font-family: $titleFont;
         font-size: 24px;
+    }
+
+    &__image {
+        background: url(../assets/img/cakes-present-sm.png) no-repeat center center;
+        position: absolute;
+        width: 300px;
+        bottom: -4px;
+        left: 50%;
+        height: 240px;
+        transform: translateX(-50%);
     }
 
     &__subtitle,
@@ -43,6 +54,7 @@
 
     &__algorithm {
         padding-top: 35px;
+        height: 550px;
 
         color: #fff;
         background: #e3353d;
@@ -59,6 +71,11 @@
             margin: 0 auto;
 
             font-family: $mainFont;
+        }
+
+        &-title {
+            width: 256px;
+            margin: 0 auto;
         }
 
         &-item {
@@ -85,12 +102,10 @@
             }
 
             &-title {
-                margin: 0 0 15px 0;
-
-                text-align: center;
+                text-align: left;
 
                 font-family: $titleFont;
-                font-size: 24px;
+                font-size: 15px;
             }
 
             &-wrapper {
@@ -104,9 +119,11 @@
 
     @media (min-width: 770px) {
         &__image {
+            position: static;
             background: url(../../assets/img/alg-cake-md.png) no-repeat center right;
             width: 600px;
             height: 560px;
+            transform: none;
         }
 
         &__wrapper {
@@ -157,6 +174,7 @@
             }
 
             &-title {
+                padding-left: 30px;
                 width: 385px;
             }
 
@@ -187,6 +205,7 @@
         &__title {
             font-size: 40px;
             width: 200px;
+
             &::after {
                 background: url(../assets/img/care-cake-lg.png) no-repeat;
                 top: -115px;

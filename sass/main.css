@@ -51,13 +51,13 @@ body {
   display: none;
 }
 
-.header__button, .promo__button, .individual__button, .individual__circle-button, .prefooter__button {
+.header__button, .promo__button, .individual__price-button, .individual__button, .individual__circle-button, .prefooter__button {
   text-transform: uppercase;
   display: block;
   width: 226px;
   height: 51px;
   margin: 0 auto;
-  padding-top: 16px;
+  padding-top: 20px;
   text-align: center;
   color: #fff;
   border-radius: 50px;
@@ -66,7 +66,7 @@ body {
   font-family: "Circe Regular";
 }
 
-.header__button:hover, .promo__button:hover, .individual__button:hover, .individual__circle-button:hover, .prefooter__button:hover {
+.header__button:hover, .promo__button:hover, .individual__price-button:hover, .individual__button:hover, .individual__circle-button:hover, .prefooter__button:hover {
   color: #f50049;
   border: 1px solid #f50049;
   background-color: #fbebea;
@@ -539,7 +539,7 @@ body {
   font-size: 12px;
 }
 
-.examples__title {
+no-repeat .examples__title {
   margin: 0;
   padding-bottom: 36px;
   text-align: center;
@@ -652,22 +652,22 @@ body {
     padding: 20px 0 0 20px;
   }
   .examples__card--classic {
-    background: url(../assets/img/classic-cake-lg.png);
+    background: url(../assets/img/classic-cake-lg.png) no-repeat;
   }
   .examples__card--mousse {
-    background: url(../assets/img/mousse-cake-lg.png);
+    background: url(../assets/img/mousse-cake-lg.png) no-repeat;
   }
   .examples__card--wedding {
-    background: url(../assets/img/wedding-cake-lg.png);
+    background: url(../assets/img/wedding-cake-lg.png) no-repeat;
   }
   .examples__card--men {
-    background: url(../assets/img/men-cake-lg.png);
+    background: url(../assets/img/men-cake-lg.png) no-repeat;
   }
   .examples__card--fem {
-    background: url(../assets/img/fem-cake-lg.png);
+    background: url(../assets/img/fem-cake-lg.png) no-repeat;
   }
   .examples__card--child {
-    background: url(../assets/img/child-cake-lg.png);
+    background: url(../assets/img/child-cake-lg.png) no-repeat;
   }
   .examples__card--big {
     width: 100%;
@@ -743,6 +743,10 @@ body {
   background-color: #fbebea;
 }
 
+.individual__price-button {
+  padding-top: 20px;
+}
+
 .individual__pager {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -784,7 +788,7 @@ body {
 .individual__title {
   width: 216px;
   margin: 0 auto;
-  padding: 0 0 36px 25px;
+  padding: 0 0 36px 0;
   text-align: center;
   font-family: "Playfair Display", serif;
   font-size: 24px;
@@ -934,7 +938,7 @@ body {
 .individual .desing-img::after {
   position: absolute;
   top: 180px;
-  left: 180px;
+  left: 50%;
   display: block;
   content: "1/35";
   color: #838383;
@@ -1006,7 +1010,7 @@ body {
 
 .individual__title--form {
   margin: 0;
-  padding-top: 30px;
+  padding: 30px 20px;
   text-align: left;
 }
 
@@ -1337,6 +1341,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 0;
   }
   .individual__card--last::before {
     display: none;
@@ -1615,7 +1620,7 @@ body {
     position: relative;
   }
   .about-us__illustration {
-    background: url(../../assets/img/mary-ill-md.png) no-repeat center center;
+    background: url(../assets/img/mary-ill-md.png) no-repeat center center;
     content: '';
     position: absolute;
     width: 770px;
@@ -1776,7 +1781,7 @@ body {
     width: 509px;
   }
   .about-us__illustration {
-    background: url(../../assets/img/mary-ill-lg.png) no-repeat;
+    background: url(../assets/img/mary-ill-lg.png) no-repeat;
     height: 170px;
     width: 1370px;
   }
@@ -1980,6 +1985,7 @@ body {
   padding-top: 35px;
   text-align: left;
   background-color: #fbebea;
+  position: relative;
 }
 
 .care__description {
@@ -1992,6 +1998,17 @@ body {
   text-align: center;
   font-family: "Playfair Display", serif;
   font-size: 24px;
+}
+
+.care__image {
+  background: url(../assets/img/cakes-present-sm.png) no-repeat center center;
+  position: absolute;
+  width: 300px;
+  bottom: -4px;
+  left: 50%;
+  height: 240px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .care__subtitle, .care__title {
@@ -2012,6 +2029,7 @@ body {
 
 .care__algorithm {
   padding-top: 35px;
+  height: 550px;
   color: #fff;
   background: #e3353d;
   /* Old browsers */
@@ -2038,6 +2056,11 @@ body {
   font-family: "Circe Regular";
 }
 
+.care__algorithm-title {
+  width: 256px;
+  margin: 0 auto;
+}
+
 .care__algorithm-item-number {
   font-family: "Playfair Display", serif;
   font-size: 35px;
@@ -2060,10 +2083,9 @@ body {
 }
 
 .care__algorithm-item-title {
-  margin: 0 0 15px 0;
-  text-align: center;
+  text-align: left;
   font-family: "Playfair Display", serif;
-  font-size: 24px;
+  font-size: 15px;
 }
 
 .care__algorithm-item-wrapper {
@@ -2077,9 +2099,12 @@ body {
     position: relative;
   }
   .care__image {
+    position: static;
     background: url(../../assets/img/alg-cake-md.png) no-repeat center right;
     width: 600px;
     height: 560px;
+    -webkit-transform: none;
+            transform: none;
   }
   .care__wrapper {
     position: relative;
@@ -2139,6 +2164,7 @@ body {
     width: 400px;
   }
   .care__algorithm-title {
+    padding-left: 30px;
     width: 385px;
   }
   .care__algorithm-item {
