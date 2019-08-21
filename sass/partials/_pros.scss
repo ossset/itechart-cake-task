@@ -1,0 +1,162 @@
+.pros {
+
+    text-align: center;
+
+    background-color: $mainBodyColor;
+
+    font-family: $mainFont;
+
+
+    &__title {
+        margin: 0;
+        padding-bottom: 36px;
+
+        text-align: center;
+
+        font-family: $titleFont;
+        font-size: 24px;
+    }
+
+    &__subtitle {
+        text-align: center;
+
+        font-family: $curvyFont;
+        font-size: 22px;
+    }
+
+
+
+
+
+    &__item {
+        @include flex(column, center);
+
+        &-text {
+            margin-top: 3px;
+
+            font-size: 14px;
+        }
+
+        &-heading {
+            margin-top: 15px;
+
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+
+    &__items-container {
+        @include flex(column, center, space-between);
+        height: 320px;
+        margin-top: 20px;
+        padding: 10px 0;
+
+        background-color: #fff;
+    }
+
+    @media (min-width: 770px) {
+        &__title {
+            padding-bottom: 0;
+        }
+
+
+
+        &__item {
+            @include flex(row, flex-end, space-between);
+            width: 335px;
+
+            &-wrapper {
+                text-align: left;
+            }
+
+            &--present {
+                width: 316px;
+                margin-right: 45px;
+            }
+
+            &--ingridients {
+                width: 349px;
+
+                &::after {
+                    position: absolute;
+                    z-index: 1;
+                    top: 0;
+                    left: 0;
+
+                    width: 310px;
+                    height: 380px;
+                    content: "";
+
+                    background: url(../assets/img/berries-md.png) no-repeat;
+                }
+            }
+        }
+
+        &__items-container {
+            background-color: $mainBodyColor;
+            @include flex(column, flex-end, center);
+            padding-right: 60px;
+        }
+
+        position: relative;
+    }
+
+    @media (min-width: 1080px) {
+        &__title {
+            font-size: 40px;
+        }
+
+        &__subtitle {
+            font-size: 35px;
+        }
+
+        &__items-container {
+            height: 450px;
+            padding-right: 150px;
+            position: relative;
+        }
+
+        &__item {
+            @include flex(row, center);
+
+            &-heading {
+                font-size: 20px;
+            }
+
+            &-text {
+                font-size: 20px;
+            }
+
+            &-heading {
+                width: 280px;
+            }
+
+            &-text {
+                width: 400px;
+            }
+
+            &-wrapper {
+                padding-left: 30px;
+
+                &--ingridients {
+                    padding-left: 40px;
+
+                }
+            }
+
+            &--ingridients::after {
+                background: url(../assets/img/berries-pros-lg.png) no-repeat;
+                width: 555px;
+                height: 690px;
+            }
+        }
+    }
+
+    @media (min-width: 1380px) {
+        &__items-container {
+            align-items: flex-end;
+            max-width: 1370px;
+            margin: 0 auto 50px auto;
+        }
+    }
+}

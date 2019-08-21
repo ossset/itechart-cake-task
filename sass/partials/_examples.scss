@@ -1,0 +1,300 @@
+.examples {
+    &__card {
+        position: relative;
+
+        width: 280px;
+        height: 120px;
+        margin: 0 auto 10px auto;
+        padding: 13px 0 0 14px;
+
+        &:hover &::after {
+            display: block;
+        }
+
+        &--classic {
+            background: url(../assets/img/classic-cake-sm.png);
+        }
+
+        &--mousse {
+            background: url(../assets/img/mousse-cake-sm.png);
+        }
+
+        &--wedding {
+            background: url(../assets/img/wedding-cake-sm.png);
+        }
+
+        &--men {
+            background: url(../assets/img/men-cake-sm.png);
+        }
+
+        &--fem {
+            background: url(../assets/img/fem-cake-sm.png);
+        }
+
+        &--child {
+            background: url(../assets/img/child-cake-sm.png);
+            background-position-y: -48px;
+        }
+    }
+
+    &__name {
+        color: #2d2829;
+
+        font-family: $mainFont;
+        font-size: 14px;
+        font-weight: 700;
+
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            @include hide();
+
+            width: 288px;
+            height: 184px;
+
+            content: "";
+
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        &--big::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            @include hide();
+
+            width: 419px;
+            height: 388px;
+
+            content: "";
+
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    &__types {
+        color: #2d2829;
+
+        font-family: $mainFont;
+        font-size: 12px;
+    }
+
+    padding: 60px 0 50px 0;
+
+    background-color: $mainBodyColor;
+ no-repeat
+    &__title {
+        margin: 0;
+        padding-bottom: 36px;
+
+        text-align: center;
+
+        font-family: $titleFont;
+        font-size: 24px;
+    }
+
+    @media (min-width: 770px) {
+        &__title {
+            text-align: left;
+
+            font-size: 28px;
+        }
+
+        &__container {
+            @include flex(row, center, space-between);
+            margin-bottom: 18px;
+
+        }
+
+        &__card {
+            width: 290px;
+            height: 185px;
+            margin: 0;
+            padding: 20px 0 0 20px;
+
+            &-container {
+                @include flex(column, flex-start, space-between);
+                height: 390px;
+            }
+
+            &--classic {
+                background: url(../assets/img/classic-cake-md.png);
+            }
+
+            &--mousse {
+                background: url(../assets/img/mousse-cake-md.png);
+            }
+
+            &--wedding {
+                background: url(../assets/img/wedding-cake-md.png);
+            }
+
+            &--men {
+                background: url(../assets/img/men-cake-md.png);
+            }
+
+            &--fem {
+                background: url(../assets/img/fem-cake-md.png);
+            }
+
+            &--child {
+                background: url(../assets/img/child-cake-md.png);
+            }
+
+            &--classic,
+            &--mousse,
+            &--wedding,
+            &--men,
+            &--fem,
+            &--child {
+                background-repeat: no-repeat;
+            }
+
+            &--big {
+                width: 420px;
+                height: 390px;
+            }
+        }
+
+        &__types {
+            font-size: 12px;
+        }
+    }
+
+    @media(min-width: 1080px) {
+
+        padding-top: 0;
+
+        &__container {
+            max-width: 1213px;
+            margin: 0 auto;
+            margin-bottom: 27px;
+            display: grid;
+            grid-template-columns: 57% 40%;
+
+            &--child {
+                display: grid;
+                grid-template-columns: 40% 57%;
+            }
+        }
+
+
+        &__title {
+            font-size: 40px;
+            max-width: 1220px;
+            margin: 0 auto;
+        }
+
+
+
+        &__card {
+            position: relative;
+            width: 100%;
+            height: 315px;
+            margin: 0;
+            padding: 20px 0 0 20px;
+
+            &--classic {
+                background: url(../assets/img/classic-cake-lg.png) no-repeat;
+            }
+
+            &--mousse {
+                background: url(../assets/img/mousse-cake-lg.png) no-repeat;
+            }
+
+            &--wedding {
+                background: url(../assets/img/wedding-cake-lg.png) no-repeat;
+            }
+
+            &--men {
+                background: url(../assets/img/men-cake-lg.png) no-repeat;
+            }
+
+            &--fem {
+                background: url(../assets/img/fem-cake-lg.png) no-repeat;
+            }
+
+            &--child {
+                background: url(../assets/img/child-cake-lg.png) no-repeat;
+            }
+
+            &--big {
+                width: 100%;
+                height: 655px;
+                max-width: 695px;
+            }
+
+            &-container {
+                height: 655px;
+
+            }
+        }
+
+
+
+        &__name::after {
+            width: 485px;
+            height: 315px;
+            font-size: 24px;
+            font-weight: 400;
+
+            &--big::after {
+                width: 695px;
+                height: 655px;
+            }
+
+        }
+
+        &__types {
+            font-size: 20px;
+            color: #6c6869;
+
+            &::after {
+                position: absolute;
+                top: 280px;
+                right: 20px;
+                content: '';
+                width: 20px;
+                height: 17px;
+                background: url(../assets/img/arrow.png) no-repeat;
+            }
+
+            &--lg::after {
+                width: 133px;
+                top: 600px;
+                content: 'Смотреть';
+                right: 60px;
+                background-position-x: 115px;
+                background-position-y: 5px;
+            }
+
+            &--child::after {
+                content: '';
+            }
+        }
+    }
+
+    @media (min-width: 1370px) {
+        &__container {
+            justify-content: space-between;
+        }
+
+        &__card {
+            position: relative;
+            width: 485px;
+            height: 315px;
+            margin: 0;
+            padding: 20px 0 0 20px;
+            flex-grow: none;
+
+            &--big {
+                width: 695px;
+                height: 655px;
+                flex-grow: none;
+            }
+        }
+    }
+}

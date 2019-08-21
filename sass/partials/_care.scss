@@ -1,0 +1,274 @@
+.care {
+
+    padding-top: 35px;
+
+    text-align: left;
+
+    background-color: $mainBodyColor;
+    position: relative;
+
+
+    &__description {
+        font-family: $mainFont;
+        font-size: 14px;
+    }
+
+    &__title {
+        margin: 0 0 7px 0;
+
+        text-align: center;
+
+        font-family: $titleFont;
+        font-size: 24px;
+    }
+
+    &__image {
+        background: url(../assets/img/cakes-present-sm.png) no-repeat center center;
+        position: absolute;
+        width: 300px;
+        bottom: -4px;
+        left: 50%;
+        height: 240px;
+        transform: translateX(-50%);
+    }
+
+    &__subtitle,
+    &__title {
+        text-align: left;
+    }
+
+    &__subtitle {
+        text-align: left;
+
+        font-family: $curvyFont;
+        font-size: 22px;
+    }
+
+
+    &__wrapper {
+        height: 290px;
+
+        background: url(../assets/img/care-cake-sm.png) no-repeat center;
+        background-position-y: 125px;
+    }
+
+    &__algorithm {
+        padding-top: 35px;
+        height: 550px;
+
+        color: #fff;
+        background: #e3353d;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #e3353d 82%, #c93030 100%);
+        background: -webkit-linear-gradient(top, #e3353d 82%, #c93030 100%);
+        background: linear-gradient(to bottom, #e3353d 82%, #c93030 100%);
+
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e3353d', endColorstr='#c93030', GradientType=0);
+
+        &-item {
+            @include flex(row, flex-start, space-around);
+            width: 280px;
+            margin: 0 auto;
+
+            font-family: $mainFont;
+        }
+
+        &-title {
+            width: 256px;
+            margin: 0 auto;
+        }
+
+        &-item {
+            &-number {
+                font-family: $titleFont;
+                font-size: 35px;
+                font-weight: 700;
+            }
+
+            &-title {
+                font-size: 15px;
+                font-weight: 700;
+            }
+
+            &-text {
+                margin-top: 5px;
+
+                font-size: 14px;
+            }
+
+            &-content {
+                width: 220px;
+                padding-top: 15px;
+            }
+
+            &-title {
+                text-align: left;
+
+                font-family: $titleFont;
+                font-size: 15px;
+            }
+
+            &-wrapper {
+                height: 480px;
+
+                background: url(../assets/img/cakes-present-sm.png) no-repeat center;
+                background-position-y: 315px;
+            }
+        }
+    }
+
+    @media (min-width: 770px) {
+        &__image {
+            position: static;
+            background: url(../../assets/img/alg-cake-md.png) no-repeat center right;
+            width: 600px;
+            height: 560px;
+            transform: none;
+        }
+
+        &__wrapper {
+            position: relative;
+
+            height: 340px;
+            padding-top: 95px;
+
+            background: none;
+        }
+
+        &__description {
+            width: 310px;
+
+            font-size: 14px;
+        }
+
+        position: relative;
+
+
+        &__title::after {
+            position: absolute;
+            top: -42px;
+            right: 0;
+
+            width: 419px;
+            height: 380px;
+
+            content: "";
+
+            background: url(../assets/img/care-cake-md.png) no-repeat;
+        }
+
+        &__subtitle {
+            text-align: left;
+        }
+
+        &__algorithm {
+            height: 420px;
+            @include flex(row, flex-start, space-between);
+            overflow: hidden;
+
+            &-wrapper {
+                background: none;
+                padding: 0 105px 0 0;
+                @include flex(column, flex-end);
+                width: 400px;
+            }
+
+            &-title {
+                padding-left: 30px;
+                width: 385px;
+            }
+
+            &-item {
+                margin: 0;
+            }
+
+            &-item-text {
+                width: 275px;
+            }
+        }
+
+    }
+
+    @media (min-width: 1080px) {
+        &__wrapper {
+            padding-top: 200px;
+            height: 665px;
+
+        }
+
+        &__image {
+            background: url(../../assets/img/algorithm-cake-lg.png) no-repeat center right;
+            width: 800px;
+            height: 900px;
+        }
+
+        &__title {
+            font-size: 40px;
+            width: 200px;
+
+            &::after {
+                background: url(../assets/img/care-cake-lg.png) no-repeat;
+                top: -115px;
+                width: 780px;
+                height: 805px;
+            }
+        }
+
+        &__subtitle {
+            font-size: 35px;
+        }
+
+        &__description {
+            font-size: 20px;
+        }
+
+        &__algorithm {
+            background: #c93030;
+            position: relative;
+            height: 700px;
+            @include flex(row, flex-start, center);
+            overflow: hidden;
+
+            &-wrapper {
+                padding: 105px 190px 0 0;
+                max-width: 1370px;
+                width: 490px;
+            }
+
+            &-title {
+                font-size: 40px;
+                width: 281px;
+            }
+
+            &-item {
+                &-number {
+                    font-size: 64px;
+                }
+
+                &-title {
+                    font-size: 21px;
+                }
+
+                &-text {
+                    font-size: 20px;
+                    width: 370px;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1380px) {
+        &__wrapper {
+            max-width: 1370px;
+            margin: 0 auto;
+        }
+
+        &__algorithm-wrapper {
+            padding-left: 0;
+        }
+
+        &__description {
+            width: 440px;
+        }
+    }
+}
